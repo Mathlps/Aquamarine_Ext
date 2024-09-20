@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 500vh;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: bebas;
+    src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+}
+.Oswald{
+  font-family: "Oswald", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 3%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    z-index: 1;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    font-style: normal;
+    color: white;
+}
+header.rolagem{
+    background-color: #061b43;
+    padding: 30px 3%;
+   
+}
+
+header ul{
+    list-style-type: none;
+    
+}
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.wave-container{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../img/pexels-mayday-2602451.jpg);
+    background-position:60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: 100px;
+    padding-left: 35px;
+
+}
+nav .wave-container h1{
+    
+    font-family: "Oswald", sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    font-style: normal;
+    color: #d2a5e6;
+}
+nav .wave-container h2{
+    
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    font-style: normal;
+    color: white;
+}
+.custom-shape-divider-bottom-1726848696 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1726848696 svg {
+    position: relative;
+    display: block;
+    width: calc(154% + 1.3px);
+    height: 133px;
+}
+
+.custom-shape-divider-bottom-1726848696 .shape-fill {
+    fill: #FFFFFF;
+}
+
+main{
+    color: black;
+}
+footer{
+    background-color: yellow;
+}
