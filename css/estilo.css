@@ -8,25 +8,28 @@ html{
 }
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-@font-face {
-    font-family: bebas;
-    src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-}
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap');
 .Oswald{
   font-family: "Oswald", sans-serif;
   font-size: 1em;
   font-weight: 600;
   font-style: normal;
 }
-
+.Latan{
+    font-family: "Latan", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+  }
+  
 
 
 .container{
     display: flex;
     flex-direction: column;
 }
-
+/* header start*/
 header{
     width: 100%;
     display: flex;
@@ -50,6 +53,11 @@ header.rolagem{
     padding: 30px 3%;
    
 }
+header img{
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+}
 
 header ul{
     list-style-type: none;
@@ -63,11 +71,13 @@ header ul li a {
     color: white;
     text-decoration: none;
 }
+/* header end*/
 
+/* nav start*/
 .wave-container{
     min-height: 100vh;
     width: 100%;
-    background-image: url(../img/pexels-mayday-2602451.jpg);
+    background-image: url(../img/jellyfish_main.jpg);
     background-position:60%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -88,7 +98,7 @@ nav .wave-container h1{
     font-style: normal;
     color: #d2a5e6;
 }
-nav .wave-container h2{
+nav h2{
     
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
@@ -96,6 +106,20 @@ nav .wave-container h2{
     font-style: normal;
     color: white;
 }
+
+nav button{
+    font-family: "Latan", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size:larger;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    color: #d2a5e6;
+    background-color: transparent;
+    border: none;
+}
+/* efeito de onda*/ 
+
 .custom-shape-divider-bottom-1726848696 {
     position: absolute;
     bottom: 0;
@@ -116,7 +140,8 @@ nav .wave-container h2{
 .custom-shape-divider-bottom-1726848696 .shape-fill {
     fill: #FFFFFF;
 }
-
+/*Fim efeito de onda*/
+/*nav end*/
 main{
     color: black;
 }
