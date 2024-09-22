@@ -1,3 +1,8 @@
+:root{
+    /*colocar as variáveis aqui*/
+    --bg-nav-color: #061b43;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,9 +11,11 @@
 html{
     height: 500vh;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap');
+
 .Oswald{
   font-family: "Oswald", sans-serif;
   font-size: 1em;
@@ -22,8 +29,6 @@ html{
     font-style: normal;
     font-variation-settings:"wdth" 100;
   }
-  
-
 
 .container{
     display: flex;
@@ -49,7 +54,7 @@ header{
     color: white;
 }
 header.rolagem{
-    background-color: #061b43;
+    background-color: var(--bg-nav-color);
     padding: 30px 3%;
    
 }
