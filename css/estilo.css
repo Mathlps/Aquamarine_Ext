@@ -143,13 +143,60 @@ nav button{
 }
 
 .custom-shape-divider-bottom-1726848696 .shape-fill {
-    fill: #FFFFFF;
+    fill: #59284d;
 }
 /*Fim efeito de onda*/
 /*nav end*/
 main{
     color: black;
 }
+.custom-shape-divider-top-1726962219 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1726962219 svg {
+    /* position: relative; */
+    width: calc(300% + 1.3px);
+    
+}
+
+.custom-shape-divider-top-1726962219 .shape-fill {
+    fill: #59284d;
+}
+
+main h1 {
+    
+    z-index: 1;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 4em;
+    font-style: normal;
+    color: white;
+
+    padding-left: 20%;
+}
+main p {
+    width: 700px;
+    z-index: 1;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 50;
+    font-size: 16px;
+    font-style: normal;
+    color: gray;
+
+    padding-left: 20%;
+    padding-top: 10px;
+}
+.sobre-aquamarine{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
 footer{
     background-color: yellow;
 }
