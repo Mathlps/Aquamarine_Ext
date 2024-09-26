@@ -1,14 +1,15 @@
-:root{
+:root {
     /*colocar as variáveis aqui*/
     --bg-nav-color: #061b43;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.flex{
+
+.flex {
     display: flex;
 }
 
@@ -16,26 +17,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap');
 
-.Oswald{
-  font-family: "Oswald", sans-serif;
-  font-size: 1em;
-  font-weight: 600;
-  font-style: normal;
+.Oswald {
+    font-family: "Oswald", sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    font-style: normal;
 }
-.Latan{
+
+.Latan {
     font-family: "Latan", monospace;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    font-variation-settings:"wdth" 100;
-  }
+    font-variation-settings: "wdth" 100;
+}
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
 }
+
 /* header start*/
-header{
+header {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -53,37 +56,42 @@ header{
     font-style: normal;
     color: white;
 }
-header.rolagem{
+
+header.rolagem {
     background-color: var(--bg-nav-color);
     padding: 30px 3%;
-   
+
 }
-header img{
+
+header img {
     width: 60px;
     height: auto;
     border-radius: 50%;
 }
 
-header ul{
+header ul {
     list-style-type: none;
-    
+
 }
-header ul li{
+
+header ul li {
     display: inline-block;
     margin: 0 40px;
 }
+
 header ul li a {
     color: white;
     text-decoration: none;
 }
+
 /* header end*/
 
 /* nav start*/
-.wave-container{
+.wave-container {
     min-height: 100vh;
     width: 100%;
     background-image: url(../img/jellyfish_main.jpg);
-    background-position:60%;
+    background-position: 60%;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -95,16 +103,18 @@ header ul li a {
     padding-left: 35px;
 
 }
-nav .wave-container h1{
-    
+
+nav .wave-container h1 {
+
     font-family: "Oswald", sans-serif;
     font-size: 2em;
     font-weight: 600;
     font-style: normal;
     color: #d2a5e6;
 }
-nav h2{
-    
+
+nav h2 {
+
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
     font-size: 3em;
@@ -112,18 +122,19 @@ nav h2{
     color: white;
 }
 
-nav button{
+nav button {
     font-family: "Latan", monospace;
     font-optical-sizing: auto;
     font-weight: 700;
-    font-size:larger;
+    font-size: larger;
     font-style: normal;
-    font-variation-settings:"wdth" 100;
+    font-variation-settings: "wdth" 100;
     color: #d2a5e6;
     background-color: transparent;
     border: none;
 }
-/* efeito de onda*/ 
+
+/* efeito de onda*/
 
 .custom-shape-divider-bottom-1726848696 {
     position: absolute;
@@ -143,13 +154,18 @@ nav button{
 }
 
 .custom-shape-divider-bottom-1726848696 .shape-fill {
-    fill: #59284d;
+    /* fill: #59284d; */
+    fill: white;
+
 }
+
 /*Fim efeito de onda*/
 /*nav end*/
-main{
- height: 1000px;
+main {
+    height: 1000px;
+
 }
+
 .custom-shape-divider-top-1726962219 {
     top: 0;
     left: 0;
@@ -161,7 +177,7 @@ main{
 .custom-shape-divider-top-1726962219 svg {
     /* position: relative; */
     width: calc(300% + 1.3px);
-    
+
 }
 
 .custom-shape-divider-top-1726962219 .shape-fill {
@@ -169,7 +185,7 @@ main{
 }
 
 main h1 {
-    
+
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
     font-size: 4em;
@@ -178,6 +194,7 @@ main h1 {
 
     padding-left: 20%;
 }
+
 main p {
     width: 700px;
     z-index: 1;
@@ -190,23 +207,144 @@ main p {
     padding-left: 20%;
     padding-top: 10px;
 }
-.sobre-aquamarine{
+
+.sobre-aquamarine {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+
     /* position: absolute; */
-    /* padding-top: 8%; */
 
 }
-.container-sobreAquamarine{
-    position: absolute;
+
+.container-sobreAquamarine {
+
+
     padding-top: 8%;
-    
+
+    flex-wrap: wrap;
+
 }
-.container-carrossel{
-    background-color: blue;
+
+/* .container-slider{
+    /* position: absolute; 
+    display: flex;
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    gap: 1rem;
+    padding-left: 6%;
+    padding-bottom: 20px;
+}
+.container-imagens{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+}
+
+.slider{
+    position: absolute;
+    width: 100%;
+    max-height: 450px;
+}
+
+#prev-button, #next-button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    align-items: center;
+}
+#prev-button img, #next-button img{
+    width: 100%;
+    height: 100%;
+} */
+.container-slider {
+    display: flex;
     padding-left: 5%;
 }
 
-footer{
+.slider {
+    width: 600px;
+    /* max-width: 100vw; */
+    height: 400px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider .list {
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+
+.slider .list img {
+    width: 600px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .buttons {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider .buttons button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.slider .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.slider .dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.slider .dots li.active {
+    width: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .slider {
+        height: 400px;
+    }
+}
+
+footer {
     background-color: yellow;
 }
