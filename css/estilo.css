@@ -8,8 +8,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
-    height: 500vh;
+.flex{
+    display: flex;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
@@ -148,7 +148,7 @@ nav button{
 /*Fim efeito de onda*/
 /*nav end*/
 main{
-    color: black;
+ height: 1000px;
 }
 .custom-shape-divider-top-1726962219 {
     top: 0;
@@ -175,7 +175,7 @@ main h1 {
     font-weight: 700;
     font-size: 4em;
     font-style: normal;
-    color: white;
+    color: #061b43;
 
     padding-left: 20%;
 }
@@ -193,8 +193,19 @@ main p {
 }
 .sobre-aquamarine{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    /* position: absolute; */
+    /* padding-top: 8%; */
+
+}
+.container-sobreAquamarine{
     position: absolute;
+    padding-top: 8%;
+    
+}
+.container-carrossel{
+    background-color: blue;
+    padding-left: 5%;
 }
 
 footer{
