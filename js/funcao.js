@@ -32,6 +32,7 @@ function reloadSlider() {
     refreshInterval = setInterval(() => { next.click() }, 3000);
 
 
+
 }
 
 dots.forEach((li, key) => {
@@ -43,4 +44,5 @@ dots.forEach((li, key) => {
 window.onresize = function (event) {
     reloadSlider();
 };
+
 

@@ -9,6 +9,7 @@
     box-sizing: border-box;
 }
 
+
 .flex {
     display: flex;
 }
@@ -16,6 +17,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 .Oswald {
     font-family: "Oswald", sans-serif;
@@ -162,7 +164,7 @@ nav button {
 /*Fim efeito de onda*/
 /*nav end*/
 main {
-    height: 1000px;
+    height: auto;
 
 }
 
@@ -192,11 +194,12 @@ main h1 {
     font-style: normal;
     color: #061b43;
 
-    padding-left: 20%;
+    /* padding-left: 20%; */
 }
 
 main p {
-    width: 700px;
+
+    width: 500px;
     z-index: 1;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 50;
@@ -204,7 +207,7 @@ main p {
     font-style: normal;
     color: gray;
 
-    padding-left: 20%;
+    /* padding-left: 20%; */
     padding-top: 10px;
 }
 
@@ -218,15 +221,14 @@ main p {
 
 .container-sobreAquamarine {
 
-
-    padding-top: 8%;
-
+    margin: 8% 5% 0 5%;
+    gap: 2rem;
     flex-wrap: wrap;
 
 }
 
-/* .container-slider{
-    /* position: absolute; 
+.container-slider {
+    /* position: absolute; */
     display: flex;
     width: 800px;
     align-items: center;
@@ -236,7 +238,8 @@ main p {
     padding-left: 6%;
     padding-bottom: 20px;
 }
-.container-imagens{
+
+.container-imagens {
     position: relative;
     display: flex;
     align-items: center;
@@ -244,13 +247,14 @@ main p {
     width: 600px;
 }
 
-.slider{
+.slider {
     position: absolute;
     width: 100%;
     max-height: 450px;
 }
 
-#prev-button, #next-button{
+#prev-button,
+#next-button {
     width: 30px;
     height: 30px;
     border: none;
@@ -258,13 +262,17 @@ main p {
     cursor: pointer;
     align-items: center;
 }
-#prev-button img, #next-button img{
+
+#prev-button img,
+#next-button img {
     width: 100%;
     height: 100%;
-} */
+}
+
 .container-slider {
     display: flex;
-    padding-left: 5%;
+    /* padding-left: 5%; */
+
 }
 
 .slider {
@@ -343,7 +351,155 @@ main p {
     .slider {
         height: 400px;
     }
+
 }
+
+@media screen and (max-width: 1280px) {
+
+
+    .sobre-aquamarine {
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sobre-aquamarine h1 {
+        font-size: 5rem;
+    }
+
+    .sobre-aquamarine p {
+        width: 600px;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    .container-slider {
+        width: 100%;
+
+        padding: 0;
+    }
+
+}
+
+@media (min-width:428px) and (max-width: 720px) {
+    header {
+        padding: 15px 1%;
+    }
+
+    header ul li {
+        margin: 5px 0;
+        font-size: 0.8em;
+    }
+
+    .text-main {
+        margin-left: 2%;
+    }
+
+    nav .text-main h1 {
+
+        width: 20px;
+        /* text-align: center; */
+        padding-bottom: 5%;
+        font-weight: bolder;
+
+    }
+
+    nav h2 {
+        font-size: 1.5em;
+        font-weight: bolder;
+
+    }
+
+    .wave-container {
+        background-size: cover;
+        background-position: 40%;
+        padding: 0.5rem;
+        min-height: 70vh;
+        position: relative;
+
+    }
+
+    .sobre-aquamarine h1 {
+        font-size: 3rem;
+    }
+
+    .sobre-aquamarine p {
+        width: 400px;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .container-slider {
+        width: 100%;
+
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    header {
+        padding: 15px 1%;
+    }
+
+    header ul li {
+        margin: 5px 0;
+        font-size: 0.8em;
+    }
+
+    nav .text-main h1 {
+
+        text-align: center;
+        /* padding-bottom: 10%; */
+        font-weight: bolder;
+        color: white;
+    }
+
+    nav h2 {
+        font-size: 1.5em;
+        font-weight: bolder;
+
+    }
+
+    .wave-container {
+        background-size: cover;
+        background-position: 10px left;
+        padding: 0.5rem;
+        min-height: 70vh;
+        position: relative;
+
+    }
+
+    .none {
+        visibility: hidden;
+    }
+
+    .text-main {
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-aquamarine h1 {
+        font-size: 2rem;
+    }
+
+    .sobre-aquamarine p {
+        width: 350px;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .container-slider {
+        width: 100%;
+
+        padding: 0;
+    }
+}
+
 
 footer {
     background-color: yellow;
