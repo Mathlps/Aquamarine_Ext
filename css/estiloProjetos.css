@@ -1,0 +1,121 @@
+:root {
+    /*colocar as variáveis aqui*/
+    --bg-background-color: #082150;
+    --bg-button-color: #0a2f73;
+    --bg-button-hover-color: #0c3a8e;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-background-color);
+}
+
+/* Navbar */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 3%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    z-index: 1;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    font-style: normal;
+    color: white;
+}
+
+header.rolagem {
+    background-color: var(--bg-background-color);
+    padding: 30px 3%;
+
+}
+
+header img {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+}
+
+header ul {
+    list-style-type: none;
+
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Inicio da pagina */
+
+.title{
+    color: white;
+    margin-top: 30vh;
+    margin-left: 24vh;
+    display: flex;
+    align-items: center;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.content_container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content{
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+    background-color: rgb(237, 236, 236);
+    width: 80%;
+    height: 80vh;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
+                0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
+}
+
+.botao {
+    display: flex;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-button-color);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
+                0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
+    transition: transform 0.2s, background-color 0.2s;
+  }
+
+  .botao:hover {
+    transform: scale(0.9);
+    background-color: var(--bg-button-hover-color);
+    text-decoration: none;
+  } 
