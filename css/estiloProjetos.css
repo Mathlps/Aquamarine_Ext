@@ -79,7 +79,7 @@ header ul li a {
     font-style: normal;
 }
 
-.content_container{
+.content-container{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -88,14 +88,61 @@ header ul li a {
 .content{
     margin-top: 8vh;
     margin-bottom: 5vh;
+    padding: 5vh;
+    padding-bottom: 8vh;
     background-color: rgb(237, 236, 236);
     width: 80%;
-    height: 80vh;
+    height: auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
                 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
 }
 
-.botao {
+.content-title{
+    text-align: center;
+}
+
+.content-items{
+    display: flex;
+    margin-top: 7vh;
+    gap: 6vh;
+}
+
+.project-image{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-image img{
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
+                0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
+}
+
+.project-description{
+    width: 45%;
+    padding-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text p{
+    text-indent: 8vh;
+    white-space: normal;           /* Permite que o texto quebre em linhas normalmente */
+    overflow-wrap: break-word;     /* Permite que palavras longas quebrem para a próxima linha, se necessário */
+    word-break: normal;            /* Permite que as palavras se quebrem apenas em espaços */
+    max-width: 100%;               /* Limita a largura do parágrafo ao tamanho do container */
+    margin: 0;                     /* Remove margens padrão */
+}
+
+.donation-button{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
     display: flex;
     flex-grow: 0;
     justify-content: center;
@@ -114,8 +161,8 @@ header ul li a {
     transition: transform 0.2s, background-color 0.2s;
   }
 
-  .botao:hover {
-    transform: scale(0.9);
+  .button:hover{
+    transform: scale(0.95);
     background-color: var(--bg-button-hover-color);
     text-decoration: none;
   } 
