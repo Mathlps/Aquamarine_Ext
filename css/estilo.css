@@ -353,7 +353,20 @@ main p {
     }
 
 }
+@media screen and (max-width: 1920px) {
+   
+    .container-sobreAquamarine{
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .sobre-aquamarine p {
+        width: 600px;
+        align-items: center;
+        font-size: 1.05rem;
+    }
+}
 @media screen and (max-width: 1280px) {
 
 
@@ -421,21 +434,7 @@ main p {
 
     }
 
-    .sobre-aquamarine h1 {
-        font-size: 3rem;
-    }
-
-    .sobre-aquamarine p {
-        width: 400px;
-        align-items: center;
-        font-size: 1rem;
-    }
-
-    .container-slider {
-        width: 100%;
-
-        padding: 0;
-    }
+    
 }
 
 @media screen and (max-width: 420px) {
