@@ -1,8 +1,8 @@
 :root {
     /*colocar as variáveis aqui*/
     --bg-background-color: #082150;
-    --bg-button-color: #0a2f73;
-    --bg-button-hover-color: #0c3a8e;
+    --bg-button-color: #0c3073;
+    --bg-button-hover-color: #1a4697;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
@@ -14,7 +14,10 @@
 }
 
 body{
-    background-color: var(--bg-background-color);
+    background-image: url(https://geoinova.com.br/wp-content/uploads/2023/09/nas-profundezas-um-recife-colorido-fervilha-de-vida-gerada-por-ia-1-1024x485.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* Navbar */
@@ -70,7 +73,7 @@ header ul li a {
 .title{
     color: white;
     margin-top: 30vh;
-    margin-left: 24vh;
+    margin-left: 12vw;
     display: flex;
     align-items: center;
 
@@ -125,16 +128,12 @@ header ul li a {
     padding-bottom: 5vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 10vh;
 }
 
 .text p{
     text-indent: 8vh;
-    white-space: normal;           /* Permite que o texto quebre em linhas normalmente */
-    overflow-wrap: break-word;     /* Permite que palavras longas quebrem para a próxima linha, se necessário */
-    word-break: normal;            /* Permite que as palavras se quebrem apenas em espaços */
-    max-width: 100%;               /* Limita a largura do parágrafo ao tamanho do container */
-    margin: 0;                     /* Remove margens padrão */
+    text-align: justify;
 }
 
 .donation-button{
