@@ -349,31 +349,39 @@ main p {
     width: 30px;
 }
 
+.container-edu{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    margin: 8% 5% 0 5%;
+}
+.container-edu img {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+}
+.edu-name{
+    text-align: center;
+    padding-bottom: 5%;
+}
+.educação{
+    display: flex;
+    gap: 10rem;
+}
+
+
 @media screen and (max-width: 768px) {
     .slider {
         height: 400px;
     }
 
 }
-@media screen and (max-width: 1920px) {
-   
-    .container-sobreAquamarine{
-        padding: 0;
-        align-items: center;
-        justify-content: center;
-    }
-
-<<<<<<< HEAD
 /* BREAKPOINTS */
-=======
-    .sobre-aquamarine p {
-        width: 600px;
-        align-items: center;
-        font-size: 1.05rem;
-    }
-}
-@media screen and (max-width: 1280px) {
->>>>>>> f5eed4cd4e4de318f7522e25924b64edbd459ef8
+
 
 @media (max-width: 576px) {
     /* Estilos para telas pequenas */
@@ -391,9 +399,7 @@ main p {
 
     /* HEADER END */
 
-<<<<<<< HEAD
     /* MAIN START */
-=======
     nav .text-main h1 {
 
         width: 20px;
@@ -430,7 +436,6 @@ main p {
         margin: 5px 0;
         font-size: 0.8em;
     }
->>>>>>> f5eed4cd4e4de318f7522e25924b64edbd459ef8
 
     nav .text-main h1 {
 
@@ -590,6 +595,7 @@ main p {
         width: 500px;
         padding: 0;
     }
+
 }
 
 footer {
