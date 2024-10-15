@@ -205,7 +205,7 @@ main p {
     font-weight: 50;
     font-size: 16px;
     font-style: normal;
-    color: gray;
+    color: #37445f;
 
     /* padding-left: 20%;  */
     padding-top: 10px;
@@ -355,8 +355,25 @@ main p {
     }
 
 }
+@media screen and (max-width: 1920px) {
+   
+    .container-sobreAquamarine{
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
 
+<<<<<<< HEAD
 /* BREAKPOINTS */
+=======
+    .sobre-aquamarine p {
+        width: 600px;
+        align-items: center;
+        font-size: 1.05rem;
+    }
+}
+@media screen and (max-width: 1280px) {
+>>>>>>> f5eed4cd4e4de318f7522e25924b64edbd459ef8
 
 @media (max-width: 576px) {
     /* Estilos para telas pequenas */
@@ -374,7 +391,46 @@ main p {
 
     /* HEADER END */
 
+<<<<<<< HEAD
     /* MAIN START */
+=======
+    nav .text-main h1 {
+
+        width: 20px;
+        /* text-align: center; */
+        padding-bottom: 5%;
+        font-weight: bolder;
+
+    }
+
+    nav h2 {
+        font-size: 1.5em;
+        font-weight: bolder;
+
+    }
+
+    .wave-container {
+        background-size: cover;
+        background-position: 40%;
+        padding: 0.5rem;
+        min-height: 70vh;
+        position: relative;
+
+    }
+
+    
+}
+
+@media screen and (max-width: 420px) {
+    header {
+        padding: 15px 1%;
+    }
+
+    header ul li {
+        margin: 5px 0;
+        font-size: 0.8em;
+    }
+>>>>>>> f5eed4cd4e4de318f7522e25924b64edbd459ef8
 
     nav .text-main h1 {
 
