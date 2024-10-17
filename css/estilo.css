@@ -410,9 +410,9 @@ main p {
     position: relative;
     width: 100%;
     height: 750px; /* Ajuste o tamanho conforme necessário */
-    background-image: url(../img/pexels-giuseppe-di-maria-163888120-28925693.jpg);
+    background-image: url(../img/pexels-eliannedipp-4802101.jpg);
     background-size: cover;
-    background-position:bottom center;
+    background-position:center center;
     overflow: hidden; /* Garante que nada exceda o contêiner */
 }
 
@@ -437,7 +437,7 @@ main p {
     height: auto;
 }
 
-.background-filter {
+.background-filt {
     position: absolute;
     top: 0;
     left: 0;
