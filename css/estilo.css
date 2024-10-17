@@ -50,7 +50,7 @@ header {
     top: 0;
     left: 0;
     transition: 1s;
-    z-index: 1;
+    z-index: 1000;
 
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
@@ -348,14 +348,15 @@ main p {
 .slider .dots li.active {
     width: 30px;
 }
-
+/* 
 .container-edu{
-    width: 95%;
+     max-width: 1400px; 
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     
-    margin: 8% 5% 0 5%;
+   margin-top: 8%;
 }
 .container-edu img {
 
@@ -365,13 +366,183 @@ main p {
     
 }
 .edu-name{
+    
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+
     text-align: center;
     padding-bottom: 5%;
 }
+  
+.edu-img{
+    width:220px;
+    display: flex;
+    flex-direction: column;
+}
+.edu-img p{
+    width: 220px;
+}
 .educação{
     display: flex;
-    gap: 10rem;
+    /* width: 100%; */
+    justify-content: space-around;
+    /* padding-left: 10px; */
+    /* gap: 3rem; 
+    
+} */
+
+.wave-container-1 {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Ajuste a altura conforme necessário */
+    background-color: #f3f4f7; /* Cor de fundo */
+  }
+  
+  .wave-1 {
+    position: absolute;
+    bottom: 0; /* Onda posicionada na parte inferior */
+    width: 100%;
+    height: auto;
+  }
+  
+
+.wave-container-2 {
+    position: relative;
+    width: 100%;
+    height: 750px; /* Ajuste o tamanho conforme necessário */
+    background-image: url(../img/pexels-giuseppe-di-maria-163888120-28925693.jpg);
+    background-size: cover;
+    background-position:bottom center;
+    overflow: hidden; /* Garante que nada exceda o contêiner */
 }
+
+.wave-2 {
+    position: absolute;
+    top: 0; /* Posiciona a onda no topo */
+    width: 100%;
+    height: auto;
+}
+
+.divisor-img {
+    position: relative; /* Para posicionar a imagem corretamente */
+    width: 100%;
+    height: 400px; /* Altura da imagem */
+    overflow: hidden; /* Garante que a imagem não saia do contêiner */
+}
+
+.wave-1 {
+    position: absolute;
+    bottom: 0; /* Posiciona a onda na parte inferior */
+    width: 100%;
+    height: auto;
+}
+
+.background-filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff21; /* Cor de fundo semi-transparente */
+    backdrop-filter: blur(1px); /* Nível de desfoque */
+    z-index: 1; /* Para colocar o filtro acima da imagem */
+}
+
+.container-projetos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+}
+.container-projetos h1{
+    text-align:center;
+    padding-bottom: 5%;
+}
+
+.projetos{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+/* From Uiverse.io by vamsidevendrakumar */ 
+.card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front-1,
+  .card-front-2,
+  .card-front-3,
+  .card-front-4,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+.card-front-1{
+    background-image: url(../img/praias\ limpas\ \(2\).jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card-front-2{
+    background-image: url(../img/save\ tartaruga.jpg);
+    background-position: bottom center;
+    background-size: cover;
+}
+.card-front-3{
+    background-image: url(../img/save\ shark.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card-front-4{
+    background-image: url(../img/palestra\ save\ de\ world.jpg);
+    background-position: center;
+    background-size: cover;
+}
+  .card-front-1,
+  .card-front-2,
+  .card-front-3,
+  .card-front-4 {
+    background-color: #6A2C70;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    /* border: 10px solid #6A2C70; */
+    border-radius: 10px;
+    justify-content: start;
+    align-items: end;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    font-size: 1rem;
+    transform: rotateY(0deg);
+  }
+  
+  .card-back {
+    background-color: #F08A5D;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #F08A5D;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+  }
+  
 
 
 @media screen and (max-width: 768px) {
