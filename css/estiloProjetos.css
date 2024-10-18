@@ -14,7 +14,8 @@
 }
 
 body{
-    background-image: url(https://geoinova.com.br/wp-content/uploads/2023/09/nas-profundezas-um-recife-colorido-fervilha-de-vida-gerada-por-ia-1-1024x485.jpg);
+    background-image: url(../img/back-2.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -33,6 +34,7 @@ header {
     left: 0;
     transition: 1s;
     z-index: 1;
+    /* background-color: #082150; */
 
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;

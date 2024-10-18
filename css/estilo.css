@@ -385,7 +385,7 @@ main p {
 .educação{
     display: flex;
     /* width: 100%; */
-    justify-content: space-around;
+    /* justify-content: space-around; */
     /* padding-left: 10px; */
     /* gap: 3rem; 
     
@@ -435,17 +435,6 @@ main p {
     bottom: 0; /* Posiciona a onda na parte inferior */
     width: 100%;
     height: auto;
-}
-
-.background-filt {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff21; /* Cor de fundo semi-transparente */
-    backdrop-filter: blur(1px); /* Nível de desfoque */
-    z-index: 1; /* Para colocar o filtro acima da imagem */
 }
 
 .container-projetos{
