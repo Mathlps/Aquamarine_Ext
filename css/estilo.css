@@ -441,8 +441,8 @@ main p {
     display: flex;
     flex-direction: column;
     margin-top: 1%;
-    background-color: #ffff;
     margin-bottom: 5%;
+
 }
 .container-projetos h1{
     text-align:center;
