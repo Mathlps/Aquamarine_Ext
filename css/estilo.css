@@ -8,7 +8,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.color{
+    background-color: #dae7eb;
+}
 
 .flex {
     display: flex;
@@ -165,7 +167,7 @@ nav button {
 /*nav end*/
 main {
     height: auto;
-    
+    /* background-color: #dae7eb; */
 }
 
 .custom-shape-divider-top-1726962219 {
@@ -442,6 +444,7 @@ main p {
     flex-direction: column;
     margin-top: 1%;
     margin-bottom: 5%;
+    background-color: #dae7eb;
 
 }
 .container-projetos h1{
@@ -542,7 +545,7 @@ main p {
     display: flex;
     flex-direction: column;
     /* margin-top: 15%; */
-    background-color: #015b725a;
+    background-color: #a5c5cd;
     
  } 
  .container-animais-impactados h1{
@@ -600,7 +603,7 @@ main p {
 }
 
 .custom-shape-divider-top-1729349552 .shape-fill {
-    fill: #FFFFFF;
+    fill: #dae7eb;
 }
 /* WAVE TOP END */
 
