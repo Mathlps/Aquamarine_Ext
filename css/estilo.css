@@ -667,54 +667,6 @@ main p {
         position: relative;
 
     }
-
-    
-}
-
-@media screen and (max-width: 420px) {
-    header {
-        padding: 15px 1%;
-    }
-
-    header ul li {
-        margin: 5px 0;
-        font-size: 0.8em;
-    }
-
-    nav .text-main h1 {
-
-        text-align: center;
-        /* padding-bottom: 10%; */
-        font-weight: bolder;
-        color: white;
-    }
-
-    nav h2 {
-        font-size: 1.5em;
-        font-weight: bolder;
-
-    }
-
-    .wave-container {
-        background-size: cover;
-        background-position: 10px left;
-        padding: 0.5rem;
-        min-height: 70vh;
-        position: relative;
-
-    }
-
-    .none {
-        visibility: hidden;
-    }
-
-    .text-main {
-        margin: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
     .container-sobreAquamarine{
         gap: 0;
         text-align: center;
@@ -753,6 +705,8 @@ main p {
     .container-projetos p{
         text-align: center;
         width: 100%;
+        padding: 5%;
+        flex-wrap: wrap;
     }
     .card{
         width: 350px;
@@ -774,40 +728,64 @@ main p {
         padding-top: 5%;
     }
 
+    .container-animais-impactados h1{
+        font-size: 2.5rem;
+        margin: 2px;
+    }
 
-    /* MAIN END */
+
+    
 }
 
-@media (min-width: 577px) and (max-width: 768px) {
-    /* Estilos para telas médias */
-
-    /* MAIN START */
-
-    .container-sobreAquamarine{
-
-        text-align: center;
-
+@media screen and (max-width: 420px) {
+    header {
+        padding: 15px 1%;
     }
 
-    .sobre-aquamarine h1 {
-        font-size: 4rem;
+    header ul li {
+        margin: 5px 0;
+        font-size: 0.8em;
     }
 
-    .sobre-aquamarine p {
+    nav .text-main h1 {
 
-        width: 700px;
-        /* align-items: center; */
-        font-size: 1rem;
-        text-indent: 10px;
-        text-align: left;
-    }
-
-    .container-slider {
         width: 100%;
-
-        padding: 0;
+        text-align: center;
+        /* padding-bottom: 10%; */
+        font-weight: bolder;
+        color: white;
     }
 
+    nav h2 {
+        font-size: 1.5em;
+        font-weight: bolder;
+
+    }
+    .wave-container {
+        background-size: cover;
+        background-position: 10px left;
+        padding: 0.5rem;
+        min-height: 70vh;
+        position: relative;
+
+    }
+
+    .none {
+        visibility: hidden;
+    }
+
+    .text-main {
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        width: 320px;
+        height: 280px;
+    }
     /* MAIN END */
 }
 
