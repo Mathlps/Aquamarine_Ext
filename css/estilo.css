@@ -8,10 +8,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-.color{
+.color-2{
     background-color: #dae7eb;
 }
-
+.color{
+    background-color: #f4f1f8;
+}
+.height{
+    height: 200px;
+    background-color: #ddd5e9;
+}
 .flex {
     display: flex;
 }
@@ -148,6 +154,7 @@ nav button {
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+
 }
 
 .custom-shape-divider-bottom-1726848696 svg {
@@ -158,8 +165,7 @@ nav button {
 }
 
 .custom-shape-divider-bottom-1726848696 .shape-fill {
-    /* fill: #59284d; */
-    fill: white;
+    fill: #f4f1f8;
 
 }
 
@@ -170,23 +176,6 @@ main {
     /* background-color: #dae7eb; */
 }
 
-.custom-shape-divider-top-1726962219 {
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1726962219 svg {
-    /* position: relative; */
-    width: calc(300% + 1.3px);
-
-}
-
-.custom-shape-divider-top-1726962219 .shape-fill {
-    fill: #59284d;
-}
 
 main h1 {
 
@@ -225,9 +214,11 @@ main p {
 
     /* width: 100%; */
     align-items: center;
-    margin: 8% 5% 0 5%;
+    margin: 0 5% 0 5%;
+    padding-top: 5%;
     gap: 2rem;
     flex-wrap: wrap;
+    background-color: #f4f1f8;
 
 }
 
@@ -393,21 +384,6 @@ main p {
     
 } */
 
-.wave-container-1 {
-    position: relative;
-    width: 100%;
-    height: 200px; /* Ajuste a altura conforme necessário */
-    background-color: #f3f4f7; /* Cor de fundo */
-  }
-  
-  .wave-1 {
-    position: absolute;
-    bottom: 0; /* Onda posicionada na parte inferior */
-    width: 100%;
-    height: auto;
-  }
-  
-
 .wave-container-2 {
     position: relative;
     width: 100%;
@@ -447,11 +423,23 @@ main p {
     background-color: #dae7eb;
 
 }
-.container-projetos h1{
-    text-align:center;
+.projetos-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 5%;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 50;
+    font-size: 16px;
+    font-style: normal;
+    color: #37445f;
 }
-
+.projetos-info h1{
+    padding-bottom: 6px;
+}
 .projetos{
     display: flex;
     justify-content: center;
@@ -554,6 +542,7 @@ main p {
  }
 .animais-impactados{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20rem;
 
@@ -727,17 +716,18 @@ main p {
         align-items: center;
     }
     .container-sobreAquamarine{
-
+        gap: 0;
         text-align: center;
     }
 
     .sobre-aquamarine h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        width: 100%;
     }
 
     .sobre-aquamarine p {
 
-        width: 350px;
+        width: 100%;
         align-items: center;
         font-size: 1rem;
         text-indent: 20px;
@@ -749,6 +739,41 @@ main p {
 
         padding: 0;
     }
+    .projetos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-projetos h1{
+        font-size: 2.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    .container-projetos p{
+        text-align: center;
+        width: 100%;
+    }
+    .card{
+        width: 350px;
+        height: 300px;
+    }
+    .animais-impactados{
+        gap: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cuidados,
+    .resgatados,
+    .realocados{
+        padding-bottom: 5%;
+    }
+    .resgatados{
+        padding-top: 5%;
+    }
+
 
     /* MAIN END */
 }
