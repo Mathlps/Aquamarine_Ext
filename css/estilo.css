@@ -423,6 +423,7 @@ main p {
     background-color: #dae7eb;
 
 }
+
 .projetos-info{
     width: 100%;
     display: flex;
@@ -789,7 +790,7 @@ main p {
     /* MAIN END */
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
     /* Estilos para tablets */
 
     
@@ -807,9 +808,9 @@ main p {
 
     .sobre-aquamarine p {
 
-        width: 750px;
+        width: 100%;
         align-items: center;
-        font-size: 1rem;
+        font-size: 1.5rem;
         text-indent: 20px;
         text-align: left;
     }
@@ -818,6 +819,36 @@ main p {
         width: 100%;
 
         padding: 0;
+    }
+    .projetos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container-projetos h1{
+        font-size: 4rem;
+        width: 100%;
+        text-align: center;
+    }
+    .container-projetos p{
+        text-align: center;
+        width: 100%;
+        padding: 5%;
+        font-size: 1.5rem;
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 350px;
+        height: 300px;
+    }
+    .animais-impactados{
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-animais-impactados h1{
+        font-size: 4rem;
+        padding-bottom: 5%;
+        margin: 2px;
     }
 
     /* MAIN END */
