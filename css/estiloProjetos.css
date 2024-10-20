@@ -109,7 +109,7 @@ header ul li a {
 .content-items{
     display: flex;
     margin-top: 7vh;
-    gap: 6vh;
+    gap: 5vw;
 }
 
 .project-image{
@@ -120,22 +120,23 @@ header ul li a {
 }
 
 .project-image img{
-    width: 100%;
+    max-width: 40vw;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
                 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
 }
 
 .project-description{
-    width: 45%;
-    padding-bottom: 5vh;
+    width: 50%;
+    padding-bottom: 4vh;
     display: flex;
     flex-direction: column;
-    gap: 10vh;
+    gap: 8vh;
 }
 
 .text p{
-    text-indent: 8vh;
+    text-indent: 3vw;
     text-align: justify;
+    padding-right: 2vw;
 }
 
 .donation-button{
@@ -160,10 +161,48 @@ header ul li a {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
                 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
     transition: transform 0.2s, background-color 0.2s;
-  }
+}
 
-  .button:hover{
+.button:hover{
     transform: scale(0.95);
     background-color: var(--bg-button-hover-color);
     text-decoration: none;
-  } 
+} 
+
+@media (max-width: 768px){
+
+    .content-items{
+        display: flex;
+        flex-direction: column;
+        margin-top: 7vh;
+        gap: 7vh;
+    }
+    
+    .project-image{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .project-image img{
+        width: 60vw;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
+                    0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
+    }
+    
+    .project-description{
+        width: 100%;
+        padding-bottom: 3vh;
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+    
+    .text p{
+        text-indent: 3vw;
+        text-align: justify;
+        padding-right: 2vw;
+    }
+
+}
