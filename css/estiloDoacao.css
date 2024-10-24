@@ -1,0 +1,133 @@
+:root {
+    /*colocar as variáveis aqui*/
+    --bg-background-color: #082150;
+    --bg-button-color: #0c3073;
+    --bg-button-hover-color: #1a4697;
+    --bg-rosa: #d2a5e6;
+    --bg-rosa-claro: #f1d3ff;
+}
+
+body{
+    background-color: var(--bg-background-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 3%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    z-index: 1;
+    /* background-color: #082150; */
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    font-style: normal;
+    color: white;
+}
+
+header.rolagem {
+    background-color: var(--bg-background-color);
+    padding: 30px 3%;
+
+}
+
+header img {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+}
+
+header ul {
+    list-style-type: none;
+
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Inicio pagina */
+
+main{
+    margin-top: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container-doacao{
+    display: flex;
+    width:  50%;
+}
+
+.doacao-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid var(--bg-rosa);
+    border-radius: 50%;
+    background-color: var(--bg-rosa-claro);
+    width: 72px;
+    height: 72px;
+}
+
+.doacao-image img{
+    width: 56px;
+    height: 56px;
+    padding: 5%;
+}
+
+
+
+.doacao-content{
+    width: 30vw;
+    padding: 24px;
+    background-color: azure;
+    border-radius: 10px;    
+}
+
+.button{
+    display: flex;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-button-color);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
+                0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.button:hover{
+    transform: scale(0.95);
+    background-color: var(--bg-button-hover-color);
+    text-decoration: none;
+} 
