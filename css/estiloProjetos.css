@@ -169,7 +169,7 @@ header ul li a {
     text-decoration: none;
 } 
 
-@media (max-width: 768px){
+@media (max-width: 916px){
 
     .content-items{
         display: flex;

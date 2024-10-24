@@ -73,11 +73,13 @@ main{
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 40px;
 }
 
 .container-doacao{
     display: flex;
+    position: relative;
     width:  50%;
 }
 
@@ -85,6 +87,10 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    z-index: 1;
     border: solid var(--bg-rosa);
     border-radius: 50%;
     background-color: var(--bg-rosa-claro);
@@ -98,13 +104,29 @@ main{
     padding: 5%;
 }
 
-
-
 .doacao-content{
+    display: flex;
+    flex-direction: column;
     width: 30vw;
     padding: 24px;
     background-color: azure;
     border-radius: 10px;    
+}
+
+.doacao-content h2{
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.doacao-content p{
+    text-indent: 3vw;
+    text-align: justify;
+}
+
+.donation-button{
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
 }
 
 .button{
