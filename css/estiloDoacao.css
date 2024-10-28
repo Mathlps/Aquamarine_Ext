@@ -7,14 +7,19 @@
     --bg-rosa-claro: #f1d3ff;
 }
 
-body{
-    background-color: var(--bg-background-color);
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.sla{
+    background-image: url(../img/pexels-alohaphotostudio-8710944.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border: solid #08215000;               /* por algum motivo, essa div so engloba o header se tiver border solid */
 }
 
 /* Navbar */
@@ -36,7 +41,6 @@ header {
     font-weight: 700;
     font-size: 1em;
     font-style: normal;
-    color: white;
 }
 
 header.rolagem {
@@ -69,21 +73,22 @@ header ul li a {
 /* Inicio pagina */
 
 main{
-    margin-top: 20vh;
+    margin-top: 200px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    padding-bottom: 100px;
 }
 
 .container-doacao{
     display: flex;
     position: relative;
-    width:  50%;
+    width: 70%;
 }
 
-.doacao-image{
+.doacao-icon{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +103,7 @@ main{
     height: 72px;
 }
 
-.doacao-image img{
+.doacao-icon img{
     width: 56px;
     height: 56px;
     padding: 5%;
@@ -153,3 +158,26 @@ main{
     background-color: var(--bg-button-hover-color);
     text-decoration: none;
 } 
+
+.projetos{
+    background-color: white;
+    margin-top: 112px;
+}
+
+.projetos-texto{
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+}
+
+.projetos-texto h1{
+    text-align: center;
+}
+
+.projetos-texto p{
+    text-indent: 3vw;
+    text-align: justify;
+}
