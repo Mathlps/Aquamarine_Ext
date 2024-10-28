@@ -1,7 +1,6 @@
 :root {
     /*colocar as variáveis aqui*/
     --bg-nav-color: #061b43;
-    --color-p: #37445f;
 }
 
 * {
@@ -9,8 +8,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
+.color-2{
+    background-color: #dae7eb;
+}
+.color{
+    background-color: #f4f1f8;
+}
+.height{
+    height: 200px;
+    background-color: #ddd5e9;
+}
 .flex {
     display: flex;
 }
@@ -51,7 +58,7 @@ header {
     top: 0;
     left: 0;
     transition: 1s;
-    z-index: 1;
+    z-index: 1000;
 
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
@@ -147,6 +154,7 @@ nav button {
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+
 }
 
 .custom-shape-divider-bottom-1726848696 svg {
@@ -157,8 +165,7 @@ nav button {
 }
 
 .custom-shape-divider-bottom-1726848696 .shape-fill {
-    /* fill: #59284d; */
-    fill: white;
+    fill: #f4f1f8;
 
 }
 
@@ -166,26 +173,9 @@ nav button {
 /*nav end*/
 main {
     height: auto;
-
+    /* background-color: #dae7eb; */
 }
 
-.custom-shape-divider-top-1726962219 {
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1726962219 svg {
-    /* position: relative; */
-    width: calc(300% + 1.3px);
-
-}
-
-.custom-shape-divider-top-1726962219 .shape-fill {
-    fill: #59284d;
-}
 
 main h1 {
 
@@ -200,15 +190,15 @@ main h1 {
 
 main p {
 
-    width: 500px;
+    width: 600px;
     z-index: 1;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 50;
     font-size: 16px;
     font-style: normal;
-    color: var(--color-p);
+    color: #37445f;
 
-    /* padding-left: 20%; */
+    /* padding-left: 20%;  */
     padding-top: 10px;
 }
 
@@ -222,21 +212,25 @@ main p {
 
 .container-sobreAquamarine {
 
-    margin: 8% 5% 0 5%;
+    /* width: 100%; */
+    align-items: center;
+    margin: 0 5% 0 5%;
+    padding-top: 5%;
     gap: 2rem;
     flex-wrap: wrap;
+    background-color: #f4f1f8;
 
 }
 
 .container-slider {
     /* position: absolute; */
     display: flex;
-    width: 800px;
+    width: 700px;
     align-items: center;
     justify-content: center;
     min-height: 500px;
     gap: 1rem;
-    padding-left: 6%;
+    /* padding-left: 6%; */
     padding-bottom: 20px;
 }
 
@@ -347,44 +341,298 @@ main p {
 .slider .dots li.active {
     width: 30px;
 }
+/* 
+.container-edu{
+     max-width: 1400px; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+   margin-top: 8%;
+}
+.container-edu img {
 
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+}
+.edu-name{
+    
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+
+    text-align: center;
+    padding-bottom: 5%;
+}
+  
+.edu-img{
+    width:220px;
+    display: flex;
+    flex-direction: column;
+}
+.edu-img p{
+    width: 220px;
+}
+.educação{
+    display: flex;
+    /* width: 100%; */
+    /* justify-content: space-around; */
+    /* padding-left: 10px; */
+    /* gap: 3rem; 
+    
+} */
+
+.wave-container-2 {
+    position: relative;
+    width: 100%;
+    height: 900px; /* Ajuste o tamanho conforme necessário */
+    background-image: url(../img/pexels-eliannedipp-4802101.jpg);
+    background-size: cover;
+    background-position:center center;
+    overflow: hidden; /* Garante que nada exceda o contêiner */
+}
+
+.wave-2 {
+    position: absolute;
+    top: 0; /* Posiciona a onda no topo */
+    width: 100%;
+    height: auto;
+}
+
+.divisor-img {
+    position: relative; /* Para posicionar a imagem corretamente */
+    width: 100%;
+    height: 400px; /* Altura da imagem */
+    overflow: hidden; /* Garante que a imagem não saia do contêiner */
+}
+
+.wave-1 {
+    position: absolute;
+    bottom: 0; /* Posiciona a onda na parte inferior */
+    width: 100%;
+    height: auto;
+}
+
+.container-projetos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    background-color: #dae7eb;
+
+}
+
+.projetos-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 50;
+    font-size: 16px;
+    font-style: normal;
+    color: #37445f;
+}
+.projetos-info h1{
+    padding-bottom: 6px;
+}
+.projetos{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+/* From Uiverse.io by vamsidevendrakumar */ 
+.card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front-1,
+  .card-front-2,
+  .card-front-3,
+  .card-front-4,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+.card-front-1{
+    background-image: url(../img/praias\ limpas\ \(2\).jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card-front-2{
+    background-image: url(../img/save\ tartaruga.jpg);
+    background-position: bottom center;
+    background-size: cover;
+}
+.card-front-3{
+    background-image: url(../img/save\ shark.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card-front-4{
+    background-image: url(../img/palestra\ save\ de\ world.jpg);
+    background-position: center;
+    background-size: cover;
+}
+  .card-front-1,
+  .card-front-2,
+  .card-front-3,
+  .card-front-4 {
+    background-color: #6A2C70;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    /* border: 10px solid #6A2C70; */
+    border-radius: 10px;
+    justify-content: start;
+    align-items: end;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    font-size: 1rem;
+    transform: rotateY(0deg);
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .card-back {
+    background-color: #F08A5D;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #F08A5D;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+  }
+  
+ .container-animais-impactados{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 15%; */
+    background-color: #a5c5cd;
+    
+ } 
+ .container-animais-impactados h1{
+    margin: 5% 0 5% 0;
+    text-align: center;
+ }
+.animais-impactados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20rem;
+
+}
+.animais-impactados img{
+    
+    width: 100px;
+    height: 100px;
+}
+
+.animais-impactados span{
+    font-family: "Oswald", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    font-style: normal;
+    color: #59284d;
+}
+.realocados, 
+.cuidados,
+.resgatados
+{   
+    /* margin: 5% 0 5% 0; */
+    margin-bottom: 5%;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    font-style: normal;
+}
+/* WAVE TOP START */
+.custom-shape-divider-top-1729349552 {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1729349552 svg {
+    position: relative;
+    display: block;
+    width: calc(161% + 1.3px);
+    height: 58px;
+}
+
+.custom-shape-divider-top-1729349552 .shape-fill {
+    fill: #dae7eb;
+}
+/* WAVE TOP END */
+
+/* WAVE BOTTOM START */
+.custom-shape-divider-bottom-1729352598 {
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1729352598 svg {
+    position: relative;
+    display: block;
+    width: calc(101% + 1.3px);
+    height: 44px;
+}
+
+.custom-shape-divider-bottom-1729352598 .shape-fill {
+    fill: #ffff;
+}
+
+/* WAVE BOTTOM END */
 @media screen and (max-width: 768px) {
     .slider {
         height: 400px;
     }
 
 }
+/* BREAKPOINTS */
 
-@media screen and (max-width: 1280px) {
 
+@media (max-width: 576px) {
+    /* Estilos para telas pequenas */
 
-    .sobre-aquamarine {
-        width: 100%;
-        padding: 0;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
+    /* HEADER START */
 
-    .sobre-aquamarine h1 {
-        font-size: 5rem;
-    }
-
-    .sobre-aquamarine p {
-        width: 600px;
-        align-items: center;
-        font-size: 1.5rem;
-    }
-
-    .container-slider {
-        width: 100%;
-
-        padding: 0;
-    }
-
-}
-
-@media (min-width:428px) and (max-width: 720px) {
     header {
         padding: 15px 1%;
     }
@@ -394,10 +642,9 @@ main p {
         font-size: 0.8em;
     }
 
-    .text-main {
-        margin-left: 2%;
-    }
+    /* HEADER END */
 
+    /* MAIN START */
     nav .text-main h1 {
 
         width: 20px;
@@ -421,15 +668,23 @@ main p {
         position: relative;
 
     }
+    .container-sobreAquamarine{
+        gap: 0;
+        text-align: center;
+    }
 
     .sobre-aquamarine h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        width: 100%;
     }
 
     .sobre-aquamarine p {
-        width: 400px;
+
+        width: 100%;
         align-items: center;
         font-size: 1rem;
+        text-indent: 20px;
+        text-align: left;
     }
 
     .container-slider {
@@ -437,6 +692,50 @@ main p {
 
         padding: 0;
     }
+    .projetos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-projetos h1{
+        font-size: 2.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    .container-projetos p{
+        text-align: center;
+        width: 100%;
+        padding: 5%;
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 350px;
+        height: 300px;
+    }
+    .animais-impactados{
+        gap: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cuidados,
+    .resgatados,
+    .realocados{
+        padding-bottom: 5%;
+    }
+    .resgatados{
+        padding-top: 5%;
+    }
+
+    .container-animais-impactados h1{
+        font-size: 2.5rem;
+        margin: 2px;
+    }
+
+
+    
 }
 
 @media screen and (max-width: 420px) {
@@ -451,6 +750,7 @@ main p {
 
     nav .text-main h1 {
 
+        width: 100%;
         text-align: center;
         /* padding-bottom: 10%; */
         font-weight: bolder;
@@ -462,7 +762,6 @@ main p {
         font-weight: bolder;
 
     }
-
     .wave-container {
         background-size: cover;
         background-position: 10px left;
@@ -484,14 +783,36 @@ main p {
         align-items: center;
     }
 
+    .card{
+        width: 320px;
+        height: 280px;
+    }
+    /* MAIN END */
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    /* Estilos para tablets */
+
+    
+    /* MAIN START */
+
+    .container-sobreAquamarine{
+
+        text-align: center;
+        padding-left: 10px;
+    }
+
     .sobre-aquamarine h1 {
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
     .sobre-aquamarine p {
-        width: 350px;
+
+        width: 100%;
         align-items: center;
-        font-size: 1rem;
+        font-size: 1.5rem;
+        text-indent: 20px;
+        text-align: left;
     }
 
     .container-slider {
@@ -499,10 +820,73 @@ main p {
 
         padding: 0;
     }
+    .projetos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container-projetos h1{
+        font-size: 4rem;
+        width: 100%;
+        text-align: center;
+    }
+    .container-projetos p{
+        text-align: center;
+        width: 100%;
+        padding: 5%;
+        font-size: 1.5rem;
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 350px;
+        height: 300px;
+    }
+    .animais-impactados{
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-animais-impactados h1{
+        font-size: 4rem;
+        padding-bottom: 5%;
+        margin: 2px;
+    }
+
+    /* MAIN END */
 }
 
+@media (min-width: 993px) and (max-width: 1200px) {
+    /* Estilos para desktops pequenos */
+
+}
+
+@media (min-width: 1201px) and (max-width: 1490px) {
+    
+    .container-sobreAquamarine{
+
+        text-align: center;
+        padding-left: 10px;
+    }
+
+    .sobre-aquamarine h1 {
+        font-size: 3rem;
+    }
+
+    .sobre-aquamarine p {
+
+        width: 600px;
+        align-items: center;
+        font-size: 1.05rem;
+        text-indent: 20px;
+        text-align: left;
+    }
+
+    .container-slider {
+        width: 500px;
+        padding: 0;
+    }
+
+}
 
 footer {
-    background-color: var(--bg-nav-color);
-    height: 18svh;
+    background-color: yellow;
 }

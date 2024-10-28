@@ -1,9 +1,10 @@
+// HEADER SCROLL ANIMATION
 window.addEventListener("scroll", function () {
     let header = document.querySelector('#header')
     header.classList.toggle('rolagem', window.scrollY > 0)
 })
 
-
+// SLIDER START
 let slider = document.querySelector('.slider .list');
 let items = document.querySelectorAll('.slider .list .item');
 let next = document.getElementById('next');
@@ -44,5 +45,23 @@ dots.forEach((li, key) => {
 window.onresize = function (event) {
     reloadSlider();
 };
+// SLIDER END
 
+// NUMEROS IMPACTADOS ANIMATION
+
+let valueDisplays = document.querySelectorAll(".num");
+let interval = 5000;
+
+valueDisplays.forEach((valueDisplay) => {
+    let startValue = 0;
+    let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+    let duration = Math.floor(interval / endValue);
+    let counter = setInterval(function () {
+        startValue += 1;
+        valueDisplay.textContent = startValue;
+        if (startValue == endValue) {
+            clearInterval(counter);
+        }
+    }, duration);
+});
 
