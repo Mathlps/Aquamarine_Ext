@@ -887,6 +887,58 @@ main p {
 
 }
 
-footer {
-    background-color: yellow;
+.footer {
+    background-color: #000;
+    color: #f1f1f1;
+    padding: 40px 20px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.footer-title {
+    font-size: 3em;
+    font-weight: bold;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-info {
+    font-size: 0.8em;
+    margin-bottom: 15px;
+    color: #bdbdbd;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: #d1d1d1;
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-social-icons a img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%);
 }
