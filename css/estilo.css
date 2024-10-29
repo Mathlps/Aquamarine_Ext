@@ -890,10 +890,25 @@ main p {
 .footer {
     background-color: #000;
     color: #f1f1f1;
-    padding: 40px 20px;
+    padding: 40px 20px 0 20px;
     width: 100%;
     text-align: center;
     position: relative;
+}
+
+.footer-row {
+    display: flex; /* Mantém o uso de flexbox */
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: space-around; /* Distribui o espaço horizontalmente */
+    color: #fff; /* Cor do texto */
+    padding: 20px 0; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+.footer img {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
 }
 
 .footer-title {
@@ -918,7 +933,6 @@ main p {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-bottom: 20px;
 }
 
 .footer-links a {
