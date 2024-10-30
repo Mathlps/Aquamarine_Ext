@@ -14,7 +14,7 @@
 }
 
 .sla{
-    background-color: var(--bg-button-hover-color);
+    background-image: url(https://img.myloview.com.br/posters/uma-vista-de-textura-de-agua-do-mar-azul-profundo-de-cima-700-139670047.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,12 +75,12 @@ header ul li a {
 
 main{
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 200px;      
     width: 80%;
     min-height: 80vh;  
     display: flex;  
     justify-content: space-around;
-    gap: 40px;
+    gap: 64px;
     padding-bottom: 100px;
 }
 
@@ -88,12 +88,13 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 56px;
 }
 
 .aside-container2{
     display: flex;
     align-items: center;
+    width: 80%;
 }
 
 .container-frase h1{
@@ -133,7 +134,7 @@ main{
     flex-direction: column;
     width: 30vw;
     padding: 24px;
-    background-color: azure;
+    background-color: white;
     border-radius: 10px;    
 }
 
@@ -189,7 +190,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 72px;
+    gap: 64px;
 }
 
 .projetos-texto h1{
@@ -199,4 +200,26 @@ main{
 .projetos-texto p{
     text-indent: 3vw;
     text-align: justify;
+}
+
+
+/* Telas menores */
+
+@media (max-width: 768px){
+    main{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .container-doacao{
+        justify-content: center;
+    }
+
+    .doacao-icon{
+        left: 40px;
+    }
+
+    .doacao-content{
+        width: 75%;
+    }
 }
