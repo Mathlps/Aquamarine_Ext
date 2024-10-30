@@ -14,12 +14,13 @@
 }
 
 .sla{
-    background-image: url(../img/pexels-alohaphotostudio-8710944.jpg);
+    background-color: var(--bg-button-hover-color);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     border: solid #08215000;               /* por algum motivo, essa div so engloba o header se tiver border solid */
+    
 }
 
 /* Navbar */
@@ -34,7 +35,7 @@ header {
     top: 0;
     left: 0;
     transition: 1s;
-    z-index: 1;
+    z-index: 2;
     /* background-color: #082150; */
 
     font-family: "Bebas Neue", sans-serif;
@@ -73,20 +74,37 @@ header ul li a {
 /* Inicio pagina */
 
 main{
+    margin: 0 auto;
     margin-top: 200px;
-    width: 100%;
+    width: 80%;
     min-height: 80vh;  
+    display: flex;  
+    justify-content: space-around;
+    gap: 40px;
+    padding-bottom: 100px;
+}
+
+.aside-container1{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    padding-bottom: 100px;
+}
+
+.aside-container2{
+    display: flex;
+    align-items: center;
+}
+
+.container-frase h1{
+    text-align: center;
+    color: #d2a5e6;
 }
 
 .container-doacao{
     display: flex;
     position: relative;
-    width: 70%;
+    width: 100%;
 }
 
 .doacao-icon{
