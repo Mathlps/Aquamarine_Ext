@@ -517,18 +517,51 @@ main p {
     font-weight: 700;
     text-transform: uppercase;
   }
-  
   .card-back {
-    background-color: #F08A5D;
+    background-color: #d2a5e6;
     color: #fff;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    border: 10px solid #F08A5D;
-    border-radius: 10px;
-    justify-content: center;
+    justify-content: space-between; /* Empurra o botão para a parte inferior */
+    padding: 20px;
     font-size: 24px;
     transform: rotateY(180deg);
+    border-radius: 10px;
+
+    
   }
+  
+  .card-back p {
+    margin: 0; /* Remove o espaço extra se necessário */
+    text-align: center;
+    width: 250px ;
+    padding-bottom: 10px;
+    font-family: "Bebas Neue", sans-serif;
+    /* font-weight: 200; */
+    font-size: 1rem;
+    font-style: normal;
+    color: #061b43;
+  }
+  
+  .card-back button {
+    padding: 8px 16px;
+    font-size: 1rem;
+    background-color: #6A2C70;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* bottom: 0; */
+
+    font-family: "Latan", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 18px;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+  
   
  .container-animais-impactados{
     display: flex;
@@ -887,6 +920,72 @@ main p {
 
 }
 
-footer {
-    background-color: yellow;
+.footer {
+    background-color: #000;
+    color: #f1f1f1;
+    padding: 40px 20px 0 20px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.footer-row {
+    display: flex; /* Mantém o uso de flexbox */
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: space-around; /* Distribui o espaço horizontalmente */
+    color: #fff; /* Cor do texto */
+    padding: 20px 0; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+.footer img {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.footer-title {
+    font-size: 3em;
+    font-weight: bold;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-info {
+    font-size: 0.8em;
+    margin-bottom: 15px;
+    color: #bdbdbd;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: #d1d1d1;
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-social-icons a img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%);
 }
