@@ -7,14 +7,20 @@
     --bg-rosa-claro: #f1d3ff;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* Configurações gerais da página inteira */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* container com a nav e a main */
+
 .sla{
-    background-image: url(https://img.myloview.com.br/posters/uma-vista-de-textura-de-agua-do-mar-azul-profundo-de-cima-700-139670047.jpg);
+    background-image: url(https://images.pexels.com/photos/20146341/pexels-photo-20146341/free-photo-of-mar-oceano-sombrio-escuro.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,6 +105,10 @@ main{
 
 .container-frase h1{
     text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    font-style: normal;
     color: #d2a5e6;
 }
 
