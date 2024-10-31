@@ -461,7 +461,7 @@ main p {
     transition: transform 0.999s;
   }
   
-  .card:hover .card-inner {
+.card:hover .card-inner {
     transform: rotateY(180deg);
   }
   
@@ -528,6 +528,7 @@ main p {
     font-size: 24px;
     transform: rotateY(180deg);
     border-radius: 10px;
+    gap: 1rem;
 
     
   }
@@ -536,6 +537,7 @@ main p {
     margin: 0; /* Remove o espaço extra se necessário */
     text-align: center;
     width: 250px ;
+    height: 150px;
     padding-bottom: 10px;
     font-family: "Bebas Neue", sans-serif;
     /* font-weight: 200; */
@@ -945,11 +947,16 @@ main p {
 }
 
 .footer-title {
-    font-size: 3em;
+    font-size: 6rem;
     font-weight: bold;
     color: #f1f1f1;
     text-transform: uppercase;
     margin-bottom: 20px;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    /* font-size: 3em; */
+    font-style: normal;
 }
 
 .footer-info {
