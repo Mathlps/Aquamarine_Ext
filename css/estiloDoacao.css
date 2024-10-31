@@ -224,7 +224,7 @@ main{
 .slider {
     position: absolute;
     width: 100%;
-    max-height: 450px;
+    max-height: 550px;
 }
 
 #prev-button,
@@ -244,34 +244,37 @@ main{
 }
 
 .container-slider {
-    display: flex;
+    display: flex;  
     /* padding-left: 5%; */
 
 }
 
 .slider {
-    width: 40%;
+    width: 45%;
     /* max-width: 100vw; */
-    height: 600px;
+    height: 550px;
     margin: auto;
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: end;
 }
 
 .slider .list { 
     position: absolute;
     width: max-content;
-    height: 100%;
-    left: 0;
-    top: 0;
+    height: auto;
     display: flex;
     transition: 1s;
 }
 
-.slider .list img {
-    width: 800px;
-    height: 600px;
-    object-fit: cover;
+.item{
+    width: 45vw;          /* colocar o msm numero do width do slider */
+}
+
+.slider .item img {
+    width: 100%;
+    height: 550px;
 }
 
 .slider .buttons {
@@ -296,14 +299,11 @@ main{
 
 .slider .dots {
     position: absolute;
-    bottom: 10px;
-    left: 0;
     color: #fff;
     width: 100%;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
+    margin-bottom: 24px;
 }
 
 .slider .dots li {
@@ -348,5 +348,21 @@ main{
 
     .doacao-content{
         width: 75%;
+    }
+}
+
+@media (max-width: 1024px){
+    .slider{
+        width: 60%;
+        max-height: 400px;
+        height: 400px;
+    }
+
+    .item{
+        width: 60vw;
+    }
+
+    .item img{
+        height: 400px;
     }
 }
