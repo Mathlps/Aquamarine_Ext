@@ -1024,6 +1024,9 @@ a.link {
         width: 350px;
         height: 300px;
     }
+    .card-back p{
+        font-size: 18px;
+    }
     .animais-impactados{
         gap: 2rem;
         justify-content: center;
