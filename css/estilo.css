@@ -674,6 +674,7 @@ main p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 2rem;
 }
 .noticias-info{
     width: 100%;
@@ -713,6 +714,7 @@ main p {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
+    padding-top: 0.5rem;
 }
 .noticias h3{
     width: 450px;
@@ -901,6 +903,9 @@ a.link {
     .noticias h1{
         width: 300px;
     }
+    .noticias h3{
+        width: 300px;
+    }
 
 .n-1,
 .n-2,
@@ -974,13 +979,15 @@ a.link {
     /* MAIN START */
 
     .container-sobreAquamarine{
-
+        
+        padding-top: 8%;
         text-align: center;
-        padding-left: 10px;
+        /* padding-left: 10px; */
     }
 
     .sobre-aquamarine h1 {
         font-size: 4rem;
+        
     }
 
     .sobre-aquamarine p {
@@ -1043,6 +1050,12 @@ a.link {
     .noticias{
         width: 100%;
     }
+    .noticias h1{
+        width: 250px;
+    }
+    .noticias h3{
+        width: 250px;
+    }
     .n-1,
 .n-2,
 .n-3,
@@ -1067,14 +1080,17 @@ a.link {
     }
 
     .sobre-aquamarine h1 {
-        font-size: 3rem;
+        font-size: 5rem;
     }
 
+    .sobre-aquamarine button{
+        font-size: 1.5rem;
+    }
     .sobre-aquamarine p {
 
         width: 600px;
         align-items: center;
-        font-size: 1.05rem;
+        font-size: 1.1rem;
         text-indent: 20px;
         text-align: left;
     }
@@ -1084,6 +1100,40 @@ a.link {
         padding: 0;
     }
 
+    .container-projetos h1{
+        font-size: 5rem;
+        width: 100%;
+        text-align: center;
+    }
+    .container-projetos p{
+        text-align: center;
+        width: 80%;
+        padding: 5%;
+        font-size: 1.5rem;
+        flex-wrap: wrap;
+    }
+    .projetos{
+        gap: 1rem;
+    }
+    .noticias-info h1{
+        font-size: 5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .noticias-info p{
+        text-align: center;
+        width: 100%;
+        padding: 5%;
+        font-size: 1.5rem;
+        flex-wrap: wrap;
+    }
+    .noticias{
+        width: 100%;
+    }
+    .noticias h3{
+        width: 250px;
+    }
 }
 
 .footer {
