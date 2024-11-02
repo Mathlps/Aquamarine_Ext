@@ -730,8 +730,8 @@ main p {
     width: 30%;
     height: 280px;
     padding: 12px;
-    
-    background-color: yellow;
+
+    cursor: pointer;
    
 }
 .n-1{
