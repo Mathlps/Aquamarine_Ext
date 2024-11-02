@@ -209,7 +209,19 @@ main p {
     /* position: absolute; */
 
 }
+.sobre-aquamarine button{
+    font-family: "Latan", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: larger;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: #59284d;
+    background-color: transparent;
+    border: none;
+    padding-top: 12px;
 
+}
 .container-sobreAquamarine {
 
     /* width: 100%; */
@@ -656,9 +668,103 @@ main p {
 /* WAVE BOTTOM END */
 /* NOTICIAS START */
 
+.container-noticias{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.noticias-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding-bottom: 5%; */
+    text-align: center;
 
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 50;
+    font-size: 16px;
+    font-style: normal;
+    color: #37445f;
+}
+.noticias-info h1{
+    padding-bottom: 6px;
+}
+.noticias{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+}
+.noticias h1{
+    font-size: 1.1rem;
+    width: 400px;
+    color: white;
 
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.noticias h3{
+    width: 450px;
+    color: gainsboro;
+}
+.n-1,
+.n-2,
+.n-3,
+.n-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 30%;
+    height: 280px;
+    padding: 12px;
+    
+    background-color: yellow;
+   
+}
+.n-1{
+    background-image: url(https://www.reciclasampa.com.br/imgs/conteudos/03_lixo_praias_brasil_padrao.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.n-2{
+    background-image: url(https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/09/19/366794775-memorial.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.n-3{
+    background-image: url(https://blog.sympla.com.br/wp-content/uploads/2023/10/08-projeto-tamar.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.n-4{
+    background-image: url(https://s2-g1.glbimg.com/UmUecOEvsbKMGTw8kQpNg3Q50ug=/0x0:4135x2757/984x0/smart/filters:strip_icc/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/T/j/AH2JoYQaCFKVTGxmfjwQ/credits-to-todd-southgate-sea-shepherd-brasil-fev-2-2023-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#divlink {
+    background-color: #D0D0D0;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+a.link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
 
 /* NOTICIAS END */
 @media screen and (max-width: 768px) {
@@ -775,9 +881,36 @@ main p {
     .container-animais-impactados h1{
         font-size: 2.5rem;
         margin: 2px;
+        
+    }
+    .noticias-info h1{
+        font-size: 2.5rem;
+    }
+    
+    .noticias-info p{
+        text-align: center;
+            width: 100%;
+            padding: 5%;
+            flex-wrap: wrap;
     }
 
+    .noticias{
+        flex-direction: column;
+    }
 
+    .noticias h1{
+        width: 300px;
+    }
+
+.n-1,
+.n-2,
+.n-3,
+.n-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 94%;
+}
     
 }
 
@@ -894,7 +1027,29 @@ main p {
         padding-bottom: 5%;
         margin: 2px;
     }
+    .noticias-info h1{
+        font-size: 4rem;
+        width: 100%;
+        text-align: center;
+    }
 
+    .noticias-info p{
+        text-align: center;
+        width: 100%;
+        padding: 5%;
+        font-size: 1.5rem;
+        flex-wrap: wrap;
+    }
+    .noticias{
+        width: 100%;
+    }
+    .n-1,
+.n-2,
+.n-3,
+.n-4{
+    display: flex;
+    width: 45%;
+}
     /* MAIN END */
 }
 
