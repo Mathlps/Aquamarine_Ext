@@ -654,6 +654,13 @@ main p {
 }
 
 /* WAVE BOTTOM END */
+/* NOTICIAS START */
+
+
+
+
+
+/* NOTICIAS END */
 @media screen and (max-width: 768px) {
     .slider {
         height: 400px;
@@ -683,7 +690,7 @@ main p {
     nav .text-main h1 {
 
         width: 20px;
-        /* text-align: center; */
+        text-align: center;
         padding-bottom: 5%;
         font-weight: bolder;
 
@@ -698,9 +705,10 @@ main p {
     .wave-container {
         background-size: cover;
         background-position: 40%;
-        padding: 0.5rem;
+        padding: 1rem;
         min-height: 70vh;
         position: relative;
+        /* align-items: center; */
 
     }
     .container-sobreAquamarine{
@@ -803,6 +811,7 @@ main p {
         padding: 0.5rem;
         min-height: 70vh;
         position: relative;
+        align-items: center;
 
     }
 
