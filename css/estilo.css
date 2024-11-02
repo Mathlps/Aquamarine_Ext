@@ -732,6 +732,8 @@ main p {
     padding: 12px;
     
     background-color: yellow;
+
+    cursor: pointer;
    
 }
 .n-1{
