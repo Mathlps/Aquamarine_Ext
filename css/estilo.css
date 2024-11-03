@@ -613,7 +613,7 @@ main p {
 .resgatados
 {   
     /* margin: 5% 0 5% 0; */
-    margin-bottom: 5%;
+    margin-bottom: 0;
     width: 200px;
     height: auto;
     text-align: center;
@@ -623,49 +623,29 @@ main p {
     font-style: normal;
 }
 /* WAVE TOP START */
-.custom-shape-divider-top-1729349552 {
+.custom-shape-divider-top-1730642411 {
     /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    transform: rotate(180deg);
 }
 
-.custom-shape-divider-top-1729349552 svg {
+.custom-shape-divider-top-1730642411 svg {
     position: relative;
     display: block;
-    width: calc(161% + 1.3px);
-    height: 58px;
+    width: calc(100% + 1.3px);
+    height: 98px;
+    transform: rotateY(180deg);
 }
 
-.custom-shape-divider-top-1729349552 .shape-fill {
+.custom-shape-divider-top-1730642411 .shape-fill {
     fill: #dae7eb;
 }
 /* WAVE TOP END */
 
-/* WAVE BOTTOM START */
-.custom-shape-divider-bottom-1729352598 {
-    /* position: absolute; */
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-bottom-1729352598 svg {
-    position: relative;
-    display: block;
-    width: calc(101% + 1.3px);
-    height: 44px;
-}
-
-.custom-shape-divider-bottom-1729352598 .shape-fill {
-    fill: #ffff;
-}
-
-/* WAVE BOTTOM END */
 /* NOTICIAS START */
 
 .container-noticias{
@@ -674,7 +654,7 @@ main p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
 }
 .noticias-info{
     width: 100%;
@@ -734,11 +714,49 @@ main p {
     cursor: pointer;
    
 }
-.n-1{
+.n-1 {
+    position: relative;
     background-image: url(https://www.reciclasampa.com.br/imgs/conteudos/03_lixo_praias_brasil_padrao.jpg);
     background-position: center;
     background-size: cover;
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgba(255, 255, 255, 0.655); */
+    transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 12px;
+}
+
+.n-1:hover .overlay {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0);
+}
+.hidden-text {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    color: black;
+    font-size: 16px;
+    /* padding: 12px; */
+}
+
+.n-1:hover .hidden-text {
+    opacity: 1;
+    visibility: visible;
+}
+
 .n-2{
     background-image: url(https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/09/19/366794775-memorial.jpg);
     background-position: center;
@@ -754,6 +772,7 @@ main p {
     background-position: center;
     background-size: cover;
 }
+
 
 #divlink {
     background-color: #D0D0D0;
