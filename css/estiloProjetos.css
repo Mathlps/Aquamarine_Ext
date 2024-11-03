@@ -5,7 +5,10 @@
     --bg-button-hover-color: #1a4697;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 * {
     margin: 0;
@@ -20,7 +23,6 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-
 /* Navbar */
 
 header {
@@ -79,8 +81,8 @@ header ul li a {
     display: flex;
     align-items: center;
 
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -104,8 +106,11 @@ header ul li a {
 
 .content-title{
     text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
 }
-
 .content-items{
     display: flex;
     margin-top: 7vh;
@@ -134,11 +139,23 @@ header ul li a {
 }
 
 .text p{
-    text-indent: 3vw;
+    text-indent: 2vw;
     text-align: justify;
-    padding-right: 2vw;
+    /* padding-right: 2vw;
+    padding-top: 1vw; */
+    padding: 1vw 2vw 1vw 0;
+    font-family: "Bebas Neue", sans-serif;
+    /* font-weight: 200; */
+    font-style: normal;
+    color: #37445f;
 }
-
+.text h3{
+    /* text-align: center; */
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #061b43;
+}
 .donation-button{
     display: flex;
     justify-content: center;
