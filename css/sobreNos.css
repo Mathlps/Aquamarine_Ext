@@ -1,0 +1,381 @@
+:root {
+    /*colocar as variáveis aqui*/
+    --bg-nav-color: #061b43;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ddd5e975;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+/* header start*/
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 3%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    z-index: 1000;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    font-style: normal;
+    color: white;
+    background-color: #061b43;
+}
+
+header.rolagem {
+    background-color: var(--bg-nav-color);
+    padding: 30px 3%;
+
+}
+
+header img {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+}
+
+header ul {
+    list-style-type: none;
+
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* header end*/
+/* main start */
+main{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    
+    margin-top: 15%;
+}
+.tittle{
+    width: 100%;
+    text-align: center;
+}
+.tittle h1{
+    font-family: "Oswald", sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    /* text-align: center; */
+    color: #d2a5e6;
+
+    padding-bottom: 1%;
+}
+.tittle p{
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 50;
+    font-size: 18px;
+    font-style: normal;
+    color: #37445f;
+
+    padding-bottom: 5%;
+}
+.container-slider {
+    /* position: absolute; */
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    gap: 1rem;
+    /* padding-left: 6%; */
+    padding-bottom: 20px;
+}
+
+.container-imagens {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    max-height: 1000px;
+}
+
+#prev-button,
+#next-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    align-items: center;
+}
+
+#prev-button img,
+#next-button img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-slider {
+    display: flex;
+    /* padding-left: 5%; */
+
+}
+
+.slider {
+    width: 900px;
+    /* max-width: 100vw; */
+    height: 400px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider .list {
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+
+.slider .list img {
+    width: 900px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .buttons {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider .buttons button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.slider .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.slider .dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.slider .dots li.active {
+    width: 30px;
+}
+.container-sobre-info{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.container-sobre-info h1{
+    padding-top: 5%;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    font-style: normal;
+    color: var(--bg-nav-color);
+}
+
+.sobre-info p{
+    width: 1000px;
+    text-indent: 2vw;
+    text-align: justify;
+    /* text-align: center; */
+    padding-top: 3%;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 50;
+    font-size: 1rem;
+    font-style: normal;
+    color: #37445f;
+
+}
+.logo{
+    width: 100%;
+    text-align: center;
+    padding-top: 3%;
+}
+.logo img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.container-missao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.container-missao h1{
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    font-style: normal;
+    color: var(--bg-nav-color);
+}
+.missao{
+    padding-top: 5%;
+    display: flex;
+    gap: 7rem;
+}
+/* From Uiverse.io by SteveBloX */ 
+.card {
+    box-sizing: border-box;
+    width: 250px;
+    height: 300px;
+    background: rgba(217, 217, 217, 0.58);
+    /* border: 1px solid white; */
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    /* text-align: center; */
+    position: relative; 
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+}
+  
+  .card:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+  }
+  
+  .card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+
+  .imagem-missao {
+    position: absolute; /* Define a posição absoluta para sair do card */
+    top: -20px; /* Ajuste para a posição desejada */
+    width: 60px;
+    height: 60px;
+}
+
+.imagem-missao img {
+    width: 100%;
+    height: 100%;
+}
+.card h2{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+    /* font-size: 2rem; */
+    font-style: normal;
+    color: var(--bg-nav-color);
+    margin-top: 40px; /* Ajuste para dar espaço para a imagem */
+}
+
+.card p{
+    text-indent: 0.5vw;
+    margin: 1rem;
+    text-align: justify center;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 50;
+    font-size: 0.9rem;
+    font-style: normal;
+    color: #37445f;
+
+}
+
+.img-wave{
+    width: 100%;
+    height: 400px;
+    background-color: #d2a5e638;
+    /* background-image: url(../img/sobreNos/pexels-babydov-7787713.jpg);
+    background-position: center;
+    background-size: cover; */
+}
+
+    button {
+    background-color: #061b43;
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    margin: 5%;
+    margin-bottom: 0;
+    box-shadow: 0 4px 8px rgba(0, 27, 66, 0.2); /* Adicionando sombra */
+    transition: all 0.3s ease; /* Para uma transição suave na interação */
+
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+button:hover {
+    box-shadow: 0 6px 12px rgba(0, 27, 66, 0.3); /* Sombra mais intensa ao passar o mouse */
+    transform: translateY(-2px); /* Um leve deslocamento para cima */
+}
+
+button:active {
+    box-shadow: 0 2px 4px rgba(0, 27, 66, 0.2); /* Sombra reduzida quando o botão é pressionado */
+    transform: translateY(0); /* Volta à posição original */
+}

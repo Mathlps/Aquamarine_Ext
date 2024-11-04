@@ -22,3 +22,5 @@ September/2024
 [![Static Badge](https://img.shields.io/badge/github-PaulingCavalcante-blue?style=plastic&logo=github&logoColor=white&labelColor=gray&color=blue&link=https%3A%2F%2Fgithub.com%2FPaulingCavalcante)](https://github.com/PaulingCavalcante)
 
 [![Static Badge](https://img.shields.io/badge/github-Tsarco-blue?style=plastic&logo=github&logoColor=white&labelColor=gray&color=blue&link=https%3A%2F%2Fgithub.com%2FTsarco)](https://github.com/Tsarco)
+
+[![Static Badge](https://img.shields.io/badge/github-MatheusGalasso-blue?style=plastic&logo=github&logoColor=white&labelColor=gray&color=blue&link=https%3A%2F%2Fgithub.com%2FMatheusGalasso)](https://github.com/Gatasso)
