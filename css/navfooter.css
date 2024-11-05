@@ -1,3 +1,8 @@
+:root {
+    /*colocar as variáveis aqui*/
+    --bg-nav-color: #061b43;
+}
+
 /* navbar */
 
 header {
