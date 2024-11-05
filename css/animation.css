@@ -28,12 +28,25 @@
     }
 }
 
+@keyframes animacaoslider{
+    from{
+        opacity: 0;
+        transform: translateX(20px) translateY(-10px);
+    }to{
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+}
+
 /* elemento.in-view{
     animation: animacao1 2s forwards
 } */
 
+
 /* home */
 
+
+/* navbar */
 .logo{
     opacity: 0;
 }
@@ -60,6 +73,7 @@
     animation-delay: 0.8s;
 }
 
+/* texto com a imagem da agua-viva atras */
 .text-main h1{
     opacity: 0;
 }
@@ -78,10 +92,101 @@
     animation-delay: 1.5s;
 }
 
+/* texto sobre */
+.sobre-aquamarine h1{
+    opacity: 0;
+}
+
+.sobre-aquamarine h1.in-view{
+    animation: animacao1 2s forwards;
+}
+
+.sobre-aquamarine p{
+    opacity: 0;
+}
+
+.sobre-aquamarine .p1.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.2s;
+}
+
+.sobre-aquamarine .p2.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.3s;
+}
+
+.sobre-aquamarine .p3.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.4s;
+}
+
+.sobre-aquamarine button{
+    opacity: 0;
+}
+
+.sobre-aquamarine button.in-view{
+    animation: animacao2 2s forwards;
+    animation-delay: 0.8s;
+}
+
+/* carrossel do sobre */
+.slider{
+    opacity: 0;
+}
+
+.slider.in-view{
+    animation: animacaoslider 2s forwards;
+}
+
+/* projetos */
+.projetos-info h1{
+    opacity: 0;
+}
+
+.projetos-info h1.in-view{
+    animation: animacao1 2s forwards;
+}
+
+.projetos-info p{
+    opacity: 0;
+}
+
+.projetos-info p.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.4s;
+}
+
 .card{
     opacity: 0;
 }
 
 .card.in-view{
     animation: animacaocard 1.5s forwards;
+}
+
+/* animais impactados */
+.container-animais-impactados h1{
+    opacity: 0;
+}
+
+.container-animais-impactados h1.in-view{
+    animation: animacao1 1.5s forwards;
+}
+
+/* noticias */
+.noticias-info h1{
+    opacity: 0;
+}
+
+.noticias-info h1.in-view{
+    animation: animacao1 2s forwards;
+}
+
+.noticias-info p{
+    opacity: 0;
+}
+
+.noticias-info p.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.4s;
 }
