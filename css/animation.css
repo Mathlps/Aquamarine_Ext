@@ -50,10 +50,6 @@
     animation: animacao1 2s forwards
 } */
 
-
-/* home */
-
-
 /* navbar */
 .logo{
     opacity: 0;
@@ -80,6 +76,10 @@
     animation: animacao1 2s forwards;
     animation-delay: 0.8s;
 }
+
+
+/* home */
+
 
 /* texto com a imagem da agua-viva atras */
 .text-main h1{
@@ -232,4 +232,104 @@
 .n-4.in-view{
     animation: animacao3 1.5s forwards;
     animation-delay: 0.6s;
+}
+
+
+/* Projetos */
+
+
+/* Nossos projetos */
+.title h1{
+    opacity: 0;
+}
+
+.title h1.in-view{
+    animation: animacao1 2s forwards;
+}
+
+/* projetos */
+.content-title h1{
+    opacity: 0;
+}
+
+.content-title h1.in-view{
+    animation: animacao3 2s forwards;
+}
+
+.project-image img{
+    opacity: 0;
+}
+
+.project-image img.in-view{
+    animation: animacao3 2s forwards;
+    animation-delay: 0.5s;
+}
+
+.text h3{
+    opacity: 0;
+}
+
+.text h3.in-view{
+    animation: animacao3 2s forwards;
+}
+
+.p1{
+    opacity: 0;
+}
+
+.p1.in-view{
+    animation: animacaocard 2s forwards;
+}
+
+.p2{
+    opacity: 0;
+}
+
+.p2.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.2s;
+}
+
+.p3{
+    opacity: 0;
+}
+
+.p3.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.4s;
+}
+
+.p4{
+    opacity: 0;
+}
+
+.p4.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.6s;
+}
+
+.p5{
+    opacity: 0;
+}
+
+.p5.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.8s;
+}
+
+.p6{
+    opacity: 0;
+}
+
+.p6.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 1s;
+}
+
+.button{
+    opacity: 0;
+}
+
+.button.in-view{
+    animation: animacao2 2s forwards;
 }

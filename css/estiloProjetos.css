@@ -110,6 +110,7 @@ header ul li a {
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
+    margin-top: 24px;
 }
 .content-items{
     display: flex;
