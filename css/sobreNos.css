@@ -246,12 +246,12 @@ main{
     color: #37445f;
 
 }
-.logo{
+.logo2{
     width: 100%;
     text-align: center;
     padding-top: 3%;
 }
-.logo img{
+.logo2 img{
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -278,7 +278,7 @@ main{
     gap: 7rem;
 }
 /* From Uiverse.io by SteveBloX */ 
-.card {
+.card-sobrenos {
     box-sizing: border-box;
     width: 250px;
     height: 300px;
@@ -300,12 +300,12 @@ main{
     color: black;
 }
   
-  .card:hover {
+  .card-sobrenos:hover {
     border: 1px solid black;
     transform: scale(1.05);
   }
   
-  .card:active {
+  .card-sobrenos:active {
     transform: scale(0.95) rotateZ(1.7deg);
   }
 
@@ -320,7 +320,7 @@ main{
     width: 100%;
     height: 100%;
 }
-.card h2{
+.card-sobrenos h2{
     font-size: 1.5rem;
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
@@ -331,7 +331,7 @@ main{
     margin-top: 40px; /* Ajuste para dar espaço para a imagem */
 }
 
-.card p{
+.card-sobrenos p{
     text-indent: 0.5vw;
     margin: 1rem;
     text-align: justify center;
