@@ -664,7 +664,7 @@ main p {
     padding-bottom: 6px;
 }
 
-.card-news h1, h3{
+.card-news h1{
     background: #00000060 ;
     display: inline;
     padding: 3px 0 !important;

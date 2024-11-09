@@ -6,11 +6,13 @@
 /* navbar */
 
 header {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    width: 100%;
     padding: 50px 3%;
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -55,11 +57,13 @@ header ul li a {
 
 .footer {
     background-color: #000;
-    color: #f1f1f1;
-    padding: 40px 20px 0 20px;
     width: 100%;
+    padding: 40px 20px 0 20px;
+    
     text-align: center;
     position: relative;
+    
+    color: #f1f1f1;
 }
 
 .footer-row {
@@ -86,21 +90,27 @@ header ul li a {
 }
 
 .footer-title {
+
     font-size: calc(2.5rem + 3vw);
     font-weight: bold;
     color: #f1f1f1;
     text-transform: uppercase;
-    margin-bottom: 20px;
+
 
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
     /* font-size: 3em; */
     font-style: normal;
+    font-size: 6rem;
+    font-weight: bold;
+    color: #f1f1f1;
+    text-transform: uppercase;
 }
 
 .footer-info {
-    font-size: 0.8em;
     margin-bottom: 15px;
+    
+    font-size: 0.8em;
     color: #bdbdbd;
 }
 
@@ -142,3 +152,51 @@ header ul li a {
         gap: 1.2rem;
     }
 }
+
+/* Breakpoints */
+@media screen and (max-width: 420px) {
+   /* header start */
+
+   header {
+    padding: 15px 1%;
+}
+
+header ul li {
+    margin: 5px 0;
+    font-size: 0.8em;
+}
+
+    /* header end */
+}
+
+@media (max-width: 576px) {
+    /* Estilos para telas pequenas */
+
+    /* header start */
+
+    header {
+        padding: 15px 1%;
+    }
+
+    header ul li {
+        margin: 5px 0;
+        font-size: 0.8em;
+    }
+
+    /* header end */
+
+}
+
+/* @media (min-width: 768px) and (max-width: 992px) {
+    
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+    
+
+}
+
+@media (min-width: 1201px) and (max-width: 1490px) {
+    
+
+} */
+
