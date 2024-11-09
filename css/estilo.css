@@ -657,10 +657,18 @@ main p {
     font-size: 16px;
     font-style: normal;
     color: #37445f;
+
 }
 
 .noticias-info h1 {
     padding-bottom: 6px;
+}
+
+.card-news h1, h3{
+    background: #00000060 ;
+    display: inline;
+    padding: 3px 0 !important;
+    position: relative;
 }
 
 .noticias {
