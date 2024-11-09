@@ -247,7 +247,7 @@ main p {
 
 .slider {
     width: 600px;
-    /* max-width: 100vw; */
+    max-width: 100vw;
     height: 400px;
     margin: auto;
     position: relative;
@@ -866,7 +866,7 @@ a.link {
 
     .container-slider {
         width: 100%;
-
+        
         padding: 0;
     }
 
@@ -914,6 +914,7 @@ a.link {
 
     .container-animais-impactados h1 {
         font-size: 2.5rem;
+        padding-top: 5%;
         margin: 2px;
 
     }
@@ -934,11 +935,11 @@ a.link {
     }
 
     .noticias h1 {
-        width: 300px;
+        width: 400px;
     }
 
     .noticias h3 {
-        width: 300px;
+        width: 400px;
     }
 
     .n-1,
@@ -1078,6 +1079,7 @@ a.link {
     .container-animais-impactados h1 {
         font-size: 4rem;
         padding-bottom: 5%;
+        padding-top: 3%;
         margin: 2px;
     }
 
@@ -1152,11 +1154,12 @@ a.link {
         width: 500px;
         padding: 0;
     }
-
+    
     .container-projetos h1 {
         font-size: 5rem;
         width: 100%;
         text-align: center;
+        padding-top: 3%;
     }
 
     .container-projetos p {
@@ -1169,6 +1172,11 @@ a.link {
 
     .projetos {
         gap: 1rem;
+    }
+
+    .card-back p {
+        font-size: 15px;
+        padding: 0;
     }
 
     .noticias-info h1 {
@@ -1189,6 +1197,9 @@ a.link {
         width: 100%;
     }
 
+    .noticias h1{
+        width: 350px;
+    }
     .noticias h3 {
         width: 250px;
     }
