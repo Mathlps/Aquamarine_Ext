@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/estilo.css" />
-    <script src="js/funcao.js" defer></script>
+    <link rel="stylesheet" href="css/navfooter.css">
+    <link rel="stylesheet" href="css/animation.css">
     <!-- defer é usado para o js ser executado depois que a página for carregada -->
     <title>Aquamarine</title>
 </head>
@@ -15,18 +16,18 @@
         <!-- HEADER START -->
         <header id="header">
             <div>
-                <a href="index.html"><img src="img/Logo_JellyFish.jpg" alt="LOGO"></a>
+                <a class="logo animate" href="index.html"><img src="img/index/Logo_JellyFish.jpg" alt="LOGO"></a>
             </div>
             <div>
-                <ul>
+                <ul class="ul1 animate">
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="#">SOBRE NÓS</a></li>
+                    <li><a href="sobreNos.html">SOBRE NÓS</a></li>
                     <li><a href="projetos.html">PROJETOS</a></li>
                     <li><a href="#">NOTÍCIAS</a></li>
                 </ul>
             </div>
             <div>
-                <ul>
+                <ul class="ul2 animate">
                     <li><a href="#">CONTATO</a></li>
                 </ul>
             </div>
@@ -49,9 +50,9 @@
                 <!-- WAVE EFEITO END -->
                 <div class="text-main">
                     <div>
-                        <h1>INSTITUTO AQUAMARINE</h1>
+                        <h1 class="animate">INSTITUTO AQUAMARINE</h1>
                     </div>
-                    <div class="none">
+                    <div class="none animate">
 
                         <h2>CUIDAR DO OCEANO</h2>
                         <h2>É GARANTIR</h2>
@@ -81,9 +82,9 @@
                 </div> -->
                 <div class="flex container-sobreAquamarine">
                     <div class="sobre-aquamarine">
-                        <h1>AQUAMARINE</h1>
+                        <h1 class="animate">AQUAMARINE</h1>
                         <div>
-                            <p>
+                            <p class="p1 animate">
                                 Fundada em 21 de setembro de 2024, a Aquamarine é uma organização não governamental
                                 comprometida
                                 com a preservação do ecossistema marinho e o cuidado de animais aquáticos em situação de
@@ -93,7 +94,7 @@
                                 conservação
                                 e proteção do meio ambiente aquático.
                             </p>
-                            <p>
+                            <p class="p2 animate">
                                 A conscientização ambiental também é um pilar fundamental da Aquamarine. Através de
                                 campanhas
                                 educativas, a ONG busca sensibilizar a sociedade sobre os perigos da poluição marinha, a
@@ -101,7 +102,7 @@
                                 oceanos. Oficinas, palestras e ações de limpeza de praias são organizadas regularmente,
                                 incentivando a participação ativa da comunidade na defesa dos oceanos.
                             </p>
-                            <p>
+                            <p class="p3 animate">
                                 A visão da Aquamarine é um mundo onde os oceanos sejam espaços protegidos e vibrantes,
                                 repletos
                                 de vida, onde cada ser marinho tenha a chance de prosperar em um ambiente saudável e
@@ -109,26 +110,26 @@
                                 melhor
                                 para nossos mares e suas criaturas.
                             </p>
-                            <button>SAIBA MAIS</button>
+                            <button class="animate">SAIBA MAIS</button>
                         </div>
                     </div>
                     <div class="container-slider">
-                        <div class="slider">
+                        <div class="slider animate">
                             <div class="list">
                                 <div class="item">
-                                    <img src="img/baleia.jpg" alt="">
+                                    <img src="img/index/slider/baleia.jpg" alt="">
                                 </div>
                                 <div class="item">
-                                    <img src="img/leao_marinho.jpg" alt="">
+                                    <img src="img/index/slider/leao_marinho.jpg" alt="">
                                 </div>
                                 <div class="item">
-                                    <img src="img/pinguim.jpg" alt="">
+                                    <img src="img/index/slider/pinguim.jpg" alt="">
                                 </div>
                                 <div class="item">
-                                    <img src="img/shark.jpg" alt="">
+                                    <img src="img/index/slider/shark.jpg" alt="">
                                 </div>
                                 <div class="item">
-                                    <img src="img/tartaruga.jpg" alt="">
+                                    <img src="img/index/slider/tartaruga.jpg" alt="">
                                 </div>
                             </div>
                             <div class="buttons">
@@ -191,15 +192,15 @@
                 <div class="container-projetos">
 
                     <div class="projetos-info">
-                        <h1>Nossos Projetos</h1>
-                        <p>
+                        <h1 class="animate">Nossos Projetos</h1>
+                        <p class="animate">
                             "Unidos pela vida marinha: preservamos o oceano e suas criaturas, inspirando ações para um
                             futuro sustentável."
                         </p>
                     </div>
                     <div class="projetos">
                         <!-- /* From Uiverse.io by vamsidevendrakumar */ -->
-                        <div class="card">
+                        <div class="card animate">
                             <div class="card-inner">
                                 <div class="card-front-1">
                                     <h3>Projeto Praias Limpas</h3>
@@ -213,7 +214,7 @@
                             </div>
                         </div>
 
-                        <div class="card">
+                        <div class="card animate">
                             <div class="card-inner">
                                 <div class="card-front-2">
                                     <h3>Projeto Proteção às Tartarugas</h3>
@@ -227,7 +228,7 @@
                             </div>
                         </div>
 
-                        <div class="card">
+                        <div class="card animate">
                             <div class="card-inner">
                                 <div class="card-front-3">
                                     <h3>Projeto Salve os Tubarões</h3>
@@ -242,7 +243,7 @@
                             </div>
                         </div>
 
-                        <div class="card">
+                        <div class="card animate">
                             <div class="card-inner">
                                 <div class="card-front-4">
                                     <h3>Projeto Conscientização</h3>
@@ -259,67 +260,58 @@
 
                 </div>
                 <div class="container-animais-impactados">
-                    <div class="custom-shape-divider-top-1729349552">
-                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                            preserveAspectRatio="none">
-                            <path
-                                d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-                                class="shape-fill"></path>
+                    <div class="custom-shape-divider-top-1730642411">
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
                         </svg>
                     </div>
-                    <h1>Animais Impactados</h1>
+                    <h1 class="animate">Animais Impactados</h1>
                     <div class="animais-impactados">
                         <div class="resgatados">
-                            <img src="./img/boia-de-vida.png" alt="">
+                            <img src="./img/index/resgatados.png" alt="">
                             <h2>Resgatados Pela ONG</h2>
-                            <span class="num" data-val="400">000</span>
+                            <span class="num value-display" data-val="400">000</span>
                         </div>
                         <div class="cuidados">
-                            <img src="./img/estetoscopio.png" alt="">
+                            <img src="./img/index/cuidados-medicos.png" alt="">
                             <h2>Em Cuidados Médicos</h2>
-                            <span class="num" data-val="340">000</span>
+                            <span class="num value-display" data-val="340">000</span>
                         </div>
                         <div class="realocados">
-                            <img src="./img/tartaruga.png" alt="">
+                            <img src="./img/index/realocados.png" alt="">
                             <h2>Realocados na Natureza</h2>
-                            <span class="num" data-val="250">000</span>
+                            <span class="num value-display" data-val="250">000</span>
                         </div>
 
                     </div>
-                    <div class="custom-shape-divider-bottom-1729352598">
-                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                            preserveAspectRatio="none">
-                            <path
-                                d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                                class="shape-fill"></path>
-                        </svg>
-                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,192L60,186.7C120,181,240,171,360,160C480,149,600,139,720,154.7C840,171,960,213,1080,213.3C1200,213,1320,171,1380,149.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+                    
 
                 </div>
             </div>
             <div class="container-noticias">
                 <div class="noticias-info">
-                    <h1>Notícias</h1>
-                    <p>Acompanhe aqui as últimas notícias sobre iniciativas de ONGs dedicadas à proteção animal e
+                    <h1 class="animate">Notícias</h1>
+                    <p class="animate">Acompanhe aqui as últimas notícias sobre iniciativas de ONGs dedicadas à proteção animal e
                         ambiental. Fique por dentro dos projetos, eventos e campanhas em andamento!</p>
                 </div>
                 <div class="noticias">
-                    <div class="n-1"
+                    <div class="n-1 animate"
                         onclick="window.open('https://www.reciclasampa.com.br/artigo/expedicao-ondas-limpas-100-das-praias-do-brasil-tem-lixo-plastico#:~:text=Estudo%20capitaneado%20pela%20Sea%20Shepherd,do%20Brasil%20t%C3%AAm%20lixo%20pl%C3%A1stico', '_blank');">
                         <h3>03/10/2024</h3>
                         <h1> Expedição Ondas Limpas: 100% das praias do Brasil têm lixo plástico</h1>
                     </div>
-                    <div class="n-2"
+                    <div class="n-2 animate"
                         onclick="window.open('https://www.terra.com.br/vida-e-estilo/turismo/memorial-da-america-latina-recebe-5-edicao-da-sp-ocean-week,6ff3f2c60d12ac7ff6861d2135cd2acfnejuct8v.html?utm_source=clipboard', '_blank');">
                         <h3>09/08/2024</h3>
                         <h1> Memorial da América Latina recebe 5ª edição da SP Ocean Week</h1>
                     </div>
-                    <div class="n-3"
+                    <div class="n-3 animate"
                         onclick="window.open('https://blog.sympla.com.br/guia-do-publico/o-que-e-o-projeto-tamar/', '_blank');">
                         <h3>20/10/2023</h3>
                         <h1> O que é Projeto Tamar, onde fica e como visitar</h1>
                     </div>
-                    <div class="n-4"
+                    <div class="n-4 animate" 
                         onclick="window.open('https://g1.globo.com/sp/campinas-regiao/terra-da-gente/noticia/2023/11/02/cacao-e-tubarao-pesquisa-mostra-que-54percent-da-populacao-brasileira-desconhece-a-origem-da-carne.ghtml', '_blank');">
                         <h3>02/11/2023</h3>
                         <h1>'Cação é tubarão': pesquisa mostra que 54% dos brasileiros desconhecem a origem da carne
@@ -361,6 +353,11 @@
         </footer>
 
     </div>
+
+    <script src="js/header.js" defer></script>
+    <script src="js/slider.js" defer></script>
+    <script src="js/animation.js" defer></script>
+    <script src="js/numbers.js" defer></script>
 </body>
 
 </html>

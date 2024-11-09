@@ -47,60 +47,11 @@
     flex-direction: column;
 }
 
-/* header start*/
-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 3%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: 1s;
-    z-index: 1000;
-
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 700;
-    font-size: 1em;
-    font-style: normal;
-    color: white;
-}
-
-header.rolagem {
-    background-color: var(--bg-nav-color);
-    padding: 30px 3%;
-
-}
-
-header img {
-    width: 60px;
-    height: auto;
-    border-radius: 50%;
-}
-
-header ul {
-    list-style-type: none;
-
-}
-
-header ul li {
-    display: inline-block;
-    margin: 0 40px;
-}
-
-header ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-/* header end*/
-
 /* nav start*/
 .wave-container {
     min-height: 100vh;
     width: 100%;
-    background-image: url(../img/jellyfish_main.jpg);
+    background-image: url(../img/index/jellyfish_main.jpg);
     background-position: 60%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -400,7 +351,7 @@ main p {
     position: relative;
     width: 100%;
     height: 900px; /* Ajuste o tamanho conforme necessário */
-    background-image: url(../img/pexels-eliannedipp-4802101.jpg);
+    background-image: url(../img/index/baleia-wave.jpg);
     background-size: cover;
     background-position:center center;
     overflow: hidden; /* Garante que nada exceda o contêiner */
@@ -489,22 +440,22 @@ main p {
   }
   
 .card-front-1{
-    background-image: url(../img/praias\ limpas\ \(2\).jpg);
+    background-image: url(../img/index/projetos/projeto-praias-limpas.jpg);
     background-position: center;
     background-size: cover;
 }
 .card-front-2{
-    background-image: url(../img/save\ tartaruga.jpg);
+    background-image: url(../img/index/projetos/projeto-salve-tartarugas.jpg);
     background-position: bottom center;
     background-size: cover;
 }
 .card-front-3{
-    background-image: url(../img/save\ shark.jpg);
+    background-image: url(../img/index/projetos/projeto-salve-tubarão.jpg);
     background-position: center;
     background-size: cover;
 }
 .card-front-4{
-    background-image: url(../img/palestra\ save\ de\ world.jpg);
+    background-image: url(../img/index/projetos/projeto-palestras.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -613,7 +564,7 @@ main p {
 .resgatados
 {   
     /* margin: 5% 0 5% 0; */
-    margin-bottom: 5%;
+    margin-bottom: 0;
     width: 200px;
     height: auto;
     text-align: center;
@@ -623,49 +574,29 @@ main p {
     font-style: normal;
 }
 /* WAVE TOP START */
-.custom-shape-divider-top-1729349552 {
+.custom-shape-divider-top-1730642411 {
     /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    transform: rotate(180deg);
 }
 
-.custom-shape-divider-top-1729349552 svg {
+.custom-shape-divider-top-1730642411 svg {
     position: relative;
     display: block;
-    width: calc(161% + 1.3px);
-    height: 58px;
+    width: calc(100% + 1.3px);
+    height: 98px;
+    transform: rotateY(180deg);
 }
 
-.custom-shape-divider-top-1729349552 .shape-fill {
+.custom-shape-divider-top-1730642411 .shape-fill {
     fill: #dae7eb;
 }
 /* WAVE TOP END */
 
-/* WAVE BOTTOM START */
-.custom-shape-divider-bottom-1729352598 {
-    /* position: absolute; */
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-bottom-1729352598 svg {
-    position: relative;
-    display: block;
-    width: calc(101% + 1.3px);
-    height: 44px;
-}
-
-.custom-shape-divider-bottom-1729352598 .shape-fill {
-    fill: #ffff;
-}
-
-/* WAVE BOTTOM END */
 /* NOTICIAS START */
 
 .container-noticias{
@@ -674,7 +605,7 @@ main p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
 }
 .noticias-info{
     width: 100%;
@@ -734,11 +665,49 @@ main p {
     cursor: pointer;
    
 }
-.n-1{
+.n-1 {
+    position: relative;
     background-image: url(https://www.reciclasampa.com.br/imgs/conteudos/03_lixo_praias_brasil_padrao.jpg);
     background-position: center;
     background-size: cover;
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgba(255, 255, 255, 0.655); */
+    transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 12px;
+}
+
+.n-1:hover .overlay {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0);
+}
+.hidden-text {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    color: black;
+    font-size: 16px;
+    /* padding: 12px; */
+}
+
+.n-1:hover .hidden-text {
+    opacity: 1;
+    visibility: visible;
+}
+
 .n-2{
     background-image: url(https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/09/19/366794775-memorial.jpg);
     background-position: center;
@@ -754,6 +723,7 @@ main p {
     background-position: center;
     background-size: cover;
 }
+
 
 #divlink {
     background-color: #D0D0D0;
@@ -1137,79 +1107,4 @@ a.link {
     .noticias h3{
         width: 250px;
     }
-}
-
-.footer {
-    background-color: #000;
-    color: #f1f1f1;
-    padding: 40px 20px 0 20px;
-    width: 100%;
-    text-align: center;
-    position: relative;
-}
-
-.footer-row {
-    display: flex; /* Mantém o uso de flexbox */
-    align-items: center; /* Alinha verticalmente ao centro */
-    justify-content: space-around; /* Distribui o espaço horizontalmente */
-    color: #fff; /* Cor do texto */
-    padding: 20px 0; /* Espaçamento interno */
-    text-align: center; /* Centraliza o texto */
-}
-
-.footer img {
-    width: 60px;
-    height: auto;
-    border-radius: 50%;
-}
-
-.footer-title {
-    font-size: 6rem;
-    font-weight: bold;
-    color: #f1f1f1;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 700;
-    /* font-size: 3em; */
-    font-style: normal;
-}
-
-.footer-info {
-    font-size: 0.8em;
-    margin-bottom: 15px;
-    color: #bdbdbd;
-}
-
-.footer-info p {
-    margin: 5px 0;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.footer-links a {
-    color: #f1f1f1;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.footer-links a:hover {
-    color: #d1d1d1;
-}
-
-.footer-social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.footer-social-icons a img {
-    width: 24px;
-    height: 24px;
-    filter: invert(100%);
 }

@@ -1,0 +1,129 @@
+:root {
+    /*colocar as variáveis aqui*/
+    --bg-nav-color: #061b43;
+}
+
+/* navbar */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 3%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    z-index: 1000;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    font-style: normal;
+    color: white;
+}
+
+header.rolagem {
+    background-color: var(--bg-nav-color);
+    padding: 30px 3%;
+
+}
+
+header img {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+}
+
+header ul {
+    list-style-type: none;
+
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* footer */
+
+.footer {
+    background-color: #000;
+    color: #f1f1f1;
+    padding: 40px 20px 0 20px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.footer-row {
+    display: flex; /* Mantém o uso de flexbox */
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: space-around; /* Distribui o espaço horizontalmente */
+    color: #fff; /* Cor do texto */
+    padding: 20px 0; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+.footer img {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.footer-title {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    /* font-size: 3em; */
+    font-style: normal;
+}
+
+.footer-info {
+    font-size: 0.8em;
+    margin-bottom: 15px;
+    color: #bdbdbd;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: #d1d1d1;
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-social-icons a img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%);
+}
