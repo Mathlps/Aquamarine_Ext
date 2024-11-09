@@ -1,23 +1,33 @@
 :root {
     /*colocar as variáveis aqui*/
     --bg-nav-color: #061b43;
+    --bg-selection-color: #048FB4;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    & ::selection {
+        background-color: var(--bg-selection-color);
+        color: white;
+    }
 }
-.color-2{
+
+.color-2 {
     background-color: #dae7eb;
 }
-.color{
+
+.color {
     background-color: #f4f1f8;
 }
-.height{
+
+.height {
     height: 200px;
     background-color: #ddd5e9;
 }
+
 .flex {
     display: flex;
 }
@@ -160,7 +170,8 @@ main p {
     /* position: absolute; */
 
 }
-.sobre-aquamarine button{
+
+.sobre-aquamarine button {
     font-family: "Latan", monospace;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -173,6 +184,7 @@ main p {
     padding-top: 12px;
 
 }
+
 .container-sobreAquamarine {
 
     /* width: 100%; */
@@ -304,6 +316,7 @@ main p {
 .slider .dots li.active {
     width: 30px;
 }
+
 /* 
 .container-edu{
      max-width: 1400px; 
@@ -341,44 +354,51 @@ main p {
 .educação{
     display: flex;
     /* width: 100%; */
-    /* justify-content: space-around; */
-    /* padding-left: 10px; */
-    /* gap: 3rem; 
+/* justify-content: space-around; */
+/* padding-left: 10px; */
+/* gap: 3rem; 
     
 } */
 
 .wave-container-2 {
     position: relative;
     width: 100%;
-    height: 900px; /* Ajuste o tamanho conforme necessário */
+    height: 900px;
+    /* Ajuste o tamanho conforme necessário */
     background-image: url(../img/index/baleia-wave.jpg);
     background-size: cover;
-    background-position:center center;
-    overflow: hidden; /* Garante que nada exceda o contêiner */
+    background-position: center center;
+    overflow: hidden;
+    /* Garante que nada exceda o contêiner */
 }
 
 .wave-2 {
     position: absolute;
-    top: 0; /* Posiciona a onda no topo */
+    top: 0;
+    /* Posiciona a onda no topo */
     width: 100%;
     height: auto;
 }
 
 .divisor-img {
-    position: relative; /* Para posicionar a imagem corretamente */
+    position: relative;
+    /* Para posicionar a imagem corretamente */
     width: 100%;
-    height: 400px; /* Altura da imagem */
-    overflow: hidden; /* Garante que a imagem não saia do contêiner */
+    height: 400px;
+    /* Altura da imagem */
+    overflow: hidden;
+    /* Garante que a imagem não saia do contêiner */
 }
 
 .wave-1 {
     position: absolute;
-    bottom: 0; /* Posiciona a onda na parte inferior */
+    bottom: 0;
+    /* Posiciona a onda na parte inferior */
     width: 100%;
     height: auto;
 }
 
-.container-projetos{
+.container-projetos {
     display: flex;
     flex-direction: column;
     margin-top: 1%;
@@ -387,7 +407,7 @@ main p {
 
 }
 
-.projetos-info{
+.projetos-info {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -401,68 +421,75 @@ main p {
     font-style: normal;
     color: #37445f;
 }
-.projetos-info h1{
+
+.projetos-info h1 {
     padding-bottom: 6px;
 }
-.projetos{
+
+.projetos {
     display: flex;
     justify-content: center;
     gap: 2rem;
 }
-/* From Uiverse.io by vamsidevendrakumar */ 
+
+/* From Uiverse.io by vamsidevendrakumar */
 .card {
     width: 300px;
     height: 200px;
     perspective: 1000px;
-  }
-  
-  .card-inner {
+}
+
+.card-inner {
     width: 100%;
     height: 100%;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.999s;
-  }
-  
+}
+
 .card:hover .card-inner {
     transform: rotateY(180deg);
-  }
-  
-  .card-front-1,
-  .card-front-2,
-  .card-front-3,
-  .card-front-4,
-  .card-back {
+}
+
+.card-front-1,
+.card-front-2,
+.card-front-3,
+.card-front-4,
+.card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-  }
-  
-.card-front-1{
+}
+
+.card-front-1 {
     background-image: url(../img/index/projetos/projeto-praias-limpas.jpg);
     background-position: center;
     background-size: cover;
 }
-.card-front-2{
+
+.card-front-2 {
     background-image: url(../img/index/projetos/projeto-salve-tartarugas.jpg);
     background-position: bottom center;
     background-size: cover;
 }
-.card-front-3{
+
+.card-front-3 {
     background-image: url(../img/index/projetos/projeto-salve-tubarão.jpg);
     background-position: center;
     background-size: cover;
 }
-.card-front-4{
+
+.card-front-4 {
     background-image: url(../img/index/projetos/projeto-palestras.jpg);
     background-position: center;
     background-size: cover;
 }
-  .card-front-1,
-  .card-front-2,
-  .card-front-3,
-  .card-front-4 {
+
+.card-front-1,
+.card-front-2,
+.card-front-3,
+.card-front-4 {
     background-color: #6A2C70;
     color: #fff;
     display: flex;
@@ -479,27 +506,30 @@ main p {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-  }
-  .card-back {
+}
+
+.card-back {
     background-color: #d2a5e6;
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; /* Empurra o botão para a parte inferior */
+    justify-content: space-between;
+    /* Empurra o botão para a parte inferior */
     padding: 20px;
     font-size: 24px;
     transform: rotateY(180deg);
     border-radius: 10px;
     gap: 1rem;
 
-    
-  }
-  
-  .card-back p {
-    margin: 0; /* Remove o espaço extra se necessário */
+
+}
+
+.card-back p {
+    margin: 0;
+    /* Remove o espaço extra se necessário */
     text-align: center;
-    width: 250px ;
+    width: 250px;
     height: 150px;
     padding-bottom: 10px;
     font-family: "Bebas Neue", sans-serif;
@@ -507,9 +537,9 @@ main p {
     font-size: 1rem;
     font-style: normal;
     color: #061b43;
-  }
-  
-  .card-back button {
+}
+
+.card-back button {
     padding: 8px 16px;
     font-size: 1rem;
     background-color: #6A2C70;
@@ -525,44 +555,47 @@ main p {
     font-size: 18px;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-  }
-  
-  
- .container-animais-impactados{
+}
+
+
+.container-animais-impactados {
     display: flex;
     flex-direction: column;
     /* margin-top: 15%; */
     background-color: #a5c5cd;
-    
- } 
- .container-animais-impactados h1{
+
+}
+
+.container-animais-impactados h1 {
     margin: 5% 0 5% 0;
     text-align: center;
- }
-.animais-impactados{
+}
+
+.animais-impactados {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20rem;
 
 }
-.animais-impactados img{
-    
+
+.animais-impactados img {
+
     width: 100px;
     height: 100px;
 }
 
-.animais-impactados span{
+.animais-impactados span {
     font-family: "Oswald", sans-serif;
     font-size: 3em;
     font-weight: 600;
     font-style: normal;
     color: #59284d;
 }
-.realocados, 
+
+.realocados,
 .cuidados,
-.resgatados
-{   
+.resgatados {
     /* margin: 5% 0 5% 0; */
     margin-bottom: 0;
     width: 200px;
@@ -573,6 +606,7 @@ main p {
     font-weight: 600;
     font-style: normal;
 }
+
 /* WAVE TOP START */
 .custom-shape-divider-top-1730642411 {
     /* position: absolute; */
@@ -595,19 +629,21 @@ main p {
 .custom-shape-divider-top-1730642411 .shape-fill {
     fill: #dae7eb;
 }
+
 /* WAVE TOP END */
 
 /* NOTICIAS START */
 
-.container-noticias{
+.container-noticias {
     display: flex;
-    
+
     justify-content: center;
     align-items: center;
     flex-direction: column;
     /* padding-top: 2rem; */
 }
-.noticias-info{
+
+.noticias-info {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -622,10 +658,12 @@ main p {
     font-style: normal;
     color: #37445f;
 }
-.noticias-info h1{
+
+.noticias-info h1 {
     padding-bottom: 6px;
 }
-.noticias{
+
+.noticias {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -635,9 +673,10 @@ main p {
 
     padding-top: 2rem;
     padding-bottom: 2rem;
-    
+
 }
-.noticias h1{
+
+.noticias h1 {
     font-size: 1.1rem;
     width: 400px;
     color: white;
@@ -647,14 +686,16 @@ main p {
     text-transform: uppercase;
     padding-top: 0.5rem;
 }
-.noticias h3{
+
+.noticias h3 {
     width: 450px;
     color: gainsboro;
 }
+
 .n-1,
 .n-2,
 .n-3,
-.n-4{
+.n-4 {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -663,8 +704,9 @@ main p {
     padding: 12px;
 
     cursor: pointer;
-   
+
 }
+
 .n-1 {
     position: relative;
     background-image: url(https://www.reciclasampa.com.br/imgs/conteudos/03_lixo_praias_brasil_padrao.jpg);
@@ -690,11 +732,12 @@ main p {
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0);
 }
+
 .hidden-text {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-    
+
     /* top: 50%;
     left: 50%; */
     /* transform: translate(-50%, -50%); */
@@ -708,17 +751,19 @@ main p {
     visibility: visible;
 }
 
-.n-2{
+.n-2 {
     background-image: url(https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/09/19/366794775-memorial.jpg);
     background-position: center;
     background-size: cover;
 }
-.n-3{
+
+.n-3 {
     background-image: url(https://blog.sympla.com.br/wp-content/uploads/2023/10/08-projeto-tamar.jpg);
     background-position: center;
     background-size: cover;
 }
-.n-4{
+
+.n-4 {
     background-image: url(https://s2-g1.glbimg.com/UmUecOEvsbKMGTw8kQpNg3Q50ug=/0x0:4135x2757/984x0/smart/filters:strip_icc/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/T/j/AH2JoYQaCFKVTGxmfjwQ/credits-to-todd-southgate-sea-shepherd-brasil-fev-2-2023-2.jpg);
     background-position: center;
     background-size: cover;
@@ -731,6 +776,7 @@ main p {
     height: 100px;
     cursor: pointer;
 }
+
 a.link {
     display: block;
     height: 100%;
@@ -745,6 +791,7 @@ a.link {
     }
 
 }
+
 /* BREAKPOINTS */
 
 
@@ -789,7 +836,8 @@ a.link {
         /* align-items: center; */
 
     }
-    .container-sobreAquamarine{
+
+    .container-sobreAquamarine {
         gap: 0;
         text-align: center;
     }
@@ -813,28 +861,33 @@ a.link {
 
         padding: 0;
     }
-    .projetos{
+
+    .projetos {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .container-projetos h1{
+
+    .container-projetos h1 {
         font-size: 2.5rem;
         width: 100%;
         text-align: center;
     }
-    .container-projetos p{
+
+    .container-projetos p {
         text-align: center;
         width: 100%;
         padding: 5%;
         flex-wrap: wrap;
     }
-    .card{
+
+    .card {
         width: 350px;
         height: 300px;
     }
-    .animais-impactados{
+
+    .animais-impactados {
         gap: 0;
         flex-direction: column;
         justify-content: center;
@@ -843,50 +896,53 @@ a.link {
 
     .cuidados,
     .resgatados,
-    .realocados{
+    .realocados {
         padding-bottom: 5%;
     }
-    .resgatados{
+
+    .resgatados {
         padding-top: 5%;
     }
 
-    .container-animais-impactados h1{
+    .container-animais-impactados h1 {
         font-size: 2.5rem;
         margin: 2px;
-        
-    }
-    .noticias-info h1{
-        font-size: 2.5rem;
-    }
-    
-    .noticias-info p{
-        text-align: center;
-            width: 100%;
-            padding: 5%;
-            flex-wrap: wrap;
+
     }
 
-    .noticias{
+    .noticias-info h1 {
+        font-size: 2.5rem;
+    }
+
+    .noticias-info p {
+        text-align: center;
+        width: 100%;
+        padding: 5%;
+        flex-wrap: wrap;
+    }
+
+    .noticias {
         flex-direction: column;
     }
 
-    .noticias h1{
-        width: 300px;
-    }
-    .noticias h3{
+    .noticias h1 {
         width: 300px;
     }
 
-.n-1,
-.n-2,
-.n-3,
-.n-4{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    width: 94%;
-}
-    
+    .noticias h3 {
+        width: 300px;
+    }
+
+    .n-1,
+    .n-2,
+    .n-3,
+    .n-4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 94%;
+    }
+
 }
 
 @media screen and (max-width: 420px) {
@@ -913,6 +969,7 @@ a.link {
         font-weight: bolder;
 
     }
+
     .wave-container {
         background-size: cover;
         background-position: 10px left;
@@ -935,21 +992,22 @@ a.link {
         align-items: center;
     }
 
-    .card{
+    .card {
         width: 320px;
         height: 280px;
     }
+
     /* MAIN END */
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
     /* Estilos para tablets */
 
-    
+
     /* MAIN START */
 
-    .container-sobreAquamarine{
-        
+    .container-sobreAquamarine {
+
         padding-top: 8%;
         text-align: center;
         /* padding-left: 10px; */
@@ -957,7 +1015,7 @@ a.link {
 
     .sobre-aquamarine h1 {
         font-size: 4rem;
-        
+
     }
 
     .sobre-aquamarine p {
@@ -974,68 +1032,81 @@ a.link {
 
         padding: 0;
     }
-    .projetos{
+
+    .projetos {
         display: flex;
         flex-wrap: wrap;
     }
-    .container-projetos h1{
-        font-size: 4rem;
-        width: 100%;
-        text-align: center;
-    }
-    .container-projetos p{
-        text-align: center;
-        width: 100%;
-        padding: 5%;
-        font-size: 1.5rem;
-        flex-wrap: wrap;
-    }
-    .card{
-        width: 350px;
-        height: 300px;
-    }
-    .card-back p{
-        font-size: 18px;
-    }
-    .animais-impactados{
-        gap: 2rem;
-        justify-content: center;
-        align-items: center;
-    }
-    .container-animais-impactados h1{
-        font-size: 4rem;
-        padding-bottom: 5%;
-        margin: 2px;
-    }
-    .noticias-info h1{
+
+    .container-projetos h1 {
         font-size: 4rem;
         width: 100%;
         text-align: center;
     }
 
-    .noticias-info p{
+    .container-projetos p {
         text-align: center;
         width: 100%;
         padding: 5%;
         font-size: 1.5rem;
         flex-wrap: wrap;
     }
-    .noticias{
+
+    .card {
+        width: 350px;
+        height: 300px;
+    }
+
+    .card-back p {
+        font-size: 18px;
+    }
+
+    .animais-impactados {
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-animais-impactados h1 {
+        font-size: 4rem;
+        padding-bottom: 5%;
+        margin: 2px;
+    }
+
+    .noticias-info h1 {
+        font-size: 4rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .noticias-info p {
+        text-align: center;
+        width: 100%;
+        padding: 5%;
+        font-size: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .noticias {
         width: 100%;
     }
-    .noticias h1{
+
+    .noticias h1 {
         width: 250px;
     }
-    .noticias h3{
+
+    .noticias h3 {
         width: 250px;
     }
+
     .n-1,
-.n-2,
-.n-3,
-.n-4{
-    display: flex;
-    width: 45%;
-}
+    .n-2,
+    .n-3,
+    .n-4 {
+        display: flex;
+        width: 45%;
+    }
+
     /* MAIN END */
 }
 
@@ -1045,8 +1116,8 @@ a.link {
 }
 
 @media (min-width: 1201px) and (max-width: 1490px) {
-    
-    .container-sobreAquamarine{
+
+    .container-sobreAquamarine {
 
         text-align: center;
         padding-left: 10px;
@@ -1056,9 +1127,10 @@ a.link {
         font-size: 5rem;
     }
 
-    .sobre-aquamarine button{
+    .sobre-aquamarine button {
         font-size: 1.5rem;
     }
+
     .sobre-aquamarine p {
 
         width: 600px;
@@ -1073,38 +1145,43 @@ a.link {
         padding: 0;
     }
 
-    .container-projetos h1{
+    .container-projetos h1 {
         font-size: 5rem;
         width: 100%;
         text-align: center;
     }
-    .container-projetos p{
+
+    .container-projetos p {
         text-align: center;
         width: 80%;
         padding: 5%;
         font-size: 1.5rem;
         flex-wrap: wrap;
     }
-    .projetos{
+
+    .projetos {
         gap: 1rem;
     }
-    .noticias-info h1{
+
+    .noticias-info h1 {
         font-size: 5rem;
         width: 100%;
         text-align: center;
     }
 
-    .noticias-info p{
+    .noticias-info p {
         text-align: center;
         width: 100%;
         padding: 5%;
         font-size: 1.5rem;
         flex-wrap: wrap;
     }
-    .noticias{
+
+    .noticias {
         width: 100%;
     }
-    .noticias h3{
+
+    .noticias h3 {
         width: 250px;
     }
 }
