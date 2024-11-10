@@ -4,8 +4,9 @@ window.addEventListener("scroll", function () {
     header.classList.toggle('rolagem', window.scrollY > 0)
 })
 
+const hamburger = document.querySelector(".hamburger")
+const navMenu = document.querySelector(".nav-menu")
 
-const hambuguer = document.querySelector(".hambuguer")
-const nav = document.querySelector(".nav")
-
-hambuguer.addEventListener("click", () => nav.classList.toggle("active"))
+hamburger.addEventListener("click", () => {
+    document.querySelector(".nav").classList.toggle("active")
+})

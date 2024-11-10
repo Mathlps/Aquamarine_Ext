@@ -44,7 +44,8 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    margin: 0 40px;
+    margin: 0 30px;
+    text-wrap: nowrap;
 }
 
 header nav ul li a {
@@ -67,6 +68,10 @@ header nav ul li a {
     display: flex;
 }
 
+.nav-contato {
+    display: none;
+}
+
 .hamburger {
     border: none;
     background: none;
@@ -86,8 +91,18 @@ header nav ul li a {
 }
 
 @media (max-width: 750px) {
+    .div-contato {
+        display: none;
+    }
+
+    .nav-contato {
+        display: flex;
+    }
+
     .hamburger {
+        position: relative;
         display: block;
+        z-index: 1;
     }
 
     .nav-list {
@@ -97,7 +112,7 @@ header nav ul li a {
         width: 100svw;
         height: 100svh;
         background-color: var(--bg-nav-color);
-        clip-path: circle(100px at 90% - 15%);
+        clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
 
         flex-direction: column;
@@ -108,14 +123,10 @@ header nav ul li a {
     }
 
     .nav.active .nav-list {
-        clip-path: circle(1500px at 90% - 15%);
+        clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
     }
 }
-
-
-
-
 
 /* footer */
 
