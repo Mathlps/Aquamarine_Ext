@@ -81,7 +81,11 @@ html {
 
 }
 
+<<<<<<< Updated upstream
 section .wave-container h1 {
+=======
+.banner .wave-container h1 {
+>>>>>>> Stashed changes
 
     font-family: "Oswald", sans-serif;
     font-size: 2em;
@@ -90,7 +94,11 @@ section .wave-container h1 {
     color: #d2a5e6;
 }
 
+<<<<<<< Updated upstream
 section h2 {
+=======
+.banner h2 {
+>>>>>>> Stashed changes
 
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
@@ -99,7 +107,11 @@ section h2 {
     color: white;
 }
 
+<<<<<<< Updated upstream
 section button {
+=======
+.banner button {
+>>>>>>> Stashed changes
     font-family: "Latan", monospace;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -784,7 +796,11 @@ a.link {
     /* HEADER END */
 
     /* MAIN START */
+<<<<<<< Updated upstream
     section .text-main h1 {
+=======
+    .banner .text-main h1 {
+>>>>>>> Stashed changes
 
         width: 20px;
         text-align: center;
@@ -793,7 +809,11 @@ a.link {
 
     }
 
+<<<<<<< Updated upstream
     section h2 {
+=======
+    .banner h2 {
+>>>>>>> Stashed changes
         font-size: 1.5em;
         font-weight: bolder;
 
@@ -928,7 +948,11 @@ a.link {
         font-size: 0.8em;
     }
 
+<<<<<<< Updated upstream
     section .text-main h1 {
+=======
+    .banner .text-main h1 {
+>>>>>>> Stashed changes
 
         width: 100%;
         text-align: center;
@@ -937,7 +961,11 @@ a.link {
         color: white;
     }
 
+<<<<<<< Updated upstream
     section h2 {
+=======
+    .banner h2 {
+>>>>>>> Stashed changes
         font-size: 1.5em;
         font-weight: bolder;
 
