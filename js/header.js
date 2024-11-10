@@ -5,7 +5,6 @@ window.addEventListener("scroll", function () {
 })
 
 const hamburger = document.querySelector(".hamburger")
-const navMenu = document.querySelector(".nav-menu")
 
 hamburger.addEventListener("click", () => {
     document.querySelector(".nav").classList.toggle("active")
