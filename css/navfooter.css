@@ -12,7 +12,7 @@ header {
 
     width: 100%;
     padding: 50px 3%;
-    
+
     position: fixed;
     top: 0;
     left: 0;
@@ -29,30 +29,93 @@ header {
 header.rolagem {
     background-color: var(--bg-nav-color);
     padding: 30px 3%;
-
 }
 
-header img {
+.nav img {
     width: 60px;
     height: auto;
     border-radius: 50%;
     cursor: pointer;
 }
 
-header ul {
+header nav ul {
     list-style-type: none;
-
 }
 
-header ul li {
+header nav ul li {
     display: inline-block;
     margin: 0 40px;
 }
 
-header ul li a {
+header nav ul li a {
     color: white;
     text-decoration: none;
 }
+
+.logo-div {
+    justify-content: left;
+}
+
+.nav {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.hamburger {
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #ffffff;
+    margin-top: 5px;
+}
+
+@media (max-width: 750px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100svw;
+        height: 100svh;
+        background-color: var(--bg-nav-color);
+        clip-path: circle(100px at 90% - 15%);
+        transition: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+
+    .nav.active .nav-list {
+        clip-path: circle(1500px at 90% - 15%);
+        pointer-events: all;
+    }
+}
+
+
+
+
 
 /* footer */
 
@@ -60,10 +123,10 @@ header ul li a {
     background-color: #000;
     width: 100%;
     padding: 40px 20px 0 20px;
-    
+
     text-align: center;
     position: relative;
-    
+
     color: #f1f1f1;
 }
 
@@ -109,7 +172,7 @@ header ul li a {
 
 .footer-info {
     margin-bottom: 15px;
-    
+
     font-size: 0.8em;
     color: #bdbdbd;
 }
@@ -155,16 +218,16 @@ header ul li a {
 
 /* Breakpoints */
 @media screen and (max-width: 420px) {
-   /* header start */
+    /* header start */
 
-   header {
-    padding: 15px 1%;
-}
+    header {
+        padding: 15px 1%;
+    }
 
-header ul li {
-    margin: 5px 0;
-    font-size: 0.8em;
-}
+    header ul li {
+        margin: 5px 0;
+        font-size: 0.8em;
+    }
 
     /* header end */
 }
@@ -199,4 +262,3 @@ header ul li {
     
 
 } */
-
