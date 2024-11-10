@@ -371,6 +371,7 @@ main{
 .voltar-ao-topo:hover{
     background-color: white;
     transform: translateY(-5px);
+
 }
 
 .voltar-ao-topo span:hover{
