@@ -2,6 +2,7 @@
     /*colocar as variáveis aqui*/
     --bg-nav-color: #061b43;
     --bg-selection-color: #048FB4;
+    scroll-padding-top: 150px; /* Ajuste este valor conforme a altura do header */
 }
 
 * {
@@ -15,6 +16,9 @@
     }
 }
 
+html{
+    scroll-behavior: smooth;
+}
 .color-2 {
     background-color: #dae7eb;
 }
@@ -75,7 +79,7 @@
 
 }
 
-nav .wave-container h1 {
+section .wave-container h1 {
 
     font-family: "Oswald", sans-serif;
     font-size: 2em;
@@ -84,7 +88,7 @@ nav .wave-container h1 {
     color: #d2a5e6;
 }
 
-nav h2 {
+section h2 {
 
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
@@ -93,7 +97,7 @@ nav h2 {
     color: white;
 }
 
-nav button {
+section button {
     font-family: "Latan", monospace;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -820,7 +824,7 @@ a.link {
     /* HEADER END */
 
     /* MAIN START */
-    nav .text-main h1 {
+    section .text-main h1 {
 
         width: 20px;
         text-align: center;
@@ -829,7 +833,7 @@ a.link {
 
     }
 
-    nav h2 {
+    section h2 {
         font-size: 1.5em;
         font-weight: bolder;
 
@@ -964,7 +968,7 @@ a.link {
         font-size: 0.8em;
     }
 
-    nav .text-main h1 {
+    section .text-main h1 {
 
         width: 100%;
         text-align: center;
@@ -973,7 +977,7 @@ a.link {
         color: white;
     }
 
-    nav h2 {
+    section h2 {
         font-size: 1.5em;
         font-weight: bolder;
 
