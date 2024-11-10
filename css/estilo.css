@@ -1,8 +1,10 @@
+
 :root {
     /*colocar as variáveis aqui*/
     --bg-nav-color: #061b43;
     --bg-selection-color: #048FB4;
-    scroll-padding-top: 150px; /* Ajuste este valor conforme a altura do header */
+    scroll-padding-top: 150px;
+    /* Ajuste este valor conforme a altura do header */
 }
 
 * {
@@ -16,9 +18,14 @@
     }
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
 .color-2 {
     background-color: #dae7eb;
 }
@@ -35,11 +42,6 @@ html{
 .flex {
     display: flex;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 .Oswald {
     font-family: "Oswald", sans-serif;
@@ -61,7 +63,7 @@ html{
     flex-direction: column;
 }
 
-/* nav start*/
+/*SITE TOP START*/
 .wave-container {
     min-height: 100vh;
     width: 100%;
@@ -109,8 +111,7 @@ section button {
     border: none;
 }
 
-/* efeito de onda*/
-
+/*WAVE EFEITO START*/
 .custom-shape-divider-bottom-1726848696 {
     position: absolute;
     bottom: 0;
@@ -134,48 +135,45 @@ section button {
 
 }
 
-/*Fim efeito de onda*/
-/*nav end*/
+/*WAVE EFEITO END*/
+/* TOP SITE END */
+
+/* MAIN START */
 main {
     height: auto;
-    /* background-color: #dae7eb; */
 }
 
-
 main h1 {
-
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
     font-size: 4em;
     font-style: normal;
     color: #061b43;
-
-    /* padding-left: 20%; */
 }
 
 main p {
-
     width: 600px;
+    padding-top: 10px;
     z-index: 1;
+
     font-family: "Bebas Neue", sans-serif;
     font-weight: 50;
     font-size: 16px;
     font-style: normal;
     color: #37445f;
-
-    /* padding-left: 20%;  */
-    padding-top: 10px;
 }
 
+/* SOBRE ONG START */
 .sobre-aquamarine {
     display: flex;
     flex-direction: column;
-
-    /* position: absolute; */
-
 }
 
 .sobre-aquamarine button {
+    background-color: transparent;
+    border: none;
+    padding-top: 12px;
+
     font-family: "Latan", monospace;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -183,33 +181,29 @@ main p {
     font-style: normal;
     font-variation-settings: "wdth" 100;
     color: #59284d;
-    background-color: transparent;
-    border: none;
-    padding-top: 12px;
-
 }
 
 .container-sobreAquamarine {
-
-    /* width: 100%; */
+    flex-wrap: wrap;
     align-items: center;
+    gap: 2rem;
+
     margin: 0 5% 0 5%;
     padding-top: 5%;
-    gap: 2rem;
-    flex-wrap: wrap;
-    background-color: #f4f1f8;
 
+    background-color: #f4f1f8;
 }
 
+/* SLIDER MAIN START */
 .container-slider {
     /* position: absolute; */
     display: flex;
-    width: 700px;
     align-items: center;
     justify-content: center;
-    min-height: 500px;
     gap: 1rem;
-    /* padding-left: 6%; */
+
+    width: 700px;
+    min-height: 500px;
     padding-bottom: 20px;
 }
 
@@ -218,23 +212,27 @@ main p {
     display: flex;
     align-items: center;
     justify-content: center;
+
     width: 600px;
 }
 
 .slider {
     position: absolute;
+
     width: 100%;
     max-height: 450px;
 }
 
 #prev-button,
 #next-button {
+    align-items: center;
+
     width: 30px;
     height: 30px;
+
     border: none;
     background-color: transparent;
     cursor: pointer;
-    align-items: center;
 }
 
 #prev-button img,
@@ -245,8 +243,6 @@ main p {
 
 .container-slider {
     display: flex;
-    /* padding-left: 5%; */
-
 }
 
 .slider {
@@ -260,11 +256,13 @@ main p {
 
 .slider .list {
     position: absolute;
-    width: max-content;
-    height: 100%;
     left: 0;
     top: 0;
     display: flex;
+
+    width: max-content;
+    height: 100%;
+
     transition: 1s;
 }
 
@@ -279,14 +277,16 @@ main p {
     position: absolute;
     top: 45%;
     left: 5%;
-    width: 90%;
     display: flex;
     justify-content: space-between;
+
+    width: 90%;
 }
 
 .slider .buttons button {
     width: 50px;
     height: 50px;
+
     border-radius: 50%;
     background-color: #fff5;
     color: #fff;
@@ -297,22 +297,25 @@ main p {
 
 .slider .dots {
     position: absolute;
-    bottom: 10px;
     left: 0;
-    color: #fff;
-    width: 100%;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
+
+    width: 100%;
+    bottom: 10px;
+    margin: 0;
+    padding: 0;
+
+    color: #fff;
 }
 
 .slider .dots li {
-    list-style: none;
     width: 10px;
     height: 10px;
-    background-color: #fff;
     margin: 10px;
+
+    list-style: none;
+    background-color: #fff;
     border-radius: 20px;
     transition: 0.5s;
 }
@@ -321,49 +324,9 @@ main p {
     width: 30px;
 }
 
-/* 
-.container-edu{
-     max-width: 1400px; 
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    
-   margin-top: 8%;
-}
-.container-edu img {
+/* SLIDE MAIN END */
 
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    
-}
-.edu-name{
-    
-    font-family: "Oswald", sans-serif;
-    font-weight: 600;
-
-    text-align: center;
-    padding-bottom: 5%;
-}
-  
-.edu-img{
-    width:220px;
-    display: flex;
-    flex-direction: column;
-}
-.edu-img p{
-    width: 220px;
-}
-.educação{
-    display: flex;
-    /* width: 100%; */
-/* justify-content: space-around; */
-/* padding-left: 10px; */
-/* gap: 3rem; 
-    
-} */
-
+/* WAVE EFEITO FOTO BALEIA START */
 .wave-container-2 {
     position: relative;
     width: 100%;
@@ -384,16 +347,6 @@ main p {
     height: auto;
 }
 
-.divisor-img {
-    position: relative;
-    /* Para posicionar a imagem corretamente */
-    width: 100%;
-    height: 400px;
-    /* Altura da imagem */
-    overflow: hidden;
-    /* Garante que a imagem não saia do contêiner */
-}
-
 .wave-1 {
     position: absolute;
     bottom: 0;
@@ -402,22 +355,27 @@ main p {
     height: auto;
 }
 
+/* WAVE EFEITO FOTO BALEIA END */
+/* PROJETOS START */
 .container-projetos {
     display: flex;
     flex-direction: column;
+
     margin-top: 1%;
     margin-bottom: 5%;
-    background-color: #dae7eb;
 
+    background-color: #dae7eb;
 }
 
 .projetos-info {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    width: 100%;
     padding-bottom: 5%;
+
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 50;
@@ -444,9 +402,11 @@ main p {
 }
 
 .card-inner {
+    position: relative;
+
     width: 100%;
     height: 100%;
-    position: relative;
+
     transform-style: preserve-3d;
     transition: transform 0.999s;
 }
@@ -461,8 +421,10 @@ main p {
 .card-front-4,
 .card-back {
     position: absolute;
+
     width: 100%;
     height: 100%;
+
     backface-visibility: hidden;
 }
 
@@ -494,50 +456,49 @@ main p {
 .card-front-2,
 .card-front-3,
 .card-front-4 {
-    background-color: #6A2C70;
-    color: #fff;
     display: flex;
     align-items: center;
-    /* border: 10px solid #6A2C70; */
-    border-radius: 10px;
     justify-content: start;
     align-items: end;
+
     padding-left: 10px;
     padding-bottom: 15px;
-    font-size: 1rem;
-    transform: rotateY(0deg);
 
+    border-radius: 10px;
+    background-color: #6A2C70;
+    color: #fff;
+    font-size: 1rem;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
+    transform: rotateY(0deg);
     text-transform: uppercase;
 }
 
 .card-back {
-    background-color: #d2a5e6;
-    color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    gap: 1rem;
     /* Empurra o botão para a parte inferior */
     padding: 20px;
     font-size: 24px;
     transform: rotateY(180deg);
     border-radius: 10px;
-    gap: 1rem;
 
-
+    background-color: #d2a5e6;
+    color: #fff;
 }
 
 .card-back p {
     margin: 0;
     /* Remove o espaço extra se necessário */
-    text-align: center;
     width: 250px;
     height: 150px;
     padding-bottom: 10px;
+
+    text-align: center;
     font-family: "Bebas Neue", sans-serif;
-    /* font-weight: 200; */
     font-size: 1rem;
     font-style: normal;
     color: #061b43;
@@ -545,14 +506,13 @@ main p {
 
 .card-back button {
     padding: 8px 16px;
+
     font-size: 1rem;
     background-color: #6A2C70;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    /* bottom: 0; */
-
     font-family: "Latan", monospace;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -561,17 +521,17 @@ main p {
     font-variation-settings: "wdth" 100;
 }
 
-
+/* PROJETOS END */
 .container-animais-impactados {
     display: flex;
     flex-direction: column;
-    /* margin-top: 15%; */
-    background-color: #a5c5cd;
 
+    background-color: #a5c5cd;
 }
 
 .container-animais-impactados h1 {
     margin: 5% 0 5% 0;
+
     text-align: center;
 }
 
@@ -580,11 +540,9 @@ main p {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20rem;
-
 }
 
 .animais-impactados img {
-
     width: 100px;
     height: 100px;
 }
@@ -600,10 +558,11 @@ main p {
 .realocados,
 .cuidados,
 .resgatados {
-    /* margin: 5% 0 5% 0; */
-    margin-bottom: 0;
     width: 200px;
     height: auto;
+
+    margin-bottom: 0;
+
     text-align: center;
     font-family: "Oswald", sans-serif;
     font-size: 1em;
@@ -616,6 +575,7 @@ main p {
     /* position: absolute; */
     top: 0;
     left: 0;
+
     width: 100%;
     overflow: hidden;
     line-height: 0;
@@ -625,6 +585,7 @@ main p {
 .custom-shape-divider-top-1730642411 svg {
     position: relative;
     display: block;
+
     width: calc(100% + 1.3px);
     height: 98px;
     transform: rotateY(180deg);
@@ -637,42 +598,40 @@ main p {
 /* WAVE TOP END */
 
 /* NOTICIAS START */
-
 .container-noticias {
     display: flex;
-
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* padding-top: 2rem; */
 }
 
 .noticias-info {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding-bottom: 5%; */
-    text-align: center;
 
+    width: 100%;
+
+    text-align: center;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 50;
     font-size: 16px;
     font-style: normal;
     color: #37445f;
-
 }
 
 .noticias-info h1 {
     padding-bottom: 6px;
 }
 
-.card-news h1{
-    background: #00000060 ;
+.card-news h1 {
+    position: relative;
+
     display: inline;
     padding: 3px 0 !important;
-    position: relative;
+
+    background: #00000060;
 }
 
 .noticias {
@@ -685,22 +644,23 @@ main p {
 
     padding-top: 2rem;
     padding-bottom: 2rem;
-
 }
 
 .noticias h1 {
-    font-size: 1.1rem;
     width: 400px;
-    color: white;
+    padding-top: 0.5rem;
 
+    font-size: 1.1rem;
+    color: white;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    padding-top: 0.5rem;
+
 }
 
 .noticias h3 {
     width: 450px;
+
     color: gainsboro;
 }
 
@@ -711,16 +671,17 @@ main p {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+
     width: 30%;
     height: 280px;
     padding: 12px;
 
     cursor: pointer;
-
 }
 
 .n-1 {
     position: relative;
+
     background-image: url(https://www.reciclasampa.com.br/imgs/conteudos/03_lixo_praias_brasil_padrao.jpg);
     background-position: center;
     background-size: cover;
@@ -732,12 +693,14 @@ main p {
     left: 0;
     right: 0;
     bottom: 0;
-    /* background-color: rgba(255, 255, 255, 0.655); */
-    transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+
     padding: 12px;
+    transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+
 }
 
 .n-1:hover .overlay {
@@ -749,13 +712,8 @@ main p {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-
-    /* top: 50%;
-    left: 50%; */
-    /* transform: translate(-50%, -50%); */
     color: black;
     font-size: 16px;
-    /* padding: 12px; */
 }
 
 .n-1:hover .hidden-text {
@@ -781,9 +739,9 @@ main p {
     background-size: cover;
 }
 
-
 #divlink {
     background-color: #D0D0D0;
+
     width: 100px;
     height: 100px;
     cursor: pointer;
@@ -791,8 +749,10 @@ main p {
 
 a.link {
     display: block;
+
     height: 100%;
     width: 100%;
+
     text-decoration: none;
 }
 
@@ -870,7 +830,7 @@ a.link {
 
     .container-slider {
         width: 100%;
-        
+
         padding: 0;
     }
 
@@ -1158,7 +1118,7 @@ a.link {
         width: 500px;
         padding: 0;
     }
-    
+
     .container-projetos h1 {
         font-size: 5rem;
         width: 100%;
@@ -1201,9 +1161,10 @@ a.link {
         width: 100%;
     }
 
-    .noticias h1{
+    .noticias h1 {
         width: 350px;
     }
+
     .noticias h3 {
         width: 250px;
     }
