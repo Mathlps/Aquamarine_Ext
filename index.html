@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,29 +15,36 @@
     <!-- defer é usado para o js ser executado depois que a página for carregada -->
     <title>Aquamarine</title>
 </head>
+
 <body>
     <div class="container">
         <!-- HEADER START -->
         <header id="header">
-            <div>
-                <a class="logo animate" href="/"><img src="img/index/Logo_JellyFish.jpg" alt="LOGO"></a>
-            </div>
-            <div>
-                <ul class="ul1 animate">
-                    <li><a href="#">HOME</a></li> <!--LEVA PARA O TOPO DA PAGINA -->
-                    <li><a href="#sobreNos">SOBRE NÓS</a></li> <!--LEVA PARA A SECTION SOBRE NOS-->
-                    <li><a href="#projetos">PROJETOS</a></li> <!--LEVA PARA A SECTION PROJETOS -->
-                    <li><a href="#noticias">NOTÍCIAS</a></li> <!--LEVA PARA A SECTION NOTICIAS -->
-                </ul>
-            </div>
-            <div>
-                <ul class="ul2 animate">
-                    <li><a href="#">CONTATO</a></li>
-                </ul>
-            </div>
+            <nav class="nav">
+
+                <div class="logo-div">
+                    <a class="logo animate" href="/"><img src="img/index/Logo_JellyFish.jpg" alt="LOGO"></a>
+                </div>
+
+                <button class="hamburger"></button>
+                <div class="nav-div-1">
+                    <ul class="ul1 animate nav-list">
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="sobreNos.html">SOBRE NÓS</a></li>
+                        <li><a href="projetos.html">PROJETOS</a></li>
+                        <li><a href="#">NOTÍCIAS</a></li>
+                    </ul>
+                </div>
+                <div class="nav-div-2">
+                    <ul class="ul2 animate">
+                        <li><a href="#">CONTATO</a></li>
+                    </ul>
+                </div>
+            </nav>
         </header>
         <!-- HEADER END -->
-        <section id="topo">
+
+        <section class="banner">
             <!-- TOP SITE START -->
             <div class="wave-container">
                 <!-- WAVE EFEITO START -->
@@ -65,7 +73,7 @@
         <!-- MAIN START -->
         <main>
             <div class="color">
-                <div  id="sobreNos" class="flex container-sobreAquamarine">
+                <div id="sobreNos" class="flex container-sobreAquamarine">
                     <!-- TEXTO SOBRE A ONG START -->
                     <div class="sobre-aquamarine">
                         <h1 class="animate">AQUAMARINE</h1>
@@ -96,11 +104,12 @@
                                 melhor
                                 para nossos mares e suas criaturas.
                             </p>
-                                <button class="animate"><a href="sobreNos.html">SAIBA MAIS</a></button> <!--LEVA PARA A PAGINA SOBRE-NOS -->
+                            <button class="animate"><a href="sobreNos.html">SAIBA MAIS</a></button>
+                            <!--LEVA PARA A PAGINA SOBRE-NOS -->
                         </div>
                         <!-- TEXTO SOBRE A ONG END -->
                     </div>
-                        <!-- SLIDE MAIN START -->
+                    <!-- SLIDE MAIN START -->
                     <div class="container-slider">
                         <div class="slider animate">
                             <div class="list">
@@ -157,7 +166,7 @@
                 </div>
                 <!-- WAVE EFEITO FOTO BALEIA END -->
                 <!-- PROJETOS ONG START -->
-                <div  id="projetos" class="container-projetos">
+                <div id="projetos" class="container-projetos">
                     <div class="projetos-info">
                         <h1 class="animate">Nossos Projetos</h1>
                         <p class="animate">
@@ -295,10 +304,14 @@
             </div>
             <!-- NOTICIAS END -->
         </main>
-            <!-- MAIN END -->
-            <!-- FOOTER START -->
-            <!--WAVE EFEITO FOOTER -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 312"><path fill="#000000" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,224C384,224,480,192,576,154.7C672,117,768,75,864,74.7C960,75,1056,117,1152,117.3C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <!-- MAIN END -->
+        <!-- FOOTER START -->
+        <!--WAVE EFEITO FOOTER -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 312">
+            <path fill="#000000" fill-opacity="1"
+                d="M0,160L48,176C96,192,192,224,288,224C384,224,480,192,576,154.7C672,117,768,75,864,74.7C960,75,1056,117,1152,117.3C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
         <footer class="footer footer-content">
             <div class="footer-row">
                 <div class="footer-icon">
@@ -323,11 +336,13 @@
             </div>
             <div class="footer-info">
                 <p>Instituto Aquamarine - Preservando a vida marinha e promovendo a conscientização ambiental.
-                    <a href="/">Política de Privacidade</a> | <a href="/">Termos de Serviço</a></p>
+                    <a href="/">Política de Privacidade</a> | <a href="/">Termos de Serviço</a>
+                </p>
             </div>
             <h1 class="footer-title">Juntos pela Vida Marinha</h1>
         </footer>
         <!-- FOOTER END -->
     </div>
 </body>
+
 </html>

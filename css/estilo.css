@@ -81,7 +81,7 @@ html {
 
 }
 
-section .wave-container h1 {
+.banner .wave-container h1 {
 
     font-family: "Oswald", sans-serif;
     font-size: 2em;
@@ -90,7 +90,7 @@ section .wave-container h1 {
     color: #d2a5e6;
 }
 
-section h2 {
+.banner h2 {
 
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
@@ -99,7 +99,7 @@ section h2 {
     color: white;
 }
 
-section button {
+.banner button {
     font-family: "Latan", monospace;
     font-optical-sizing: auto;
     font-weight: 700;
