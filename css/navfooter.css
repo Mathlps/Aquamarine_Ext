@@ -91,7 +91,7 @@ header ul li a {
 
 .footer-title {
 
-    font-size: calc(2.5rem + 3vw);
+    font-size: calc(2.2rem + 4svw);
     font-weight: bold;
     color: #f1f1f1;
     text-transform: uppercase;
@@ -101,7 +101,6 @@ header ul li a {
     font-weight: 700;
     /* font-size: 3em; */
     font-style: normal;
-    font-size: 6rem;
     font-weight: bold;
     color: #f1f1f1;
     text-transform: uppercase;
