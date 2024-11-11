@@ -20,61 +20,13 @@
 /* container com a nav e a main */
 
 .sla{
-    background-image: url(https://images.pexels.com/photos/20146341/pexels-photo-20146341/free-photo-of-mar-oceano-sombrio-escuro.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url("../img/doação/pexels-photo-189349.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     border: solid #08215000;               /* por algum motivo, essa div so engloba o header se tiver border solid */
     
-}
-
-/* Navbar */
-
-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 3%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: 1s;
-    z-index: 999;
-    /* background-color: #082150; */
-
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 700;
-    font-size: 1em;
-    font-style: normal;
-}
-
-header.rolagem {
-    background-color: var(--bg-background-color);
-    padding: 30px 3%;
-
-}
-
-header img {
-    width: 60px;
-    height: auto;
-    border-radius: 50%;
-}
-
-header ul {
-    list-style-type: none;
-
-}
-
-header ul li {
-    display: inline-block;
-    margin: 0 40px;
-}
-
-header ul li a {
-    color: white;
-    text-decoration: none;
 }
 
 /* Inicio pagina */

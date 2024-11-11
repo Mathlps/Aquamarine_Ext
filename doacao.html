@@ -4,32 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estiloDoacao.css" />
-    <script src="js/funcao.js" defer></script>
+    <link rel="stylesheet" href="css/navfooter.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="shortcut icon" href="img/index/Logo_JellyFish.jpg">
+    <script src="js/animation.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/slider.js" defer></script>
     <title>Aquamarine</title>
 </head>
 <body>
     <div class="sla">
         <header id="header">
-            <div>
-                <a href="#"><img src="img/Logo_JellyFish.jpg" alt="LOGO"></a>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="#">SOBRE NÓS</a></li>
-                    <li><a href="#">PROJETOS</a></li>
-                    <li><a href="#">NOTÍCIAS</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="#">CONTATO</a></li>
-                </ul>
-            </div>
+            <nav class="nav">
+
+                <div class="logo-div">
+                    <a class="logo animate" href="/"><img src="img/index/Logo_JellyFish.jpg" alt="LOGO"></a>
+                </div>
+
+
+                <div class="nav-div-1">
+                    <ul class="ul1 animate nav-list">
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="sobreNos.html">SOBRE NÓS</a></li>
+                        <li><a href="projetos.html">PROJETOS</a></li>
+                        <li><a href="#">NOTÍCIAS</a></li>
+                        <li class="nav-contato"><a href="#">AJUDE</a></li>
+                    </ul>
+                </div>
+                <div class="nav-div-2">
+                    <ul class="ul2 animate div-contato">
+                        <li><a href="#">AJUDE</a></li>
+                    </ul>
+                    <button class="hamburger"></button>
+                </div>
+            </nav>
         </header>
         <main>
             <div class="aside-container1">
-                <div class="container-doacao">
+                <div class="container-doacao cd1 animate">
                     <div class="doacao-icon">
                         <img src="https://cdn-icons-png.flaticon.com/512/105/105686.png">
                     </div>
@@ -45,7 +57,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container-doacao">
+                <div class="container-doacao cd2 animate">
                     <div class="doacao-icon">
                         <img src="https://cdn-icons-png.flaticon.com/512/105/105686.png">
                     </div>
@@ -61,7 +73,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container-doacao">
+                <div class="container-doacao cd3 animate">
                     <div class="doacao-icon">
                         <img src="https://cdn-icons-png.flaticon.com/512/105/105686.png">
                     </div>
@@ -80,34 +92,34 @@
             </div>
             <div class="aside-container2">
                 <div class="container-frase">
-                    <h1>“Quando acreditamos em nós mesmos, o impossível se torna possível.”</h1>
+                    <h1 class="animate">“Quando acreditamos em nós mesmos, o impossível se torna possível.”</h1>
                 </div>
             </div>
         </main>
     </div>
     <div class="projetos">
         <div class="projetos-texto">
-            <h1>titulo da doaçao para projetos</h1>
-            <p>
+            <h1 class="animate">titulo da doaçao para projetos</h1>
+            <p class="animate"> 
                 Define-se texto como um conjunto de palavras e frases encadeados que permitem interpretação e transmitem uma mensagem. Pode ser qualquer obra escrita em versão 
                 original que constitui um livro ou um documento escrito. Um texto é uma unidade linguística de extensão superior a frase.
             </p>
         </div>
         <div class="projetos-carrossel">
             <div class="container-slider">
-                <div class="slider">
+                <div class="slider animate">
                     <div class="list">
                         <div class="item">
-                            <img src="./img/projetos/projetos/projeto-palestras.jpg" alt="">
+                            <img src="img/projetos/projetos/projeto-palestras.jpg" alt="">
                         </div>
                         <div class="item">
-                            <img src="./img/projetos/projetos/projeto-praias-limpas.jpg" alt="">
+                            <img src="img/projetos/projetos/projeto-praias-limpas.jpg" alt="">
                         </div>
                         <div class="item">
-                            <img src="./img/projetos/projetos/projeto-salve-tartarugas.jpg" alt="">
+                            <img src="img/projetos/projetos/projeto-salve-tartarugas.jpg" alt="">
                         </div>
                         <div class="item">
-                            <img src="./img/projetos/projetos/projeto-salve-tubarão.jpg" alt="">
+                            <img src="img/projetos/projetos/projeto-salve-tubarão.jpg" alt="">
                         </div>
                     </div>
                     <div class="buttons">
@@ -124,7 +136,7 @@
             </div>
         </div>
         <div class="projetos-button">
-            <a href="#" class="button">Ver projetos</a>
+            <a href="#" class="button animate">Ver projetos</a>
         </div>
     </div>
 </body>
