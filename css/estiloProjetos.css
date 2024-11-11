@@ -97,7 +97,7 @@ header ul li a {
     margin-bottom: 5vh;
     padding: 5vh;
     padding-bottom: 8vh;
-    background-color: rgb(237, 236, 236);
+    background-color: azure;
     width: 80%;
     height: auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
@@ -196,7 +196,7 @@ header ul li a {
     text-decoration: none;
 } 
 
-@media (max-width: 768px){
+@media (max-width: 916px){
 
     .content-items{
         display: flex;
