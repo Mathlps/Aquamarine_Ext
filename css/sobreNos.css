@@ -17,51 +17,8 @@ body{
 
 /* header start*/
 header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 3%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: 1s;
-    z-index: 1000;
-
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 700;
-    font-size: 1em;
-    font-style: normal;
-    color: white;
     background-color: #061b43;
-}
-
-header.rolagem {
-    background-color: var(--bg-nav-color);
-    padding: 30px 3%;
-
-}
-
-header img {
-    width: 60px;
-    height: auto;
-    border-radius: 50%;
-}
-
-header ul {
-    list-style-type: none;
-
-}
-
-header ul li {
-    display: inline-block;
-    margin: 0 40px;
-}
-
-header ul li a {
-    color: white;
-    text-decoration: none;
-}
+} 
 
 /* header end*/
 /* main start */
@@ -353,7 +310,7 @@ main{
     background-size: cover; */
 }
 
-    button {
+    .sobrenos-button {
     background-color: #061b43;
     width: 130px;
     height: 50px;
@@ -370,12 +327,12 @@ main{
     text-transform: uppercase;
 }
 
-button:hover {
+.sobrenos-button:hover {
     box-shadow: 0 6px 12px rgba(0, 27, 66, 0.3); /* Sombra mais intensa ao passar o mouse */
     transform: translateY(-2px); /* Um leve deslocamento para cima */
 }
 
-button:active {
+.sobrenos-button:active {
     box-shadow: 0 2px 4px rgba(0, 27, 66, 0.2); /* Sombra reduzida quando o botão é pressionado */
     transform: translateY(0); /* Volta à posição original */
 }
