@@ -6,7 +6,8 @@
 ## Description
 September/2024
 
-
+Para executar no windows, rodar o seguinte script no powershell como administrador:
+<pre>Set-ExecutionPolicy RemoteSigned</pre>
 
 ### Credits
 [![Static Badge](https://img.shields.io/badge/JoYoneyama-github?style=flat&logo=github&logoColor=white&label=github&labelColor=gray&color=blue&link=https%3A%2F%2Fgithub.com%2FJoYoneyama)](https://github.com/JoYoneyama)
