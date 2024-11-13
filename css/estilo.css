@@ -1,4 +1,3 @@
-
 :root {
     /*colocar as variáveis aqui*/
     --bg-nav-color: #061b43;
@@ -21,6 +20,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap');
@@ -76,7 +76,7 @@ html {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding-bottom: 100px;  
+    padding-bottom: 100px;
     padding-left: 35px;
 
 }
@@ -625,7 +625,8 @@ main p {
     padding-bottom: 6px;
 }
 
-.card-news h1 {
+.card-news h1,
+.card-news h2 {
     position: relative;
 
     display: inline;
