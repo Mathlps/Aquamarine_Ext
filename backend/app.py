@@ -13,6 +13,10 @@ else:
 
 # db = SQLAlchemy(app)
 
+@app.route("/")
+def home():
+    return "<h1>Pagina Principal</h1><h2>Titulo Titulo</h2>"
+
 @app.route("/projeto/<int:id>", methods= ['GET'])
 def get_project_by_id(id):
         return "<h1>PROJETO TAL</h1>"
