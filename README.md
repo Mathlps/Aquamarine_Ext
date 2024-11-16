@@ -6,10 +6,46 @@
 ## Description
 September/2024
 
-Para executar no windows, rodar o seguinte script no powershell como administrador:
+## How to run
+
+> [!NOTE]
+> Para executar os proejetos Flask no windows, rodar o seguinte script no powershell como administrador:
 <pre>Set-ExecutionPolicy RemoteSigned</pre>
 
-### Credits
+### Ativar o ambiente virtual
+1. **No Windows:**
+```
+venv\Scripts\activate
+```
+
+2. **No macOS/Linux:**
+```
+source venv/bin/activate
+```
+
+### Instalar as dependências a partir do `requirements.txt`
+
+1. **Instalar as dependências:**
+```
+pip install -r requirements.txt
+```
+* Isso instalará todas as dependências listadas no arquivo `requirements.txt`.
+
+### Iniciar o sever da aplicação Flask:
+1. **Rodar a aplicação Flask:**
+```
+python app.py
+```
+* Isso iniciará o servidor Flask. Por padrão, ele irá rodar no endereço `http://127.0.0.1:5000/`.
+
+2. **Acessar a aplicação:**
+* Abra o navegador e vá para `http://127.0.0.1:5000/` para acessar a página inicial do seu projeto.
+
+### Parar o servidor
+
+- Para parar o servidor, você pode pressionar `Ctrl + C` no terminal onde o servidor está rodando.
+
+## Credits
 [![Static Badge](https://img.shields.io/badge/JoYoneyama-github?style=flat&logo=github&logoColor=white&label=github&labelColor=gray&color=blue&link=https%3A%2F%2Fgithub.com%2FJoYoneyama)](https://github.com/JoYoneyama)
 
 [![Static Badge](https://img.shields.io/badge/github-KaykyMatos845-blue?style=plastic&logo=github&logoColor=white&labelColor=gray&color=blue&link=https%3A%2F%2Fgithub.com%2FKaykyMatos845)](https://github.com/KaykyMatos845)
