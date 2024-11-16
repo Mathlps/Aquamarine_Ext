@@ -1,7 +1,9 @@
-from flask  import flask, jsonify, request, make_response
+from flask  import Flask, jsonify, request, Blueprint
 # from news_service import 
 
-@app.route("/noticias", method= ['POST'])
+news_route = Blueprint("news", __name__)
+
+@news_route.route("/noticias", methods= ['POST'])
 def create_news():
     return jsonify(message="Noticia criada com sucesso")
 

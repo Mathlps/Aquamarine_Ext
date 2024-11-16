@@ -5,7 +5,7 @@ class Config:
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 class Dev(Config):
-    SQLALCHEMY_DATABASE_URI = 'mysql://root:mysql123@localhost/aquamarine'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:mysql123@localhost/aquamarine'
     DEBUG = True
 
 class Prod(Config):
