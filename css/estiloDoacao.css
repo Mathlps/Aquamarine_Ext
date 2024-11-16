@@ -3,6 +3,7 @@
     --bg-background-color: #082150;
     --bg-button-color: #0c3073;
     --bg-button-hover-color: #1a4697;
+    --bg-selection-color: #048FB4;
     --bg-rosa: #d2a5e6;
     --bg-rosa-claro: #f1d3ff;
 }
@@ -78,17 +79,18 @@ main{
     top: -20px;
     left: -20px;
     z-index: 1;
-    border: solid var(--bg-rosa);
+    border: solid var(--bg-button-hover-color);
     border-radius: 50%;
-    background-color: var(--bg-rosa-claro);
+    background-color: var(--bg-selection-color);
     width: 72px;
     height: 72px;
 }
 
 .doacao-icon img{
-    width: 56px;
-    height: 56px;
+    width: 46px;
+    height: 46px;
     padding: 5%;
+    color: white;
 }
 
 .doacao-content{
@@ -103,6 +105,8 @@ main{
 .doacao-content h2{
     text-align: center;
     margin-bottom: 18px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
 }
 
 .doacao-content p{
