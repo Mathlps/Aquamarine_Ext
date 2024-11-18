@@ -41,6 +41,12 @@ python app.py
 2. **Acessar a aplicação:**
 * Abra o navegador e vá para `http://127.0.0.1:5000/` para acessar a página inicial do seu projeto.
 
+### Criar requeriments.txt
+
+```
+pip freeze > requirements.txt
+```
+
 ### Parar o servidor
 
 - Para parar o servidor, você pode pressionar `Ctrl + C` no terminal onde o servidor está rodando.
