@@ -1,5 +1,3 @@
-from flask import jsonify
-
 class ProjectService:
 
     @staticmethod
@@ -9,7 +7,7 @@ class ProjectService:
         endsAt = data['data_fim'],
         status = data['status']
 
-        return {"message":"Projeto criado com sucesso"}, 201
+        return {"message": "Projeto criado com sucesso!"}, 201
 
     @staticmethod
     def update_project(data, id):
