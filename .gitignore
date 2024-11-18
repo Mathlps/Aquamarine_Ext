@@ -1,4 +1,5 @@
 # Ignorar arquivos de ambiente virtual
+.venv
 venv/
 .env
 .env.local
