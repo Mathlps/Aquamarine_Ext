@@ -2,12 +2,16 @@ class NewsService:
 
     @staticmethod
     def create_news(data):
-
+        title = data['titulo'],
+        createdAt = data['data_publicacao'],
+        news_text = data['texto']
         return {"message":"Notícia Criada"}, 201
 
     @staticmethod
     def update_news(data, id):
-
+        title = data['titulo'],
+        createdAt = data['data_publicacao'],
+        news_text = data['texto']
         return {"message":"Notícia Atualizada"},200
 
     @staticmethod

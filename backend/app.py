@@ -19,10 +19,10 @@ def create_app():
     with app.app_context():
         from routes.project_route import project_route
         from routes.news_route import news_route
-        # from routes.animal_route import animal_route
+        from routes.animal_route import animal_route
         app.register_blueprint(project_route)
         app.register_blueprint(news_route)
-        # app.register_blueprint(animal_routes)
+        app.register_blueprint(animal_routes)
 
     return app
 
