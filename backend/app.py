@@ -22,23 +22,16 @@ def create_app():
         from routes.animal_route import animal_route
         app.register_blueprint(project_route)
         app.register_blueprint(news_route)
-        app.register_blueprint(animal_routes)
+        app.register_blueprint(animal_route)
 
     return app
 
 app = create_app()
 
-@app.route("/")
+@app.route("/login")
 def home():
-    return "<h1>Pagina Principal</h1><h2>Titulo Titulo</h2>"
+    return "<h1>Efetuar Login</h1>"
 
-@app.route("/projeto/<int:id>", methods= ['GET'])
-def get_project_by_id(id):
-        return "<h1>PROJETO TAL</h1>"
-
-@app.route("/noticia/<int:id>", methods= ['GET'])
-def get_news_by_id(id):
-    return "<h1>NOTICIA TAL</h1>"
 
 if __name__ == "__main__":
     app.run(debug=app.config['DEBUG'])
