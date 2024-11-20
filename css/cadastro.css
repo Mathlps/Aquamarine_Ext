@@ -47,14 +47,11 @@ body {
     align-items: center;
     width: 400px;
     height: 460px;
-  
     padding: 50px;
     border-radius: 10px;
     text-align: center;
-
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-
     border: 2px solid rgba(255, 255, 255, .2);
 }
 
@@ -110,6 +107,7 @@ body {
 
 .login button:hover {
     background-color: blue;
+    transform: scale(1.1);
 }
 
 /* Alerta */
@@ -126,7 +124,7 @@ body {
 
 .alertaConta {
     font-size: 16px;
-    color: white;
+    color: #ccc;
 }
 
 .alertaConta:hover {
