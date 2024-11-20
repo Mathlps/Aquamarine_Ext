@@ -1,0 +1,134 @@
+/* Configurações gerais */
+
+:root {
+    --bg-background-color: #082150;
+    --bg-button-color: #0c3073;
+    --bg-button-hover-color: #1a4697;
+    --bg-rosa: #d2a5e6;
+    --bg-rosa-claro: #f1d3ff;
+    scroll-padding-top: 150px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+}
+
+/* Container principal */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+    background-image: url(../img/index/jellyfish_main.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Container Login */
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 460px;
+  
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    border: 2px solid rgba(255, 255, 255, .2);
+}
+
+.login .nomeOng {
+    color: var(--bg-rosa);
+    font-size: 24px;
+    font-weight: bolder;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+/* Formulário de Acesso */
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.login input {
+    outline: none;
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    height: 48px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    padding-left: 16px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+}
+
+.login input:focus {
+    border: 2px solid rgba(255, 255, 255, .3);
+}
+
+.login input::placeholder {
+    color: #ccc;
+}
+
+.login button {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 48px;
+    font-size: 18px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: blue;
+}
+
+/* Alerta */
+
+.login .divisoria {
+    display: block;
+    width: 80%;
+    height: 1px;
+    background-color: white;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    opacity: .2;
+}
+
+.alertaConta {
+    font-size: 16px;
+    color: white;
+}
+
+.alertaConta:hover {
+    text-decoration: underline;
+}
