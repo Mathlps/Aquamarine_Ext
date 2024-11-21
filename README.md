@@ -12,6 +12,17 @@ September/2024
 > Para executar os proejetos Flask no windows, rodar o seguinte script no powershell como administrador:
 <pre>Set-ExecutionPolicy RemoteSigned</pre>
 
+### Criar o ambiente virtual
+1. **No Windows:**
+```
+py -3 -m venv .venv
+```
+
+2. **No macOS/Linux:**
+```
+python3 -m venv .venv
+```
+
 ### Ativar o ambiente virtual
 1. **No Windows:**
 ```
