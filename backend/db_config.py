@@ -3,6 +3,13 @@ from dotenv import load_dotenv,find_dotenv
 
 load_dotenv(find_dotenv(".env.local"))
 
+# import os
+# print("Variáveis carregadas:")
+# for key, value in os.environ.items():
+#     if key.startswith("DB_") or key == "JWT_SECRET_KEY" or key == "FLASK_ENV":
+#         print(f"{key}: {value}")
+
+
 class Config:
     SECRET_KEY = os.environ.get('JWT_SECRET_KEY') or 'chave_secreta_padrao'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
