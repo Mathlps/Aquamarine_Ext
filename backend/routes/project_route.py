@@ -5,10 +5,9 @@ from service.project_service import ProjectService
 project_route = Blueprint("project", __name__)
 
 @project_route.route("/projects", methods=['POST'])
-# @jwt_required
+@jwt_required
 def create_project():
     data = request.json
-    # idAdmin = get_jwt_identity()
     response, status = ProjectService.create_project(data)
     return jsonify(response), status
     

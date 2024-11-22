@@ -15,7 +15,7 @@ def get_animal_by_id(id):
     response, status = AnimalService.get_animal_by_id(id)
     return jsonify(response), status
 
-@animal_route.route("/animal/<int:idProject>", methods=['GET'])
+@animal_route.route("/animal/<int:id_project>", methods=['GET'])
 def get_animals_from_project(id_project):
 
     response, status = AnimalService.get_animals_from_project(id_project)

@@ -1,5 +1,5 @@
 from flask_sqlalchemy import SQLAlchemy
-from app import db
+from extensions import db
 
 
 class Administrador(db.Model):
@@ -9,7 +9,7 @@ class Administrador(db.Model):
     nome = db.Column('Nome', db.String(45), nullable=True)
     email = db.Column('Email', db.String(45), nullable=True)
     cpf = db.Column('CPF', db.String(15), nullable=True)
-    senha = db.Column('Senha', db.String(45), nullable=True)
+    senha = db.Column('Senha', db.String(255), nullable=True)
 
     projetos = db.relationship('Projeto', backref='administrador', lazy=True)
     animais = db.relationship('Animal', backref='administrador', lazy=True)
