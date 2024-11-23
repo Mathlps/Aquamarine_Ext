@@ -1,8 +1,11 @@
 from db_model import Projeto
+from flask_jwt_extended import get_jwt_identity 
+from extensions import db
 class ProjectService:
 
     @staticmethod
     def create_project(data):
+        print("Dentro do Service")
         new_project = Projeto(
             titulo=data['titulo'],
             data_inicio=data['data_inicio'],
@@ -11,6 +14,8 @@ class ProjectService:
             texto = data['texto'],
             idAdm = get_jwt_identity()
         )
+
+        print(new_project)
 
         db.session.add(new_project)
         db.session.commit()
@@ -27,7 +32,6 @@ class ProjectService:
         project.data_fim = data['data_fim']
         project.status = data['status'],
         project.texto = data['texto'],
-
 
         db.session.commit()
         return {"message": "Projeto atualizado com sucesso!"}, 200

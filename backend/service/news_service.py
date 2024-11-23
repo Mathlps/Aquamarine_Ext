@@ -1,4 +1,5 @@
 from db_model import Noticia
+from flask_jwt_extended import get_jwt_identity 
 from extensions import db
 class NewsService:
 

@@ -17,7 +17,6 @@ def login():
 
 @adm_route.route("/adm/password", methods=['PUT'])
 def update_password():
-    print("Rota Senha")
     credenciais = request.json
     response, status = AdmService.update_password(credenciais)
     return jsonify(response), status
