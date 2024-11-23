@@ -9,7 +9,7 @@ class NewsService:
             titulo=data['titulo'],
             data_publicacao=data['data_publicacao'],
             texto=data['texto'],
-            idAdm  = get_jwt_identity()
+            id_adm  = get_jwt_identity()
         )
         db.session.add(new_news)
         db.session.commit()
@@ -24,7 +24,7 @@ class NewsService:
         
         noticia.titulo = data.get('titulo', noticia.titulo)
         noticia.data_publicacao = data.get('data_publicacao', noticia.data_publicacao)
-        noticia.texto = data.get('Texto', noticia.Texto)
+        noticia.texto = data.get('texto', noticia.texto)
 
         db.session.commit()
         return {"message":"Notícia Atualizada"},200
@@ -60,4 +60,5 @@ class NewsService:
             return {"error": "Notícia não encontrada"}, 404 
         
         db.session.delete(noticia)
+        db.session.commit()
         return {"message":"Notícia Excluída"},200

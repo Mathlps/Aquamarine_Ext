@@ -17,7 +17,8 @@ class AdmService:
         if not adm or not check_password_hash(adm.senha,password):
             return {"error": "Verifique suas credenciais novamente"}, 404
         
-        access_token = create_access_token(identity=adm.id_adm)
+        access_token = create_access_token(identity=str(adm.id_adm))
+        print (access_token)
         return {"token": access_token}, 200
 
     @staticmethod

@@ -12,7 +12,7 @@ class ProjectService:
             data_fim=data['data_fim'],
             status=data['status'],
             texto = data['texto'],
-            idAdm = get_jwt_identity()
+            id_adm = get_jwt_identity()
         )
 
         print(new_project)

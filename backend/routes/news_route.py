@@ -11,14 +11,14 @@ def create_news():
     response,status = NewsService.create_news(data)
     return jsonify(response), status
 
-@news_route.route("/noticias", methods= ['PUT'])
+@news_route.route("/noticias/<int:id>", methods= ['PUT'])
 @jwt_required()
 def update_news(id):
     data = request.json
     response,status = NewsService.update_news(data, id)
     return jsonify(response), status
 
-@news_route.route("/noticias", methods= ['GET'])
+@news_route.route("/noticias/<int:id>", methods= ['GET'])
 def get_news_by_id(id):
     response,status = NewsService.get_news_by_id(id)
     return jsonify(response), status
@@ -28,7 +28,7 @@ def get_all_news():
     response,status = NewsService.get_all_news()
     return jsonify(response), status
 
-@news_route.route("/noticias", methods= ['DELETE'])
+@news_route.route("/noticias/<int:id>", methods= ['DELETE'])
 @jwt_required()
 def delete_news(id):
     response,status = NewsService.delete_news(id)

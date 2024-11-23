@@ -19,6 +19,7 @@ def login():
 def update_password():
     credenciais = request.json
     response, status = AdmService.update_password(credenciais)
+    print(response, status)
     return jsonify(response), status
 
 
