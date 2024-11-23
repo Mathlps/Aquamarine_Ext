@@ -42,6 +42,8 @@ header nav ul {
     list-style-type: none;
 }
 
+/* ==== ANIMAÇÃO DE HOVER DO MOUSE PARA NAVBAR ==== */
+
 header nav ul li {
     display: inline-block;
     margin: 0 30px;
@@ -68,6 +70,8 @@ header nav ul li a {
     color: white;
     text-decoration: none;
 }
+
+/* ====== definições da navbar ===== */
 
 
 .logo-div {

@@ -1,4 +1,3 @@
-
 :root {
     /*colocar as variáveis aqui*/
     --bg-nav-color: #061b43;
@@ -21,6 +20,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap');
@@ -182,6 +182,34 @@ main p {
     font-variation-settings: "wdth" 100;
     color: #59284d;
  } */  /* BOTÃO ANTIGO */
+
+ .sobre-aquamarine button {
+    background-color: var(--bg-nav-color);
+    width: 8em;
+    border: none;
+    border-radius: 30px;
+    margin-top: 12px;
+    padding: 10px;
+
+
+ }
+
+ .botao-saiba-mais {
+    font-family: "Latan", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: larger;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    
+    text-decoration: none;
+    color: white;
+    transition: ease-in-out 0.3s;
+ }
+
+ .botao-saiba-mais:hover {
+    transform: translateY(5px);
+  } */  /* BOTÃO ANTIGO */
 
  .sobre-aquamarine button {
     background-color: var(--bg-nav-color);
@@ -653,7 +681,8 @@ main p {
     padding-bottom: 6px;
 }
 
-.card-news h1 {
+.card-news h1,
+.card-news h2 {
     position: relative;
 
     display: inline;
@@ -783,6 +812,9 @@ a.link {
 
     text-decoration: none;
 }
+
+
+
 
 /* === BOTÃO DE VOLTAR AO INICIO DA PÁGINA === */
 

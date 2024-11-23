@@ -1,0 +1,104 @@
+:root {
+    /*colocar as variáveis aqui*/
+    --bg-background-color: #082150;
+    --bg-button-color: #0c3073;
+    --bg-button-hover-color: #1a4697;
+    --bg-selection-color: #048FB4;
+    --bg-rosa: #d2a5e6;
+    --bg-rosa-claro: #f1d3ff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* Configurações gerais da página inteira */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-background-color);
+}
+
+main{
+    margin: 0 auto;
+    margin-top: 200px;      
+    width: 80%;
+    min-height: 80vh;  
+    display: flex;  
+    justify-content: space-around;
+    gap: 64px;
+    padding-bottom: 100px;
+}
+
+
+.noticias-lista{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.noticias-card{
+    display: flex;
+    position: relative;
+    max-width: 900px;
+    width: 45%;
+    background-color: white;
+    max-height: 300px;
+    overflow: hidden;
+    
+}
+
+.noticias-card-img{
+    overflow: hidden;
+    object-fit: cover;
+    height: 100%;
+
+}
+
+.noticias-card-img img{
+
+    height: 100%;
+}
+
+.noticias-card-content{
+    width: 70%;
+
+}
+
+@media (max-width: 768px){
+    main{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .container-doacao{
+        justify-content: center;
+    }
+
+    .doacao-icon{
+        left: 40px;
+    }
+
+    .doacao-content{
+        width: 75%;
+    }
+}
+
+@media (max-width: 1024px){
+    .slider{
+        width: 60%;
+        max-height: 400px;
+        height: 400px;
+    }
+
+    .item{
+        width: 60vw;
+    }
+
+    .item img{
+        height: 400px;
+    }
+}

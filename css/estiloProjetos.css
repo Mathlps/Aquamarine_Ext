@@ -97,7 +97,7 @@ header ul li a {
     margin-bottom: 5vh;
     padding: 5vh;
     padding-bottom: 8vh;
-    background-color: rgb(237, 236, 236);
+    background-color: azure;
     width: 80%;
     height: auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
@@ -196,44 +196,45 @@ header ul li a {
     text-decoration: none;
 } 
 
-/* === BOTÃO DE VOLTAR AO INICIO DA PÁGINA === */
 
-.voltar-ao-topo{
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    background-color: var(--bg-nav-color);
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    transition: ease-out 0.2s;
-    opacity: 0;
-    visibility: hidden;
-    opacity: 0.5s, visibility .5s;
-}
+@media (max-width: 916px){
 
-.voltar-ao-topo.mostrar{
-    opacity: 1;
-    visibility: visible;
-}
+    .content-items{
+        display: flex;
+        flex-direction: column;
+        margin-top: 7vh;
+        gap: 7vh;
+    }
+    
+    .project-image{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .project-image img{
+        width: 60vw;
+        height: 300px;
+        max-height: 350px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
+                    0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
+    }
+    
+    .project-description{
+        width: 100%;
+        padding-bottom: 3vh;
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+    
+    .text p{
+        text-indent: 3vw;
+        text-align: justify;
+        padding: 1vh 2vw 1vh 0;
+    }
 
-.voltar-ao-topo span{
-    font-size: 3em;
-    color: white;
-    top: 50%;
-    transition: ease-out 0.2s;
-}
-
-.voltar-ao-topo:hover{
-    background-color: white;
-    transform: translateY(-5px);
-}
-
-.voltar-ao-topo span:hover{
-    color: var(--bg-nav-color);
 }
 
 
@@ -276,4 +277,19 @@ header ul li a {
         padding: 1vh 2vw 1vh 0;
     }
 
+}
+
+@media (max-width: 768px) {
+    /* Estilos para telas pequenas */
+
+    /* HEADER START */
+
+    header {
+        padding: 15px 1%;
+    }
+
+    header ul li {
+        margin: 5px 0;
+        font-size: 0.8em;
+    }
 }
