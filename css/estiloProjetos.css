@@ -17,7 +17,7 @@
 }
 
 body{
-    background-image: url(../img/pexels-alohaphotostudio-8710944.jpg);
+    background-image: url(../img/projetos/pexels-alohaphotostudio-8710944.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -97,7 +97,7 @@ header ul li a {
     margin-bottom: 5vh;
     padding: 5vh;
     padding-bottom: 8vh;
-    background-color: rgb(237, 236, 236);
+    background-color: azure;
     width: 80%;
     height: auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
@@ -110,6 +110,7 @@ header ul li a {
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
+    margin-top: 24px;
 }
 .content-items{
     display: flex;
@@ -126,6 +127,8 @@ header ul li a {
 
 .project-image img{
     width: 30vw;
+    min-height: 400px;
+    height: 500px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
                 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
 }
@@ -135,15 +138,22 @@ header ul li a {
     padding-bottom: 4vh;
     display: flex;
     flex-direction: column;
-    gap: 8vh;
+    gap: 36px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
 }
 
 .text p{
     text-indent: 2vw;
     text-align: justify;
+    word-spacing: 1px;
     /* padding-right: 2vw;
     padding-top: 1vw; */
-    padding: 1vw 2vw 1vw 0;
+    padding: 0 2vw 0 0;
     font-family: "Bebas Neue", sans-serif;
     /* font-weight: 200; */
     font-style: normal;
@@ -186,7 +196,7 @@ header ul li a {
     text-decoration: none;
 } 
 
-@media (max-width: 768px){
+@media (max-width: 916px){
 
     .content-items{
         display: flex;
@@ -198,12 +208,14 @@ header ul li a {
     .project-image{
         width: 100%;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
     }
     
     .project-image img{
         width: 60vw;
+        height: 300px;
+        max-height: 350px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
                     0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
     }
@@ -219,7 +231,22 @@ header ul li a {
     .text p{
         text-indent: 3vw;
         text-align: justify;
-        padding-right: 2vw;
+        padding: 1vh 2vw 1vh 0;
     }
 
+}
+
+@media (max-width: 768px) {
+    /* Estilos para telas pequenas */
+
+    /* HEADER START */
+
+    header {
+        padding: 15px 1%;
+    }
+
+    header ul li {
+        margin: 5px 0;
+        font-size: 0.8em;
+    }
 }

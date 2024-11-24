@@ -1,0 +1,448 @@
+@keyframes animacao1{
+    from{
+        opacity: 0;
+        transform: translateY(-15px) translateX(-5px);
+    }to{
+        opacity: 1;
+        transform: translateY(0) translateX(0);
+    }
+}
+
+@keyframes animacao2{
+    from{
+        opacity: 0;
+        transform: translateY(5px) translateX(-5px);
+    }to{
+        opacity: 1;
+        transform: translateY(0) translateX(0);
+    }
+}
+
+@keyframes animacao3{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+@keyframes animacaocard{
+    from{
+        opacity: 0;
+        transform: translateX(-25px);
+    }to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes animacaoslider{
+    from{
+        opacity: 0;
+        transform: translateX(20px) translateY(-10px);
+    }to{
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+}
+
+/* elemento.in-view{
+    animation: animacao1 2s forwards
+} */
+
+/* navbar */
+.logo{
+    opacity: 0;
+}
+
+.logo.in-view{
+    animation: animacao1 2s forwards;
+}
+
+.ul1{
+    opacity: 0;
+}
+
+.ul1.in-view{
+    animation: animacao1 2s forwards;
+    animation-delay: 0.5s;
+}
+
+.ul2{
+    opacity: 0;
+}
+
+.ul2.in-view{
+    animation: animacao1 2s forwards;
+    animation-delay: 0.8s;
+}
+
+
+/* home */
+
+
+/* texto com a imagem da agua-viva atras */
+.text-main h1{
+    opacity: 0;
+}
+
+.text-main h1.in-view{
+    animation: animacao1 2s forwards;
+    animation-delay: 1s;
+}
+
+.none{
+    opacity: 0;
+}
+
+.none.in-view{
+    animation: animacao2 1.5s forwards;
+    animation-delay: 1.5s;
+}
+
+/* texto sobre */
+.sobre-aquamarine h1{
+    opacity: 0;
+}
+
+.sobre-aquamarine h1.in-view{
+    animation: animacao1 2s forwards;
+}
+
+.sobre-aquamarine p{
+    opacity: 0;
+}
+
+.sobre-aquamarine .p1.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.2s;
+}
+
+.sobre-aquamarine .p2.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.4s;
+}
+
+.sobre-aquamarine .p3.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.6s;
+}
+
+.sobre-aquamarine button{
+    opacity: 0;
+}
+
+.sobre-aquamarine button.in-view{
+    animation: animacao2 2s forwards;
+    animation-delay: 0.8s;
+}
+
+/* carrossel do sobre */
+.slider{
+    opacity: 0;
+}
+
+.slider.in-view{
+    animation: animacaoslider 2s forwards;
+}
+
+/* projetos */
+.projetos-info h1{
+    opacity: 0;
+}
+
+.projetos-info h1.in-view{
+    animation: animacao1 2s forwards;
+}
+
+.projetos-info p{
+    opacity: 0;
+}
+
+.projetos-info p.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.4s;
+}
+
+.card{
+    opacity: 0;
+}
+
+.card.in-view{
+    animation: animacaocard 1.5s forwards;
+}
+
+/* animais impactados */
+.container-animais-impactados h1{
+    opacity: 0;
+}
+
+.container-animais-impactados h1.in-view{
+    animation: animacao1 1.5s forwards;
+}
+
+/* noticias */
+.noticias-info h1{
+    opacity: 0;
+}
+
+.noticias-info h1.in-view{
+    animation: animacao1 2s forwards;
+}
+
+.noticias-info p{
+    opacity: 0;
+}
+
+.noticias-info p.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.4s;
+}
+
+.n-1{
+    opacity: 0;
+}
+
+.n-1.in-view{
+    animation: animacao3 1.5s forwards;
+}
+
+.n-2{
+    opacity: 0;
+}
+
+.n-2.in-view{
+    animation: animacao3 1.5s forwards;
+    animation-delay: 0.2s;
+}
+
+.n-3{
+    opacity: 0;
+}
+
+.n-3.in-view{
+    animation: animacao3 1.5s forwards;
+    animation-delay: 0.4s;
+}
+
+.n-4{
+    opacity: 0;
+}
+
+.n-4.in-view{
+    animation: animacao3 1.5s forwards;
+    animation-delay: 0.6s;
+}
+
+
+/* Projetos */
+
+
+/* Nossos projetos */
+.title h1{
+    opacity: 0;
+}
+
+.title h1.in-view{
+    animation: animacao1 2s forwards;
+}
+
+/* projetos */
+.content-title h1{
+    opacity: 0;
+}
+
+.content-title h1.in-view{
+    animation: animacao3 2s forwards;
+}
+
+.project-image img{
+    opacity: 0;
+}
+
+.project-image img.in-view{
+    animation: animacao3 2s forwards;
+    animation-delay: 0.5s;
+}
+
+.text h3{
+    opacity: 0;
+}
+
+.text h3.in-view{
+    animation: animacao3 2s forwards;
+}
+
+.text p{
+    opacity: 0;
+}
+
+.text .p1.in-view{
+    animation: animacaocard 2s forwards;
+}
+
+.text .p2.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.2s;
+}
+
+.text .p3.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.4s;
+}
+
+.text .p4.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.6s;
+}
+
+.text .p5.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.8s;
+}
+
+.text .p6.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 1s;
+}
+
+.button{
+    opacity: 0;
+}
+
+.button.in-view{
+    animation: animacao2 2s forwards;
+}
+
+
+/* pagina sobre nos */
+
+
+/* titulo */
+.tittle h1{
+    opacity: 0;
+}
+
+.tittle h1.in-view{
+    animation: animacao1 2s forwards;
+}
+
+.tittle p{
+    opacity: 0;
+}
+
+.tittle p.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.4s;
+}
+
+/* sobre nos info */
+.sobre-info h1{
+    opacity: 0;
+}
+
+.sobre-info h1.in-view{
+    animation: animacao1 2s forwards;
+}
+
+.sobre-info p{
+    opacity: 0;
+}
+
+.sobre-info p.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.4s;
+}
+
+.logo2 img{
+    opacity: 0;
+}
+
+.logo2 img.in-view{
+    animation: animacao3 2s forwards;
+    animation-delay: 0.3s;
+}
+
+/* sobre nos card */
+.container-missao h1{
+    opacity: 0;
+}
+
+.container-missao h1.in-view{
+    animation: animacao1 2s forwards;
+}
+
+.card-sobrenos{
+    opacity: 0;
+}
+
+.c1.in-view{
+    animation: animacao3 2s forwards;
+}
+
+.c2.in-view{
+    animation: animacao3 2s forwards;
+    animation-delay: 0.3s;
+}
+
+.c3.in-view{
+    animation: animacao3 2s forwards;
+    animation-delay: 0.6s;
+}
+
+.container-missao button{
+    opacity: 0;
+}
+
+.container-missao button.in-view{
+    animation: animacaoslider 2s forwards;
+}
+
+
+/* pagina de doacao */
+
+/* doacoes */
+.container-doacao{
+    opacity: 0;
+}
+
+.cd1.in-view{
+    animation: animacaocard 2s forwards;
+}
+
+.cd2.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.4s;
+}
+
+.cd3.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.8s;
+}
+
+.container-frase h1{
+    opacity: 0;
+}
+
+.container-frase h1.in-view{
+    animation: animacao3 2.5s forwards;
+    animation-delay: 0.5s;
+}
+
+/* doacao projetos */
+.projetos-texto h1{
+    opacity: 0;
+}
+
+.projetos-texto h1.in-view{
+    animation: animacao1 2s forwards;
+}
+
+.projetos-texto p{
+    opacity: 0;
+}
+
+.projetos-texto p.in-view{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.4s;
+}
