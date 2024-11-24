@@ -94,6 +94,7 @@ header ul li a {
 
 .content{
     margin-top: 8vh;
+    border-radius: 20px;
     margin-bottom: 5vh;
     padding: 5vh;
     padding-bottom: 8vh;

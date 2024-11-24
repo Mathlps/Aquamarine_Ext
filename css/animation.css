@@ -492,3 +492,15 @@
 .voltar-ao-topo span:hover{
     color: var(--bg-selection-color);
 }
+
+/* Página Noticias */
+
+.noticias-titulo h1{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.1s;
+}
+
+.noticias-titulo p{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.4s;
+}

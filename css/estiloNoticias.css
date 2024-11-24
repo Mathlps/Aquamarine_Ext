@@ -6,9 +6,21 @@
     --bg-selection-color: #048FB4;
     --bg-rosa: #d2a5e6;
     --bg-rosa-claro: #f1d3ff;
+    --bg-cinza: #37445f;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* FONTES */
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
 
 /* Configurações gerais da página inteira */
 
@@ -20,71 +32,189 @@
 
 body{
     background-color: var(--bg-background-color);
+
 }
 
 main{
     margin: 0 auto;
-    margin-top: 200px;      
-    width: 80%;
+    margin-top: 20px;      
+    width: 90%;
     min-height: 80vh;  
     display: flex;  
+    flex-direction: column;
     justify-content: space-around;
     gap: 64px;
     padding-bottom: 100px;
 }
 
+.noticias-inicio{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/noticias/tartaruga.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
-.noticias-lista{
+.noticias-inicio svg{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+}
+
+.noticias-titulo{
+    margin: 0 auto;
+    padding-top: 200px;  
+    width: 40%;
+    align-self: center;
+    color: white;
+    text-align: center;
     display: flex;
     flex-direction: column;
+    gap: 30px;
+    z-index: 1;
+    text-shadow: 1px 1px black;
+}
+
+.noticias-titulo h1{
+    font-size: 3.3em;
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--bg-button-hover-color);
+    text-shadow: 1px 1px white;
+
+}
+
+.noticias-titulo p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    /* background-color: var(--bg-button-color);
+    padding: 15px;
+    border-radius: 10px; */
+}
+
+.noticias-main{
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .noticias-card{
     display: flex;
     position: relative;
-    max-width: 900px;
     width: 45%;
+    margin-bottom: 30px;
     background-color: white;
-    max-height: 300px;
+    height: 250px;
     overflow: hidden;
-    
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.noticias-card:hover{
+    transform: translateY(-10px);
 }
 
 .noticias-card-img{
     overflow: hidden;
-    object-fit: cover;
+    width: 100%;
     height: 100%;
 
 }
 
 .noticias-card-img img{
-
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
     height: 100%;
 }
 
 .noticias-card-content{
-    width: 70%;
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
 
+.noticias-card-content h2{
+    font-size: 25px;
+    color: var(--bg-rosa);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.noticias-card-content p{
+    margin: 15px 0;
+    font-family: 'Bowlby One', sans-serif;
+    font-size: 14px;
+    color: var(--bg-cinza);
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* define quantas linhas antes dele cortar o texto */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.noticias-card-data{
+    margin-top: auto;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    color: var(--bg-cinza);
+    font-weight: 700;
+    align-self: flex-end;
+}
+
+.noticias-fim{
+    margin: 0 auto;
+    margin-top: -50px;
+    font-size: 1.1em;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    border-radius: 20px;
+    color: var(--bg-button-color);
+    font-style: italic;
+    font-weight: 700;
 }
 
 @media (max-width: 768px){
     main{
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
     }
 
-    .container-doacao{
-        justify-content: center;
+    .noticias-inicio{
+        background-position: middle bottom;
     }
 
-    .doacao-icon{
-        left: 40px;
+    .noticias-titulo{
+        align-items: center;
+
     }
 
-    .doacao-content{
-        width: 75%;
+    .noticias-titulo p{
+        width: 200%;
     }
+
+    .noticias-card{
+        width: 100%;
+        height: 70vh;
+        flex-direction: column;
+    }
+
+    .noticias-card-img{
+        height: 100%;
+    }
+
+    .noticias-card h2{
+        font-size: 1.5em;
+    }
+
 }
 
 @media (max-width: 1024px){

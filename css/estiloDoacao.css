@@ -160,10 +160,11 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 64px;
+    gap: 40px;
 }
 
 .projetos-texto h1{
+    font-size: 2.5em;
     text-align: center;
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 600;
@@ -175,6 +176,8 @@ main{
     text-indent: 3vw;
     text-align: justify;
     font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
 
 }
 

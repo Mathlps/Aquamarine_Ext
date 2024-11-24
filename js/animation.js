@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {         //checa se o docum
 var btn = document.querySelector('.voltar-ao-topo'); // pega itens com classe voltar-ao-topo
 
 window.addEventListener('scroll', function() {
-  if (window.scrollY > 700) {
+  if (window.scrollY > 500) {
     btn.classList.add('mostrar'); // adiciona visibilidade se for maior que 700 de altura da página
   } else {
     btn.classList.remove('mostrar'); 
