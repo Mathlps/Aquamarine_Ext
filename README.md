@@ -15,12 +15,12 @@ September/2024
 ### Criar o ambiente virtual
 1. **No Windows:**
 ```
-py -3 -m venv .venv
+py -3 -m venv venv
 ```
 
 2. **No macOS/Linux:**
 ```
-python3 -m venv .venv
+python3 -m venv venv
 ```
 
 ### Ativar o ambiente virtual
