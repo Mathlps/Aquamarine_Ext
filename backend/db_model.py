@@ -36,7 +36,7 @@ class Animal(db.Model):
     nome = db.Column('Nome', db.String(45), nullable=True)
     especie = db.Column('Especie', db.String(45), nullable=True)
     porte = db.Column('Porte', db.String(45), nullable=True)
-    id_projeto = db.Column('IdProjeto', db.Integer, db.ForeignKey('Projeto.IdProjeto'), nullable=False)
+    id_projeto = db.Column('IdProjeto', db.Integer, db.ForeignKey('Projeto.IdProjeto'), nullable=True)
     id_adm = db.Column('IdAdm', db.Integer, db.ForeignKey('Administrador.IdAdm'), nullable=False)
 
 class Noticia(db.Model):
