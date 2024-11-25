@@ -130,3 +130,82 @@ body {
 .alertaConta:hover {
     text-decoration: underline;
 }
+
+/* Responsividade */
+
+@media (max-width: 1490px) {
+    .login {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .login {
+        width: 320px;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .login {
+        width: 280px;
+        padding: 30px;
+    }
+
+    .login .nomeOng {
+        font-size: 20px;
+    }
+
+    .login input, 
+    .login button {
+        height: 40px;
+    }
+
+    .login button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .login {
+        width: 250px;
+        padding: 20px;
+    }
+
+    .login input,
+    .login button {
+        height: 36px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .login {
+        width: 220px;
+    }
+
+    .login .nomeOng {
+        font-size: 18px;
+    }
+
+    .alertaConta {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 420px) {
+    .login {
+        width: 200px;
+        padding: 15px;
+    }
+
+    .login input,
+    .login button {
+        font-size: 12px;
+        height: 32px;
+    }
+
+    .alertaConta {
+        font-size: 12px;
+    }
+}
