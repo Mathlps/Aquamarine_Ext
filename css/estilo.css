@@ -169,7 +169,7 @@ main p {
     flex-direction: column;
 }
 
-.sobre-aquamarine button {
+/* .sobre-aquamarine button {
     background-color: transparent;
     border: none;
     padding-top: 12px;
@@ -181,7 +181,63 @@ main p {
     font-style: normal;
     font-variation-settings: "wdth" 100;
     color: #59284d;
-}
+ } */  /* BOTÃO ANTIGO */
+
+ .sobre-aquamarine button {
+    background-color: var(--bg-nav-color);
+    width: 8em;
+    border: none;
+    border-radius: 30px;
+    margin-top: 12px;
+    padding: 10px;
+
+
+ }
+
+ .botao-saiba-mais {
+    font-family: "Latan", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: larger;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    
+    text-decoration: none;
+    color: white;
+    transition: ease-in-out 0.3s;
+ }
+
+ .botao-saiba-mais:hover {
+    transform: translateY(5px);
+  } */  /* BOTÃO ANTIGO */
+
+ .sobre-aquamarine button {
+    background-color: var(--bg-nav-color);
+    width: 8em;
+    border: none;
+    border-radius: 30px;
+    margin-top: 12px;
+    padding: 10px;
+
+
+ }
+
+ .botao-saiba-mais {
+    font-family: "Latan", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: larger;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    
+    text-decoration: none;
+    color: white;
+    transition: ease-in-out 0.3s;
+ }
+
+ .botao-saiba-mais:hover {
+    transform: translateY(5px);
+ }
 
 .container-sobreAquamarine {
     flex-wrap: wrap;
@@ -757,6 +813,51 @@ a.link {
     text-decoration: none;
 }
 
+
+
+
+/* === BOTÃO DE VOLTAR AO INICIO DA PÁGINA === */
+
+.voltar-ao-topo{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--bg-nav-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    transition: ease-out 0.2s;
+    opacity: 0;
+    visibility: hidden;
+    opacity: 0.5s, visibility .5s;
+}
+
+.voltar-ao-topo.mostrar{
+    opacity: 1;
+    visibility: visible;
+}
+
+.voltar-ao-topo span{
+    font-size: 3em;
+    color: white;
+    top: 50%;
+    transition: ease-out 0.2s;
+}
+
+.voltar-ao-topo:hover{
+    background-color: white;
+    transform: translateY(-5px);
+}
+
+.voltar-ao-topo span:hover{
+    color: var(--bg-nav-color);
+}
+
+
+
 /* NOTICIAS END */
 @media screen and (max-width: 768px) {
     .slider {
@@ -828,6 +929,8 @@ a.link {
         text-indent: 20px;
         text-align: left;
     }
+
+
 
     .container-slider {
         width: 100%;
