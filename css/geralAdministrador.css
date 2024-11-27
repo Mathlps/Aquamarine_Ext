@@ -40,10 +40,16 @@ body {
 }
 
 .menuLateral h2 {
+    margin-bottom: 20px;
     padding: 10px;
     font-size: 20px;
-    margin-bottom: 20px;
     color: white;
+    list-style: none;
+}
+
+.menuLateral h2 a {
+    color: white;
+    text-decoration: none;
 }
 
 .menuLateral nav ul {
@@ -62,7 +68,6 @@ body {
     display: block;
     padding: 10px;
     border-radius: 4px;
-    transition: background-color 0.3s ease;
 }
 
 .menuLateral nav ul li a:hover {
@@ -156,7 +161,6 @@ body {
     width: 250px;
     text-align: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .box:hover {
