@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/geralAdministrador.css">
-    <link rel="stylesheet" href="css/cadastrarAnimais.css">
+    <link rel="stylesheet" href="css/cadastrarProjetos.css">
     <link rel="shortcut icon" href="img/index/Logo_JellyFish.jpg">
     <title>Aquamarine</title>
 </head>
@@ -39,26 +39,31 @@
             <div class="divisor2"></div>
 
             <section>
-                <h2 class="funcao">Cadastrar um Animal</h2>
+                <h2 class="funcao">Cadastrar um Projeto</h2>
                 <form action="#" method="POST">
-                    <label for="projeto">Projeto Incumbido</label>
-                    <input type="text" id="projeto" name="projeto" required>
-
-                    <label for="especie">Espécie</label>
-                    <input type="text" id="especie" name="especie" required>
-
-                    <label for="porte">Porte</label>
-                    <input type="text" id="porte" name="porte" required>
-
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" required>
-
+                    <div class="formularioDatas">
+                        <div class="datas">
+                            <label for="dataInicio">Data de Início</label>
+                            <input type="date" id="dataInicio" name="dataInicio" required>
+                        </div>
+                        <div class="datas">
+                            <label for="dataTermino">Data de Término</label>
+                            <input type="date" id="dataTermino" name="dataTermino" required>
+                        </div>
+                    </div>
+            
                     <label for="status">Status</label>
                     <input type="text" id="status" name="status" required>
-
+            
+                    <label for="nomeProjeto">Nome do Projeto</label>
+                    <input type="text" id="nomeProjeto" name="nomeProjeto" required>
+            
+                    <label for="descricaoProjeto">Sobre o Projeto</label>
+                    <textarea id="descricaoProjeto" name="descricaoProjeto" rows="4" required></textarea>
+            
                     <button type="submit">Cadastrar</button>
                 </form>
-            </section>
+            </section>            
 
         </main>
 

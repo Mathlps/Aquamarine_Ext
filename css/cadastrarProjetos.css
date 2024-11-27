@@ -1,0 +1,86 @@
+/* Texto Função */
+
+.funcao {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    margin-top: -10px;
+    margin-bottom: -9px;
+}
+
+/* Formulário */
+
+form {
+    margin-top: 30px;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+form label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+
+    margin-bottom: 6px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #00509e;
+    box-shadow: 0 0 8px rgba(0, 80, 158, 0.4);
+    outline: none;
+}
+
+form input:valid,
+form textarea:valid {
+    border-color: green;
+    background-color: #f0fff4;
+}
+
+.formularioDatas {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.datas {
+    flex: 1;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background-color: var(--bg-background-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--bg-button-color);
+    transform: scale(1.03);
+}
+
+form button:active {
+    background-color: var(--bg-background-color);
+    transform: scale(1);
+}
