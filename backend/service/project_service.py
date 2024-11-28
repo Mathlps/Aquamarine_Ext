@@ -23,18 +23,20 @@ class ProjectService:
 
     @staticmethod
     def update_project(data, id):
-        project = Projeto.query.get(id)
-        if not project:
+        projeto = Projeto.query.get(id)
+        if not projeto:
             return {"error": "Projeto não encontrado"}, 404
 
-        project.titulo = data['titulo']
-        project.data_inicio = data['data_inicio']
-        project.data_fim = data['data_fim']
-        project.status = data['status'],
-        project.texto = data['texto'],
+        for key, value in data.items():
+            if hasattr(projeto, key) and value not in [None, ""]:  # Verifica se o atributo existe no modelo
+                setattr(projeto, key, value)  # Atualiza o atributo dinamicamente
 
-        db.session.commit()
-        return {"message": "Projeto atualizado com sucesso!"}, 200
+        try:
+            db.session.commit()
+            return {"message": "Projeto atualizado com sucesso!"}, 200
+        except Exception as e:
+            db.session.rollback()
+            return {"error": f"Erro ao atualizar projeto: {str(e)}"}, 500
     
     @staticmethod
     def get_project_by_id(id):

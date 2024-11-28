@@ -22,12 +22,16 @@ class NewsService:
         if not noticia:
             return {"error": "Nenhuma Notícia com este ID foi encontrada"}, 404
         
-        noticia.titulo = data.get('titulo', noticia.titulo)
-        noticia.data_publicacao = data.get('data_publicacao', noticia.data_publicacao)
-        noticia.texto = data.get('texto', noticia.texto)
+        for key, value in data.items():
+            if hasattr(noticia, key) and value not in [None, ""]:  # Verifica se o atributo existe no modelo
+                setattr(noticia, key, value)  # Atualiza o atributo dinamicamente
 
-        db.session.commit()
-        return {"message":"Notícia Atualizada"},200
+        try:
+            db.session.commit()
+            return {"message": "Noticia atualizada com sucesso!"}, 200
+        except Exception as e:
+            db.session.rollback()
+            return {"error": f"Erro ao atualizar noticia: {str(e)}"}, 500
 
     @staticmethod
     def get_news_by_id(id):

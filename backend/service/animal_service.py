@@ -24,13 +24,24 @@ class AnimalService:
         if not animal:
             return {"error": "Animal não encontrado"}, 404
         
-        animal.nome= data['nome'],
-        animal.especie= data['especie'],
-        animal.porte= data['porte'],
-        animal.status= data['status']
+        for key, value in data.items():
+            if hasattr(animal, key) and value not in [None, ""]:  # Verifica se o atributo existe no modelo
+                setattr(animal, key, value)  # Atualiza o atributo dinamicamente
 
-        db.session.commit()
-        return {"message": "Registro de Animal atualizado com Sucesso!"}, 200
+        try:
+            db.session.commit()
+            return {"message": "Registro de Animal atualizado com sucesso!"}, 200
+        except Exception as e:
+            db.session.rollback()
+            return {"error": f"Erro ao atualizar registro: {str(e)}"}, 500
+        
+        # animal.nome= data['nome'],
+        # animal.especie= data['especie'],
+        # animal.porte= data['porte'],
+        # animal.status= data['status']
+
+        # db.session.commit()
+        # return {"message": "Registro de Animal atualizado com Sucesso!"}, 200
 
 
     @staticmethod

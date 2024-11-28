@@ -12,9 +12,12 @@ class AdmService:
     def validate_credentials(credenciais):
         email = credenciais['email']
         password= credenciais['senha']
+        print(email, password)
         adm = Administrador.query.filter_by(email=email).first()
 
+
         if not adm or not check_password_hash(adm.senha,password):
+        # if not adm:
             return {"error": "Verifique suas credenciais novamente"}, 404
         
         access_token = create_access_token(identity=str(adm.id_adm))
@@ -32,7 +35,7 @@ class AdmService:
         
         novaSenha = generate_password_hash(password, method='pbkdf2:sha256')
         adm.senha = novaSenha
-
+        print(novaSenha)
 
         db.session.commit()
         return {"message": "Senha Atualizada com Sucesso"}, 200
