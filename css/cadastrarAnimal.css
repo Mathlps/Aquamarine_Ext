@@ -64,7 +64,7 @@ form button:active {
     transform: scale(1);
 }
 
-form input:valid {
+form input:required:valid {
     border-color: green;
     background-color: #f0fff4;
 }
