@@ -25,7 +25,6 @@ form label {
     font-size: 1rem;
     font-weight: bold;
     color: #333;
-
     margin-bottom: 6px;
 }
 
@@ -47,8 +46,8 @@ form textarea:focus {
     outline: none;
 }
 
-form input:valid,
-form textarea:valid {
+form input:required:valid,
+form textarea:required:valid {
     border-color: green;
     background-color: #f0fff4;
 }
@@ -63,8 +62,28 @@ form textarea:valid {
     flex: 1;
 }
 
-form button {
+form select {
     width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+
+form select:focus {
+    border-color: #00509e;
+    box-shadow: 0 0 8px rgba(0, 80, 158, 0.4);
+    outline: none;
+}
+
+form select:required:valid {
+    border-color: green;
+    background-color: #f0fff4;
+}
+
+form button {
     padding: 12px;
     font-size: 1.1rem;
     font-weight: bold;

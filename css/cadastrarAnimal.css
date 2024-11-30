@@ -42,6 +42,11 @@ form input:focus {
     outline: none;
 }
 
+form input:required:valid {
+    border-color: green;
+    background-color: #f0fff4;
+}
+
 form button {
     margin-top: 10px;
     padding: 12px;
@@ -62,9 +67,4 @@ form button:hover {
 form button:active {
     background-color: var(--bg-background-color);
     transform: scale(1);
-}
-
-form input:required:valid {
-    border-color: green;
-    background-color: #f0fff4;
 }
