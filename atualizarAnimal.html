@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/geralAdministrador.css">
-    <link rel="stylesheet" href="css/cadastrarAnimais.css">
+    <link rel="stylesheet" href="css/cadastrarAnimal.css">
     <link rel="shortcut icon" href="img/index/Logo_JellyFish.jpg">
     <title>Aquamarine</title>
 </head>
@@ -19,13 +19,11 @@
             <div class="divisor"></div>
             <nav>
                 <ul>
-                    <li><a href="cadastrarAnimais.html">Cadastrar um Animal</a></li>
-                    <li><a href="#">Consultar Animais Cadastrados</a></li>
-                    <li><a href="#">Consultar Animais em Recuperação</a></li>
-                    <li><a href="#">Consultar Animais Realocados</a></li>
-                    <li><a href="cadastrarProjetos.html">Cadastrar um Projeto</a></li>
-                    <li><a href="#">Consultar Projetos</a></li>
-                    <li><a href="#">Consultar Projetos em Estudo</a></li>
+                    <li><a href="cadastrarAnimal.html">Cadastrar um Animal</a></li>
+                    <li><a href="atualizarAnimal.html">Atualizar Registro de Um Animal</a></li>
+                    <li><a href="excluirAnimal.html">Excluir Registro de Um Animal</a></li>
+                    <li><a href="vincDesvAnimal.html">Vincular / Desvincular Animal à um Projeto</a></li>
+                    <li><a href="consultarAnimal.html">Consultar Animais Cadastrados</a></li>
                 </ul>
             </nav>
         </aside>
@@ -39,9 +37,9 @@
             <div class="divisor2"></div>
 
             <section>
-                <h2 class="funcao">Cadastrar um Animal</h2>
+                <h2 class="funcao">Atualizar Registro de Um Animal</h2>
                 <form action="#" method="POST">
-                    <label for="projeto">Projeto Incumbido</label>
+                    <label for="projeto">Projeto pertencente</label>
                     <input type="text" id="projeto" name="projeto" required>
 
                     <label for="especie">Espécie</label>
@@ -56,7 +54,7 @@
                     <label for="status">Status</label>
                     <input type="text" id="status" name="status" required>
 
-                    <button type="submit">Cadastrar</button>
+                    <button type="submit">Atualizar Registro</button>
                 </form>
             </section>
 
