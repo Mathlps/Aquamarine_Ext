@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/geralAdministrador.css">
-    <link rel="stylesheet" href="../css/cadastrarProjetos.css">
+    <link rel="stylesheet" href="../css/conteudoAdm.css">
+    <link rel="stylesheet" href="../css/conteudoProjNot.css">
     <link rel="shortcut icon" href="../img/index/Logo_JellyFish.jpg">
     <title>Aquamarine</title>
 </head>
@@ -51,7 +52,12 @@
                     </div>
             
                     <label for="status">Status</label>
-                    <input type="text" id="status" name="status" required>
+                    <select id="status" name="status" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="em-estudo">Em estudo</option>
+                        <option value="em-andamento">Em andamento</option>
+                        <option value="concluido">Concluído</option>
+                    </select>
             
                     <label for="nomeProjeto">Nome do Projeto</label>
                     <input type="text" id="nomeProjeto" name="nomeProjeto" required>

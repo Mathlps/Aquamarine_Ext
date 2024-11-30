@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/geralAdministrador.css">
-    <link rel="stylesheet" href="../css/cadastrarAnimal.css">
+    <link rel="stylesheet" href="../css/conteudoAdm.css">
     <link rel="shortcut icon" href="../img/index/Logo_JellyFish.jpg">
     <title>Aquamarine</title>
 </head>
@@ -53,7 +53,12 @@
                     <input type="text" id="nome" name="nome">
 
                     <label for="status">Status</label>
-                    <input type="text" id="status" name="status">
+                    <select id="status" name="status">
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="em-estudo">Em estudo</option>
+                        <option value="em-andamento">Em andamento</option>
+                        <option value="concluido">Concluído</option>
+                    </select>
 
                     <button type="submit">Atualizar Registro</button>
                 </form>
