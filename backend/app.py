@@ -5,6 +5,7 @@ from extensions import db
 from flask_migrate import Migrate
 from db_config import Dev,Prod
 from flask_jwt_extended import JWTManager
+from flask_cors import CORS
 
 # db = SQLAlchemy()
 migrate = Migrate()
@@ -13,6 +14,8 @@ jwt = JWTManager()
 
 def create_app():
     app = Flask(__name__)
+    
+    CORS(app)
     
     # Configuração do ambiente
     if os.environ.get('FLASK_ENV') == 'production':
