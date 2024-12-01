@@ -48,13 +48,13 @@ header nav ul li {
     display: inline-block;
     margin: 0 30px;
     white-space: nowrap;
-    position: relative; 
+    position: relative;
 }
 
 header nav ul li::before {
     content: '';
     position: absolute;
-    bottom: -5px; 
+    bottom: -5px;
     left: 0;
     width: 0%;
     height: 2px;
@@ -207,6 +207,14 @@ header nav ul li a {
 
     font-size: 0.8em;
     color: #bdbdbd;
+}
+
+.footer-info a {
+    color: white;
+
+    &#login {
+        text-decoration: none;
+    }
 }
 
 .footer-info p {
