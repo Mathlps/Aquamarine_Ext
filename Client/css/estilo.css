@@ -169,75 +169,38 @@ main p {
     flex-direction: column;
 }
 
-/* .sobre-aquamarine button {
-    background-color: transparent;
-    border: none;
-    padding-top: 12px;
-
-    font-family: "Latan", monospace;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-size: larger;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-    color: #59284d;
- } */  /* BOTÃO ANTIGO */
-
- .sobre-aquamarine button {
+.sobre-aquamarine button {
     background-color: var(--bg-nav-color);
     width: 8em;
     border: none;
     border-radius: 30px;
     margin-top: 12px;
     padding: 10px;
+    margin-bottom: 5rem;
+}
 
+.botao-saiba-mais a {
+    text-decoration: none;
+    color: white;
+}
 
- }
-
- .botao-saiba-mais {
+.botao-saiba-mais {
     font-family: "Latan", monospace;
     font-optical-sizing: auto;
     font-weight: 700;
     font-size: larger;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-    
+
     text-decoration: none;
     color: white;
     transition: ease-in-out 0.3s;
- }
+}
 
- .botao-saiba-mais:hover {
+.botao-saiba-mais:hover {
     transform: translateY(5px);
-  } */  /* BOTÃO ANTIGO */
-
- .sobre-aquamarine button {
-    background-color: var(--bg-nav-color);
-    width: 8em;
-    border: none;
-    border-radius: 30px;
-    margin-top: 12px;
-    padding: 10px;
-
-
- }
-
- .botao-saiba-mais {
-    font-family: "Latan", monospace;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-size: larger;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-    
-    text-decoration: none;
-    color: white;
-    transition: ease-in-out 0.3s;
- }
-
- .botao-saiba-mais:hover {
-    transform: translateY(5px);
- }
+    background-color: #59284d;
+}
 
 .container-sobreAquamarine {
     flex-wrap: wrap;
@@ -544,8 +507,12 @@ main p {
 
     background-color: #d2a5e6;
     color: #fff;
+    
 }
-
+.b-card-back{
+    text-decoration: none;
+    color: white;
+}
 .card-back p {
     margin: 0;
     /* Remove o espaço extra se necessário */
@@ -818,7 +785,7 @@ a.link {
 
 /* === BOTÃO DE VOLTAR AO INICIO DA PÁGINA === */
 
-.voltar-ao-topo{
+.voltar-ao-topo {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -835,24 +802,24 @@ a.link {
     opacity: 0.5s, visibility .5s;
 }
 
-.voltar-ao-topo.mostrar{
+.voltar-ao-topo.mostrar {
     opacity: 1;
     visibility: visible;
 }
 
-.voltar-ao-topo span{
+.voltar-ao-topo span {
     font-size: 3em;
     color: white;
     top: 50%;
     transition: ease-out 0.2s;
 }
 
-.voltar-ao-topo:hover{
+.voltar-ao-topo:hover {
     background-color: white;
     transform: translateY(-5px);
 }
 
-.voltar-ao-topo span:hover{
+.voltar-ao-topo span:hover {
     color: var(--bg-nav-color);
 }
 
@@ -1002,12 +969,13 @@ a.link {
         flex-direction: column;
     }
 
-    .noticias h1 {
-        width: 400px;
+    .noticias h1,
+    .card-news h1 {
+        width: 350px;
     }
 
     .noticias h3 {
-        width: 400px;
+        width: 350px;
     }
 
     .n-1,
@@ -1074,6 +1042,10 @@ a.link {
         height: 280px;
     }
 
+    .noticias h1,
+    .card-news h1 {
+        width: 330px;
+    }
     /* MAIN END */
 }
 
@@ -1173,6 +1145,11 @@ a.link {
         width: 250px;
     }
 
+    .noticias h1,
+    .card-news h1 {
+        width: 350px;
+    }
+
     .noticias h3 {
         width: 250px;
     }
@@ -1266,6 +1243,10 @@ a.link {
     }
 
     .noticias h1 {
+        width: 350px;
+    }
+    .noticias h1,
+    .card-news h1 {
         width: 350px;
     }
 
