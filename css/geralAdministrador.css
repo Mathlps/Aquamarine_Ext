@@ -32,11 +32,13 @@ body {
 /* Menu lateral */
 
 .menuLateral {
-    width: 20%;
+    width: 40vh;
     background-color: var(--bg-background-color);
     color: white;
     padding: 20px;
-    min-width: 250px;
+    min-height:100vh;
+
+    box-sizing: border-box;
 }
 
 .menuLateral h2 {
@@ -182,3 +184,18 @@ footer {
     word-wrap: break-word; 
     max-width: 100%;
 }    
+
+
+/* teste */
+.menuLateral h5 {
+    list-style: none;
+}
+
+.menuLateral h5 a {
+    position: absolute; 
+    bottom: 0;
+    margin: 0 0 15px 0;
+
+    text-decoration: none;
+    color: white; /* Herda a cor branca do elemento pai */
+}
