@@ -1,10 +1,15 @@
-# Aquamarine_Ext
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+# Backend ONG Aquamarine
+## Tech Stack
+  Tecnologias | Usamos para
+----------|---------
+<img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" width = "85px" height="30px"> | <p align = "justify">Linguagem de alto nível e tipagem dinâmica, fácil compreensão e utilização, permite rápido desenvolvimento de código, ao passo em que proporciona flexibilidade e escalonamento, ideal para projetos WEB que demanadam baixo fluxo de requisições e praticidade.</p>
+<img src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white" width = "85px" height="30px"> | <p align = "justify">Flask é um microframework web em Python, ideal para criar APIs modernas de forma rápida, eficiente e escalável. Oferece flexibilidade para customização e se integra com outras bibliotecas. Com suporte a extensões robustas, o Flask permite adicionar funcionalidades de maneira simplificada.</p>
+<img src="https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens" width = "85px" height="30px"> | <p align = "justify">Biblioteca de gerenciamento de Json Web Tokens, garantindo a autenticação e  autorização de usuários, e segurança na transmissão de toda a informação da aplicação, desde o recebimento até o retorno de requisições para o Frontend</p>
+<img src="https://www.sqlalchemy.org/img/sqla_logo.png" width = "80px" height="30px"> | <p align = "justify">Biblioteca Python para Mapeamento de Objeto Relacional(ORM), que proporciona flexibilidade e facilidade na criação, conexão e gerenciamento das Databases, Tabelas, Queries e Dados entre a API e o Banco.</p>
+<img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" width = "85px" height="30px"> | <p align = "justify">Sistema de Gerenciamento de Banco de Dados Relacionais amplamente utilizado no mundo. Oferece alta performance, confiabilidade e facilidade de uso, ideal para aplicações web modernas. Suporte a SQL como linguagem de consulta, o MySQL permite gerenciar e organizar grandes volumes de dados de forma eficiente, além de oferecer compatibilidade com diversas linguagens de programação e frameworks.</p>
+<img src="https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white" width = "85px" height="30px"> | <p align = "justify">Render é uma plataforma que simplifica o processo de Build & Deploy de aplicações. Com integração direta ao repositório do GitHub, ela automatiza o pipeline de desenvolvimento, proporcionando alta escalabilidade, suporte para múltiplos frameworks e monitoramento em tempo real.</p>
+<img src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white" width = "85px" height="30px"> | <p align = "justify">AWS Relational Database Service (RDS) é um serviço gerenciado que facilita a configuração, operação e escalabilidade de bancos de dados relacionais na nuvem. Ele oferece um ambiente seguro, eficiente e de baixo custo, otimizando o gerenciamento do banco de dados.</p>
 
-## Description
-September/2024
 
 ## How to run
 
