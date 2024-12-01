@@ -433,6 +433,15 @@
     animation-delay: 0.5s;
 }
 
+.aside-container2{
+    opacity: 0;
+}
+
+.aside-container2.in-view{
+    animation: animacao3 2.5s forwards;
+    animation-delay: 0.5s;
+}
+
 /* doacao projetos */
 .projetos-texto h1{
     opacity: 0;

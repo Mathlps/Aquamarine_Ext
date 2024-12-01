@@ -55,16 +55,8 @@ main{
 .aside-container2{
     display: flex;
     align-items: center;
-    width: 80%;
-}
-
-.container-frase h1{
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    font-size: 2em;
-    font-weight: 600;
-    font-style: normal;
-    color: #d2a5e6;
+    width: 70%;
+    border-radius: 5%;
 }
 
 .container-doacao{
@@ -148,6 +140,109 @@ main{
     background-color: var(--bg-button-hover-color);
     text-decoration: none;
 } 
+
+
+/* CONTAINER DE FRASES/CITAÇÕES */
+.container-carrossel {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carrossel {
+    overflow: hidden;
+    position: relative;
+    height: 12em;
+    display: flex;
+    justify-content: center;
+}
+
+.citacao {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    position: absolute;
+    width: 100%;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--bg-selection-color); 
+}
+
+.citacao-pessoa{
+    margin-top: 10px;
+    font-size: 16px;
+    color: var(--bg-rosa);
+    font-style: italic;
+}
+
+.citacao.ativa {
+    opacity: 1;
+    transform: translateX(0);
+    
+}
+
+.citacao.sair-esquerda {
+    opacity: 0;
+    transform: translateX(-100%); /* Movimento para a esquerda */
+}
+
+.citacao.sair-direita {
+    opacity: 0;
+    transform: translateX(100%); /* Movimento para a direita */
+}
+
+.controles {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.controles button {
+    background-color: var(--bg-rosa);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.controles button:hover {
+    background-color: var(--bg-rosa-claro);
+}
+
+.container-carrossel .doacao-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    border: solid var(--bg-button-hover-color);
+    border-radius: 50%;
+    background-color: var(--bg-selection-color);
+    width: 72px;
+    height: 72px;
+}
+
+/* SEÇÃO DE PROJETOS */
 
 .projetos{
     background-color: #ffffff;
@@ -313,8 +408,34 @@ main{
     }
 
     .doacao-icon{
-        left: 40px;
+        left: 10px;
+        width: 56px;
+        height: 56px;
     }
+
+    .doacao-icon img{
+        width: 36px;
+        height: 36px;
+    }
+
+    .aside-container2{
+        width: 100%;
+    }
+
+    .carrossel{
+        height: 15em;
+    }
+
+
+    .citacao{
+        font-size: 1.2em;
+    }
+
+    .slider{
+        width: 100%;
+    }
+
+
 
     .doacao-content{
         width: 75%;
@@ -323,13 +444,13 @@ main{
 
 @media (max-width: 1024px){
     .slider{
-        width: 60%;
+        width: 80%;
         max-height: 400px;
         height: 400px;
     }
 
     .item{
-        width: 60vw;
+        width: 80vw;
     }
 
     .item img{
