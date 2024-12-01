@@ -17,7 +17,7 @@ const projectsMain = async () => {
 
 const animalsMain = async () => {
     try {
-        const response = await fetch(`${apiUrl}projetos`);
+        const response = await fetch(`${apiUrl}animais`);
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
@@ -43,11 +43,11 @@ const newsMain = async () => {
 
 const onMain = async () => {
     let project = await projectsMain()
-    console.table(project); // Mostra os dados
+    console.table(project); // Mostra os dados do projeto
     let animals = await animalsMain()
-    console.table(animals)
+    console.table(animals) // Mostra os dados dos animais
     let news = await newsMain()
-    console.table(news)
+    console.table(news) // Mostra os dados das noticias
 }
 
 onMain();
