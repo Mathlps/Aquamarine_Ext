@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/geralAdministrador.css">
+    <link rel="stylesheet" href="../css/conteudoAdm.css">
+    <link rel="stylesheet" href="../css/conteudoProjNot.css">
+    <link rel="shortcut icon" href="../img/index/Logo_JellyFish.jpg">
+    <title>Aquamarine</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <aside class="menuLateral">
+            <h2><li><a href="../geralAdministrador.html">MENU</a></li></h2>
+            <div class="divisor"></div>
+            <nav>
+                <ul>
+                    <li><a href="cadastrarProjetos.html">Cadastrar um Projeto</a></li>
+                    <li><a href="atualizarProjeto.html">Atualizar Um Projeto</a></li>
+                    <li><a href="excluirProjeto.html">Excluir Um Projeto</a></li>
+                    <li><a href="consultarProjeto.html">Consultar Projetos Cadastrados</a></li>
+                    <li><a href="consultarIDProjeto.html">Consultar Projeto por ID</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="conteudoPag">
+
+            <div class="cabecalho">
+                <h1>Instituto Aquamarine</h1>
+                <h2>Administrador</h2>
+            </div>
+            <div class="divisor2"></div>
+
+            <section>
+                <h2 class="funcao">Cadastrar um Projeto</h2>
+                <form action="#" method="POST">
+                    <div class="formularioDatas">
+                        <div class="datas">
+                            <label for="dataInicio">Data de Início</label>
+                            <input type="date" id="dataInicio" name="dataInicio" required>
+                        </div>
+                        <div class="datas">
+                            <label for="dataTermino">Data de Término</label>
+                            <input type="date" id="dataTermino" name="dataTermino" required>
+                        </div>
+                    </div>
+            
+                    <label for="status">Status</label>
+                    <select id="status" name="status" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="em-estudo">Em estudo</option>
+                        <option value="em-andamento">Em andamento</option>
+                        <option value="concluido">Concluído</option>
+                    </select>
+            
+                    <label for="nomeProjeto">Nome do Projeto</label>
+                    <input type="text" id="nomeProjeto" name="nomeProjeto" required>
+            
+                    <label for="descricaoProjeto">Sobre o Projeto</label>
+                    <textarea id="descricaoProjeto" name="descricaoProjeto" rows="4" required></textarea>
+            
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </section>            
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

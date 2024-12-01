@@ -1,0 +1,37 @@
+/* Formulário */
+
+form label {
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+
+form textarea:focus {
+    border-color: #00509e;
+    box-shadow: 0 0 8px rgba(0, 80, 158, 0.4);
+    outline: none;
+}
+
+form textarea:required:valid {
+    border-color: green;
+    background-color: #f0fff4;
+}
+
+.formularioDatas {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.datas {
+    flex: 1;
+}
