@@ -19,3 +19,15 @@ document.addEventListener("DOMContentLoaded", () => {         //checa se o docum
     allAnimatedElements.forEach((element) => observer.observe(element));      //adiciona o observer para todos esses elementos
   
 })
+
+// ANIMAÇÃO OPACIDADE DE BOTÃO VOLTAR AO TOPO
+
+var btn = document.querySelector('.voltar-ao-topo'); // pega itens com classe voltar-ao-topo
+
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 500) {
+    btn.classList.add('mostrar'); // adiciona visibilidade se for maior que 700 de altura da página
+  } else {
+    btn.classList.remove('mostrar'); 
+  }
+});

@@ -12,10 +12,12 @@
     <script src="js/slider.js" defer></script>
     <script src="js/animation.js" defer></script>
     <script src="js/numbers.js" defer></script>
-    <script type="module" src="js/fetch.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- defer é usado para o js ser executado depois que a página for carregada -->
     <title>Aquamarine</title>
 </head>
+
+
 
 <body>
     <div class="container">
@@ -24,19 +26,19 @@
             <nav class="nav">
 
                 <div class="logo-div">
-                    <a class="logo animate" href="/"><img src="img/index/Logo_JellyFish.jpg" alt="LOGO"></a>
+                    <a class="logo animate" href="index.html"><img src="img/index/Logo_JellyFish.jpg" alt="LOGO"></a>
                 </div>
-
 
                 <div class="nav-div-1">
                     <ul class="ul1 animate nav-list">
-                        <li><a href="/">HOME</a></li>
+                        <li><a href="index.html">HOME</a></li>
                         <li><a href="sobreNos.html">SOBRE NÓS</a></li>
                         <li><a href="projetos.html">PROJETOS</a></li>
-                        <li><a href="#">NOTÍCIAS</a></li>
+                        <li><a href="Noticias.html">NOTÍCIAS</a></li>
                         <li class="nav-contato"><a href="doacao.html">AJUDE</a></li>
                     </ul>
                 </div>
+
                 <div class="nav-div-2">
                     <ul class="ul2 animate div-contato">
                         <li><a href="doacao.html">AJUDE</a></li>
@@ -107,7 +109,7 @@
                                 melhor
                                 para nossos mares e suas criaturas.
                             </p>
-                            <button class="animate"><a href="sobreNos.html">SAIBA MAIS</a></button>
+                            <button class="animate "><a href="sobreNos.html" class="botao-saiba-mais">SAIBA MAIS</a></button>
                             <!--LEVA PARA A PAGINA SOBRE-NOS -->
                         </div>
                         <!-- TEXTO SOBRE A ONG END -->
@@ -133,8 +135,9 @@
                                 </div>
                             </div>
                             <div class="buttons">
-                                <button id="prev"><</button>
-                                <button id="next">></button>
+                                <button id="prev">
+                                    << /button>
+                                        <button id="next">></button>
                             </div>
                             <ul class="dots">
                                 <li class="active"></li>
@@ -161,8 +164,8 @@
                         <!-- Segunda onda -->
                         <svg class="wave-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 312">
                             <path fill="#dae7eb" fill-opacity="1"
-                                d="M0,160L60,165.3C120,171,240,181,360,192C480,203,600,213,720,208C840,203,960,181,1080,170.7C1200,160,1320,160,1380,160L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
-                            </path>
+                                d="M0,160L
+                            </path>60,165.3C120,171,240,181,360,192C480,203,600,213,720,208C840,203,960,181,1080,170.7C1200,160,1320,160,1380,160L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
                         </svg>
                     </div>
                 </div>
@@ -344,6 +347,10 @@
             <h1 class="footer-title">Juntos pela Vida Marinha</h1>
         </footer>
         <!-- FOOTER END -->
+
+        <a href="#" class="voltar-ao-topo">
+            <span><i class='bx bx-chevron-up'></i></span>
+        </a>
     </div>
 </body>
 
