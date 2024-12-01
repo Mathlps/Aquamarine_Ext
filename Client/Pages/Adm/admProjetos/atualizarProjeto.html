@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/geralAdministrador.css">
-    <link rel="stylesheet" href="../css/conteudoAdm.css">
-    <link rel="stylesheet" href="../css/conteudoProjNot.css">
-    <link rel="shortcut icon" href="../img/index/Logo_JellyFish.jpg">
+    <link rel="stylesheet" href="../../../css/geralAdministrador.css">
+    <link rel="stylesheet" href="../../../css/conteudoAdm.css">
+    <link rel="stylesheet" href="../../../css/conteudoProjNot.css">
+    <link rel="shortcut icon" href="../../../img/index/Logo_JellyFish.jpg">
     <title>Aquamarine</title>
 </head>
 
@@ -38,21 +38,24 @@
             <div class="divisor2"></div>
 
             <section>
-                <h2 class="funcao">Cadastrar um Projeto</h2>
+                <h2 class="funcao">Atualizar um Projeto</h2>
                 <form action="#" method="POST">
+                    <label for="idProjeto">ID Projeto</label>
+                    <input type="text" id="idProjeto" name="idProjeto" required>
+
                     <div class="formularioDatas">
                         <div class="datas">
                             <label for="dataInicio">Data de Início</label>
-                            <input type="date" id="dataInicio" name="dataInicio" required>
+                            <input type="date" id="dataInicio" name="dataInicio">
                         </div>
                         <div class="datas">
                             <label for="dataTermino">Data de Término</label>
-                            <input type="date" id="dataTermino" name="dataTermino" required>
+                            <input type="date" id="dataTermino" name="dataTermino">
                         </div>
                     </div>
-            
+                    
                     <label for="status">Status</label>
-                    <select id="status" name="status" required>
+                    <select id="status" name="status">
                         <option value="" disabled selected>Selecione uma opção</option>
                         <option value="em-estudo">Em estudo</option>
                         <option value="em-andamento">Em andamento</option>
@@ -60,12 +63,12 @@
                     </select>
             
                     <label for="nomeProjeto">Nome do Projeto</label>
-                    <input type="text" id="nomeProjeto" name="nomeProjeto" required>
+                    <input type="text" id="nomeProjeto" name="nomeProjeto">
             
                     <label for="descricaoProjeto">Sobre o Projeto</label>
-                    <textarea id="descricaoProjeto" name="descricaoProjeto" rows="4" required></textarea>
+                    <textarea id="descricaoProjeto" name="descricaoProjeto" rows="4"></textarea>
             
-                    <button type="submit">Cadastrar</button>
+                    <button type="submit">Atualizar</button>
                 </form>
             </section>            
 

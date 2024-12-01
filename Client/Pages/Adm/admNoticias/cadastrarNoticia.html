@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/geralAdministrador.css">
-    <link rel="stylesheet" href="../css/conteudoAdm.css">
-    <link rel="stylesheet" href="../css/conteudoProjNot.css">
-    <link rel="shortcut icon" href="../img/index/Logo_JellyFish.jpg">
+    <link rel="stylesheet" href="../../../css/geralAdministrador.css">
+    <link rel="stylesheet" href="../../../css/conteudoAdm.css">
+    <link rel="stylesheet" href="../../../css/conteudoProjNot.css">
+    <link rel="shortcut icon" href="../../../img/index/Logo_JellyFish.jpg">
     <title>Aquamarine</title>
 </head>
 
@@ -38,9 +38,24 @@
             <div class="divisor2"></div>
 
             <section>
-                <h2 class="funcao">Notícias Publicadas</h2>
-                <!--Conteúdo-->
-            </section>
+                <h2 class="funcao">Publicar uma Notícia</h2>
+                <form action="#" method="POST">
+                    <div class="formularioDatas">
+                        <div class="datas">
+                            <label for="dataNoticia">Data da Publicação</label>
+                            <input type="date" id="dataNoticia" name="dataNoticia" required>
+                        </div>
+                    </div>
+            
+                    <label for="nomeNotícia">Título</label>
+                    <input type="text" id="nomeNotícia" name="nomeNotícia" required>
+            
+                    <label for="descricaoNotícia">Texto</label>
+                    <textarea id="descricaoNotícia" name="descricaoNotícia" rows="4" required></textarea>
+            
+                    <button type="submit">Publicar</button>
+                </form>
+            </section>            
 
         </main>
 

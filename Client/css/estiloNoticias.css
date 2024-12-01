@@ -50,7 +50,7 @@ main{
 .noticias-inicio{
     width: 100%;
     height: 100vh;
-    background-image: url(/img/noticias/tartaruga.jpg);
+    background-image: url(../img/noticias/tartaruga.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
