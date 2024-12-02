@@ -75,7 +75,7 @@ header ul li a {
 /* Inicio da pagina */
 
 .title{
-    color: white;
+    color: #d2a5e6;
     margin-top: 30vh;
     margin-left: 12vw;
     display: flex;
@@ -106,10 +106,11 @@ header ul li a {
 }
 
 .content-title{
-    text-align: center;
-    font-family: "Oswald", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
     font-style: normal;
+    color: var(--bg-background-color);
+    text-align: center;
     text-transform: uppercase;
     margin-top: 24px;
 }
@@ -132,6 +133,7 @@ header ul li a {
     height: 500px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
                 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
+    object-fit: cover;
 }
 
 .project-description{

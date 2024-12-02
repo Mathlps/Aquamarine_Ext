@@ -75,20 +75,24 @@ main{
     flex-direction: column;
     gap: 30px;
     z-index: 1;
-    text-shadow: 1px 1px black;
+    /* text-shadow: 1px 1px black; */
 }
 
 .noticias-titulo h1{
-    font-size: 3.3em;
-    font-family: 'Bebas Neue', sans-serif;
-    color: var(--bg-button-hover-color);
-    text-shadow: 1px 1px white;
+    font-family: "Oswald", sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--bg-button-color);
 
 }
 
 .noticias-titulo p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    font-style: normal;
+    color: white;
     /* background-color: var(--bg-button-color);
     padding: 15px;
     border-radius: 10px; */
@@ -154,7 +158,7 @@ main{
     font-size: 14px;
     color: var(--bg-cinza);
     display: -webkit-box;
-    -webkit-line-clamp: 4; /* define quantas linhas antes dele cortar o texto */
+    /* -webkit-line-clamp: 4; define quantas linhas antes dele cortar o texto */
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -174,12 +178,18 @@ main{
     margin-top: -50px;
     font-size: 1.1em;
     padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     color: var(--bg-button-color);
     font-style: italic;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 700;
+    font-size: larger;
+    font-style: normal;
+   
+    
 }
 
 @media (max-width: 768px){

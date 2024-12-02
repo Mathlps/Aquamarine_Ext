@@ -23,7 +23,7 @@
 /* container com a nav e a main */
 
 .sla{
-    background-image: url("../img/doação/pexels-photo-189349.webp");
+    background-image: url("../img/doação/ondas-1-background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -268,11 +268,13 @@ main{
 }
 
 .projetos-texto p{
-    text-indent: 3vw;
-    text-align: justify;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.2em;
-    font-weight: 500;
+    
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 50;
+    font-size: 16px;
+    font-style: normal;
+    color: #37445f;
 
 }
 
@@ -340,6 +342,8 @@ main{
 .slider .item img {
     width: 100%;
     height: 500px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .slider .buttons {
@@ -396,6 +400,15 @@ main{
 
 
 /* Telas menores */
+@media (max-width: 576px) {
+    .projetos-texto h1{
+        font-size: 1.5em;
+    }
+    
+    .projetos-texto p{
+        font-size: 15px;
+    }
+}
 
 @media (max-width: 768px){
     main{
@@ -434,8 +447,10 @@ main{
     .slider{
         width: 100%;
     }
-
-
+ 
+    .projetos-texto p{
+        font-size: 18px;
+    }
 
     .doacao-content{
         width: 75%;
@@ -455,5 +470,9 @@ main{
 
     .item img{
         height: 400px;
+    }
+
+    .projetos-texto p{
+        font-size: 18px;
     }
 }
