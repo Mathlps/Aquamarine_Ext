@@ -303,7 +303,8 @@ main{
 
 .img-wave{
     width: 100%;
-    height: 400px;
+    height: 300px;
+    padding-bottom: 5%;
     background-color: #d2a5e638;
     /* background-image: url(../img/sobreNos/pexels-babydov-7787713.jpg);
     background-position: center;

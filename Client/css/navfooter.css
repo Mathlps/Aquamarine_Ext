@@ -177,6 +177,7 @@ header nav ul li a {
     text-align: center;
     /* Centraliza o texto */
     flex-wrap: wrap;
+    margin-top: 10%;
 }
 
 .footer img {
@@ -248,6 +249,28 @@ header nav ul li a {
     height: 24px;
     filter: invert(100%);
 }
+
+.custom-shape-divider-bottom-1733103704 {
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1733103704 svg {
+    position: relative;
+    display: block;
+    width: calc(132% + 1.3px);
+    height: 201px;
+}
+
+.custom-shape-divider-bottom-1733103704 .shape-fill {
+    fill: #000000;
+}
+
 
 @media screen and (max-width: 576px) {
     .footer-row {
