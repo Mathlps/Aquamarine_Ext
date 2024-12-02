@@ -151,7 +151,7 @@
 }
 
 /* projetos */
-.projetos-info h1{
+/* .projetos-info h1{
     opacity: 0;
 }
 
@@ -174,7 +174,7 @@
 
 .card.in-view{
     animation: animacaocard 1.5s forwards;
-}
+} */
 
 /* animais impactados */
 .container-animais-impactados h1{
