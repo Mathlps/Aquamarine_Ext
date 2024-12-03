@@ -1,4 +1,4 @@
-import config from './config.js'; // importa a rota da API pre config
+import config from '../config.js'; // importa a rota da API pre config
 
 const apiUrl = config.API_URL;
 
