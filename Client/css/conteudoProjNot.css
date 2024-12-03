@@ -35,3 +35,36 @@ form textarea:required:valid {
 .datas {
     flex: 1;
 }
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+    .formularioDatas {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    form textarea {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    form label {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    form textarea {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+    form label {
+        font-size: 0.85rem;
+    }
+
+    .formularioDatas {
+        gap: 8px;
+    }
+}
