@@ -111,4 +111,11 @@ const onMain = async () => {
     renderNews(news)
 }
 
-onMain();
+// Verifica se a rota atual é '/' ou '/index.html'
+const checkRouteAndExecute = () => {
+    const currentPath = window.location.pathname // Obtém o caminho da URL atual
+
+    if (currentPath === '/' || currentPath === '/index.html') onMain()
+}
+
+window.onload = checkRouteAndExecute
