@@ -36,7 +36,7 @@ body {
     background-color: var(--bg-background-color);
     color: white;
     padding: 20px;
-    min-height:100vh;
+    min-height: 100vh;
 
     box-sizing: border-box;
 }
@@ -52,6 +52,19 @@ body {
 .menuLateral h2 a {
     color: white;
     text-decoration: none;
+}
+
+.menuLateral h5 {
+    list-style: none;
+}
+
+.menuLateral h5 a {
+    position: absolute; 
+    bottom: 0;
+    margin: 0 0 15px 0;
+
+    text-decoration: none;
+    color: white;
 }
 
 .menuLateral nav ul {
@@ -175,7 +188,7 @@ body {
 /* Rodapé */
 
 footer {
-    margin: -25px 0 0 250px;
+    margin: 20px 0 0 0;
     text-align: center;
     font-style: italic;
     color: #7f8c8d;
@@ -183,19 +196,69 @@ footer {
 
     word-wrap: break-word; 
     max-width: 100%;
-}    
-
-
-/* teste */
-.menuLateral h5 {
-    list-style: none;
 }
 
-.menuLateral h5 a {
-    position: absolute; 
-    bottom: 0;
-    margin: 0 0 15px 0;
+/* Responsividade */
 
-    text-decoration: none;
-    color: white; /* Herda a cor branca do elemento pai */
+@media (max-width: 768px) {
+    .menuLateral {
+        width: 100%;
+        position: relative;
+        min-height: auto;
+        padding: 10px;
+    }
+
+    .menuLateral nav ul li a {
+        padding: 8px;
+    }
+
+    .conteudoPag {
+        padding: 10px;
+    }
+
+    .cabecalho h1 {
+        font-size: 20px;
+    }
+
+    .box {
+        padding: 20px 10px;
+    }
+
+    .box h3 {
+        font-size: 16px;
+    }
+
+    .box p {
+        font-size: 24px;
+    }
+
+    footer {
+        margin: 10px 0;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dados {
+        grid-template-columns: 1fr;
+    }
+
+    .menuLateral {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menuLateral nav ul li a {
+        font-size: 14px;
+    }
+
+    .cabecalho h1 {
+        font-size: 18px;
+    }
+
+    .box p {
+        font-size: 20px;
+    }
 }
