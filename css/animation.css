@@ -243,16 +243,16 @@
 
 
 /* Nossos projetos */
-.title h1{
+/* .title h1{
     opacity: 0;
 }
 
 .title h1.in-view{
     animation: animacao1 2s forwards;
-}
+} */
 
 /* projetos */
-.content-title h1{
+/* .content-title h1{
     opacity: 0;
 }
 
@@ -316,7 +316,7 @@
 
 .button.in-view{
     animation: animacao2 2s forwards;
-}
+} */
 
 
 /* pagina sobre nos */
