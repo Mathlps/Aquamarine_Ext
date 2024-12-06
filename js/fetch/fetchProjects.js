@@ -17,12 +17,37 @@ const projects = async () => {
 }
 
 const renderProjects = (json) => {
-    const projects = json
+    const projects = json;
     const projectsContainer = document.querySelector('.content-container'); // Seleciona o container onde os projetos serão inseridos
 
-    projectsContainer.innerHTML = null
+    projectsContainer.innerHTML = ''; // Limpa o conteúdo anterior
 
-    projects.forEach(project => {
+    const img = {
+        "images": [
+            {
+                "url": "img/projetos/projetos/projeto-praias-limpas.jpg"
+            },
+            {
+                "url": "img/projetos/projetos/projeto-salve-tartarugas.jpg"
+            },
+            {
+                "url": "img/projetos/projetos/projeto-salve-tubarão.jpg"
+            },
+            {
+                "url": "img/projetos/projetos/projeto-palestras.jpg"
+            }
+        ]
+    };
+
+    projects.forEach((project, index) => {
+        // Usa o índice para acessar a imagem correspondente em img.images
+        const projectImage = img.images[index]?.url || 'default.jpg'; // Caso não haja imagem correspondente, usa uma imagem padrão
+
+        const delimitadores = ["Meta", "Como Funciona", "Parcerias e apoio"];
+        const regex = new RegExp(`(?:${delimitadores.join('|')})`, 'g'); // (?:...) cria um grupo não capturador
+
+        const partes = project.texto.split(regex).map(p => p.trim()).filter(p => p); // Remove strings vazias e espaços extras
+
         const projectCard = `
             <div class="content">
                 <div class="content-title">
@@ -30,40 +55,17 @@ const renderProjects = (json) => {
                 </div>
                 <div class="content-items">
                     <div class="project-image">
-                        <img class="animate" src="img/projetos/projetos/projeto-praias-limpas.jpg" alt="exemplo">
+                        <img class="animate" src="${projectImage}" alt="${project.titulo}">
                     </div>
                     <div class="project-description">
                         <div class="text">
-
-                            <h3 class="animate">Meta</h3>
-                            <p class="p1 animate">
-                                O projeto "Praias Limpas" é uma iniciativa da ONG Aquamarine, que reúne voluntários
-                                todos os meses em diversas praias ao longo da costa brasileira com o objetivo de
-                                promover a limpeza das praias e a conscientização ambiental. O projeto surgiu da
-                                necessidade urgente de combater a poluição dos oceanos, especialmente o acúmulo de
-                                resíduos plásticos, que ameaçam a biodiversidade marinha e a saúde dos ecossistemas
-                                costeiros.
-                            </p>
-                            <h3 class="animate">Como Funciona?</h3>
-                            <p class="p2 animate">Todos os meses, equipes de voluntários se mobilizam para realizar
-                                mutirões de limpeza
-                                simultâneos em praias de várias regiões do Brasil. Desde o Norte até o Sul do país, as
-                                ações são realizadas em locais previamente mapeados por apresentarem um acúmulo
-                                significativo de lixo.
-                            </p>
-                            <p class="p3 animate">Durante os mutirões, também são realizadas atividades de
-                                conscientização com os banhistas
-                                e moradores locais, explicando o impacto do lixo nos oceanos e incentivando boas
-                                práticas ambientais.
-                            </p>
-                            <h3 class="animate">Parcerias e apoio</h3>
-                            <p class="p4 animate">O projeto conta com o apoio de voluntários, que dão o suporte
-                                necessário para a
-                                realização das ações.
-                                Além disso, escolas e universidades também são envolvidas no projeto, realizando
-                                campanhas educativas e incentivando os alunos a participarem dos mutirões como parte de
-                                atividades extracurriculares focadas em cidadania e responsabilidade ambiental.</p>
-                        </div>
+                            <h3 class="animte">Meta</h3>
+                            <p class="animate">${partes[0]}</p>
+                            <h3 class="animte">Como Funciona</h3>
+                            <p class="animate">${partes[1]}</p>
+                            <h3 class="animte">Parcerias e apoio</h3>
+                            <p class="animate">${partes[2]}</p>
+                            </div>
                         <div class="donation-button">
                             <a href="#" class="button animate">Junte-se a Nós</a>
                         </div>
@@ -73,7 +75,7 @@ const renderProjects = (json) => {
         `;
         projectsContainer.innerHTML += projectCard; // Adiciona o card do projeto ao container
     });
-}
+};
 
 const onProjects = async () => {
     let project = await projects()
