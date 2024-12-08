@@ -12,6 +12,7 @@ const projects = async () => {
         return data // Retorna os dados em JSON
     } catch (error) {
         console.error('Houve um problema com a requisição Fetch:', error);
+        return null // Caso haja um erro, retorna null
     }
 }
 
@@ -60,8 +61,8 @@ const renderProjects = (json) => {
 
 const onProjects = async () => {
     let project = await projects()
-    console.table(project); // Mostra os dados do projeto
-    renderProjects(project)
+    console.table(project) // Mostra os dados do projeto
+    if (project !== null) renderProjects(project)
 }
 
 window.onload = onProjects

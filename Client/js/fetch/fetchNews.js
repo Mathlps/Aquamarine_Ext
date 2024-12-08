@@ -3,7 +3,7 @@ import { formatarData } from '../formatDate.js';
 
 const apiUrl = config.API_URL;
 
-const news = async () => {
+const newsFunc = async () => {
     try {
         const response = await fetch(`${apiUrl}noticias`);
         if (!response.ok) {
@@ -13,6 +13,7 @@ const news = async () => {
         return data // Retorna os dados em JSON
     } catch (error) {
         console.error('Houve um problema com a requisição Fetch:', error);
+        return null
     }
 }
 
@@ -42,9 +43,9 @@ const renderNews = (newsData) => {
 }
 
 const onNews = async () => {
-    let project = await news()
-    console.table(project); // Mostra os dados do projeto
-    renderNews(project)
+    let news = await newsFunc()
+    console.table(news); // Mostra os dados do projeto
+    if(news !== null) renderNews(news)
 }
 
 window.onload = onNews

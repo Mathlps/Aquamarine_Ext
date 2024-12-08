@@ -13,6 +13,7 @@ const animalsMain = async () => {
         return data // Retorna os dados em JSON
     } catch (error) {
         console.error('Houve um problema com a requisição Fetch:', error);
+        return null
     }
 }
 
@@ -28,6 +29,7 @@ const animalsMain = async () => {
         return data // Retorna os dados em JSON
     } catch (error) {
         console.error('Houve um problema com a requisição Fetch:', error);
+        return null;
     }
 }
 
@@ -53,10 +55,11 @@ const onMain = async () => {
 
     // let animals = await animalsMain()
     // console.table(animals) // Mostra os dados dos animais
+    // if (animals !== null) renderAnimals()
 
     let news = await newsMain()
-    console.table(news) // Mostra os dados das noticias
-    renderNews(news)
+    console.table(news); // Mostra os dados do projeto
+    if(news !== null) renderNews(news)
 }
 
 // Verifica se a rota atual é '/' ou '/index.html'
