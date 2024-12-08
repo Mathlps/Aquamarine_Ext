@@ -21,26 +21,8 @@ const renderProjects = (json) => {
 
     projectsContainer.innerHTML = ''; // Limpa o conteúdo anterior
 
-    const img = {
-        "images": [
-            {
-                "url": "img/projetos/projetos/projeto-praias-limpas.jpg"
-            },
-            {
-                "url": "img/projetos/projetos/projeto-salve-tartarugas.jpg"
-            },
-            {
-                "url": "img/projetos/projetos/projeto-salve-tubarão.jpg"
-            },
-            {
-                "url": "img/projetos/projetos/projeto-palestras.jpg"
-            }
-        ]
-    };
-
-    projects.forEach((project, index) => {
+    projects.forEach((project) => {
         // Usa o índice para acessar a imagem correspondente em img.images
-        const projectImage = img.images[index]?.url || 'default.jpg'; // Caso não haja imagem correspondente, usa uma imagem padrão
 
         const delimitadores = ["Meta", "Como Funciona", "Parcerias e apoio"];
         const regex = new RegExp(`(?:${delimitadores.join('|')})`, 'g'); // (?:...) cria um grupo não capturador
@@ -54,7 +36,7 @@ const renderProjects = (json) => {
                 </div>
                 <div class="content-items">
                     <div class="project-image">
-                        <img class="animate" src="${projectImage}" alt="${project.titulo}">
+                        <img class="animate" src="${project.link_imagem}" alt="${project.titulo}">
                     </div>
                     <div class="project-description">
                         <div class="text">
