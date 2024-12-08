@@ -1,3 +1,7 @@
+:root{
+    --bg-selection-color: #048FB4;
+}
+
 @keyframes animacao1{
     from{
         opacity: 0;
@@ -182,7 +186,7 @@
 }
 
 /* noticias */
-.noticias-info h1{
+/* .noticias-info h1{
     opacity: 0;
 }
 
@@ -233,22 +237,22 @@
     animation: animacao3 1.5s forwards;
     animation-delay: 0.6s;
 }
-
+ */
 
 /* Projetos */
 
 
 /* Nossos projetos */
-.title h1{
+/* .title h1{
     opacity: 0;
 }
 
 .title h1.in-view{
     animation: animacao1 2s forwards;
-}
+} */
 
 /* projetos */
-.content-title h1{
+/* .content-title h1{
     opacity: 0;
 }
 
@@ -312,7 +316,7 @@
 
 .button.in-view{
     animation: animacao2 2s forwards;
-}
+} */
 
 
 /* pagina sobre nos */
@@ -429,6 +433,15 @@
     animation-delay: 0.5s;
 }
 
+.aside-container2{
+    opacity: 0;
+}
+
+.aside-container2.in-view{
+    animation: animacao3 2.5s forwards;
+    animation-delay: 0.5s;
+}
+
 /* doacao projetos */
 .projetos-texto h1{
     opacity: 0;
@@ -446,3 +459,57 @@
     animation: animacaocard 2s forwards;
     animation-delay: 0.4s;
 }
+
+/* botão voltar ao topo de todas as páginas */
+
+
+/* === BOTÃO DE VOLTAR AO INICIO DA PÁGINA === */
+
+.voltar-ao-topo{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--bg-nav-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    transition: ease-out 0.2s;
+    opacity: 0;
+    visibility: hidden;
+    opacity: 0.5s, visibility .5s;
+}
+
+.voltar-ao-topo.mostrar{
+    opacity: 1;
+    visibility: visible;
+}
+
+.voltar-ao-topo span{
+    font-size: 3em;
+    color: white;
+    top: 50%;
+    transition: ease-out 0.2s;
+}
+
+.voltar-ao-topo:hover{
+    transform: translateY(-5px);
+}
+
+.voltar-ao-topo span:hover{
+    color: var(--bg-selection-color);
+}
+
+/* Página Noticias */
+/* 
+.noticias-titulo h1{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.1s;
+}
+
+.noticias-titulo p{
+    animation: animacaocard 2s forwards;
+    animation-delay: 0.4s;
+} */

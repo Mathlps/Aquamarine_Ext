@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,10 @@
     <link rel="shortcut icon" href="img/index/Logo_JellyFish.jpg">
     <script src="js/animation.js" defer></script>
     <script src="js/header.js" defer></script>
-    <script src="js/slider.js" defer></script>
+    <script src="js/slider.js" defer></script><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Candal&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Aquamarine</title>
 </head>
 <body>
@@ -18,22 +21,22 @@
             <nav class="nav">
 
                 <div class="logo-div">
-                    <a class="logo animate" href="/"><img src="img/index/Logo_JellyFish.jpg" alt="LOGO"></a>
+                    <a class="logo animate" href="index.html"><img src="img/index/Logo_JellyFish.jpg" alt="LOGO"></a>
                 </div>
-
 
                 <div class="nav-div-1">
                     <ul class="ul1 animate nav-list">
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="sobreNos.html">SOBRE NÓS</a></li>
                         <li><a href="projetos.html">PROJETOS</a></li>
-                        <li><a href="#">NOTÍCIAS</a></li>
+                        <li><a href="Noticias.html">NOTÍCIAS</a></li>
                         <li class="nav-contato"><a href="#">AJUDE</a></li>
                     </ul>
                 </div>
+
                 <div class="nav-div-2">
                     <ul class="ul2 animate div-contato">
-                        <li><a href="#">AJUDE</a></li>
+                        <li><a href="doacao.html">AJUDE</a></li>
                     </ul>
                     <button class="hamburger"></button>
                 </div>
@@ -43,67 +46,85 @@
             <div class="aside-container1">
                 <div class="container-doacao cd1 animate">
                     <div class="doacao-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/105/105686.png">
+                        <img src="./img/doação/icones/fish.svg">
                     </div>
                     <div class="doacao-content">
                         <div>
-                            <h2>1 Real</h2>
+                            <h2>R$5,00 / MÊS</h2>
                             <p>
-                                texto
+                                Cada real conta! Sua contribuição alimenta sonhos e salva vidas aquáticas. 🐚💧
                             </p>
                         </div>
                         <div class="donation-button">
-                            <a href="#" class="button">Doa ai mano</a>
+                            <a href="#" class="button animate">Faça sua Doação!</a>
                         </div>
                     </div>
                 </div>
                 <div class="container-doacao cd2 animate">
                     <div class="doacao-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/105/105686.png">
+                        <img src="./img/doação/icones/dolphin.svg">
                     </div>
                     <div class="doacao-content">
                         <div>
-                            <h2>2 Real</h2>
+                            <h2>R$15,00 / MÊS</h2>
                             <p>
-                                texto e mais texto. Sim, texto. Aqui vai ter texto escrito pra ser lido, porque é um texto.
+                                Pequeno para você, mas é uma ajuda gigante para eles!
                             </p>
                         </div>
                         <div class="donation-button">
-                            <a href="#" class="button">Doa ai mano</a>
+                            <a href="#" class="button animate">Faça sua Doação!</a>
                         </div>
                     </div>
                 </div>
                 <div class="container-doacao cd3 animate">
                     <div class="doacao-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/105/105686.png">
+                        <img src="img/doação/icones/whale.svg" alt="baleia branca pequena">
                     </div>
                     <div class="doacao-content">
                         <div>
-                            <h2>3 Real</h2>
+                            <h2>R$30,00 / MÊS</h2>
                             <p>
-                                
+                                Você vira um herói do oceano, cuidando de tartarugas, golfinhos e muito mais!
                             </p>
                         </div>
                         <div class="donation-button">
-                            <a href="#" class="button">Doa ai mano</a>
+                            <a href="#" class="button animate">Faça sua Doação!</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="aside-container2">
-                <div class="container-frase">
-                    <h1 class="animate">“Quando acreditamos em nós mesmos, o impossível se torna possível.”</h1>
-                </div>
+            <div class="aside-container2 animate">
+                    <div class="container-carrossel">
+                        <div class="doacao-icon">
+                            <img src="img/doação/icones/citacao.svg" alt="citação branca pequena">
+                        </div>
+                        <div class="carrossel">
+                          <div class="citacao ativa">
+                            <p>"Atualmente, cerca de 25% dos ecossistemas marinhos estão degradados ou destruídos devido à poluição, pesca excessiva e destruição de habitats."</p>
+                            <p class="citacao-pessoa"> - UNEP</p>
+                          </div>
+                          <div class="citacao">
+                            <p>"A conservação dos oceanos pode aumentar a população de peixes em até 300%, ajudando a recuperar os ecossistemas marinhos e melhorar a segurança alimentar."</p>
+                            <p class="citacao-pessoa"> - National Geographic</p>
+                          </div>
+                          <div class="citacao">
+                            <p>"Mais de 300 milhões de toneladas de plástico são produzidas anualmente, com cerca de 8 milhões de toneladas indo parar nos oceanos, impactando negativamente a fauna marinha."</p>
+                            <p class="citacao-pessoa"> - Ocean Conservancy</p>
+                          </div>
+                        </div>
+                        <div class="controles">
+                          <button id="anterior">❮</button>
+                          <button id="proximo">❯</button>
+                        </div>
+                      </div>
             </div>
         </main>
     </div>
     <div class="projetos">
         <div class="projetos-texto">
-            <h1 class="animate">titulo da doaçao para projetos</h1>
+            <h1 class="animate">APOIE NOSSAS AÇÕES</h1>
             <p class="animate"> 
-                Define-se texto como um conjunto de palavras e frases encadeados que permitem interpretação e transmitem uma mensagem. Pode ser qualquer obra escrita em versão 
-                original que constitui um livro ou um documento escrito. Um texto é uma unidade linguística de extensão superior a frase.
-            </p>
+                Com projetos voltados para o resgate, reabilitação e proteção dos animais, trabalhamos incansavelmente para devolver a esperança a quem mais precisa. Cada esforço, cada história de superação, é um lembrete do poder que temos quando nos unimos em prol do bem. Junte-se a nós nessa missão de salvar vidas e cuidar do nosso planeta! </p>
         </div>
         <div class="projetos-carrossel">
             <div class="container-slider">
@@ -139,5 +160,9 @@
             <a href="#" class="button animate">Ver projetos</a>
         </div>
     </div>
+
+    <a href="#" class="voltar-ao-topo">
+        <span><i class='bx bx-chevron-up'></i></span>
+    </a>
 </body>
 </html>

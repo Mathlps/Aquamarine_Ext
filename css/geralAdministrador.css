@@ -1,0 +1,201 @@
+/* Configurações gerais */
+
+:root {
+    --bg-background-color: #082150;
+    --bg-button-color: #0c3073;
+    --bg-button-hover-color: #1a4697;
+    --bg-rosa: #d2a5e6;
+    --bg-rosa-claro: #f1d3ff;
+    scroll-padding-top: 150px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+/* Menu lateral */
+
+.menuLateral {
+    width: 40vh;
+    background-color: var(--bg-background-color);
+    color: white;
+    padding: 20px;
+    min-height:100vh;
+
+    box-sizing: border-box;
+}
+
+.menuLateral h2 {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    list-style: none;
+}
+
+.menuLateral h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.menuLateral nav ul {
+    margin-top: -23px;
+    list-style: none;
+}
+
+.menuLateral nav ul li {
+    margin-bottom: 1px;
+}
+
+.menuLateral nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.menuLateral nav ul li a:hover {
+    background-color: var(--bg-button-color);
+}
+
+/* Divisorias */
+
+.divisor {
+    display: block;
+    width: 95%;
+    height: 1px;
+    background-color: white;
+    margin-top: -20px;
+    margin-bottom: 32px;
+    opacity: .5;
+}
+
+.divisor2 {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #7f8c8d;
+    margin-top: -10px;
+    margin-bottom: 32px;
+    opacity: .2;
+}
+
+/* Conteúdo */
+
+.conteudoPag {
+    flex: 1;
+    padding: 20px;
+    min-width: 300px;
+}
+
+/* Cabeçalho */
+
+.cabecalho {
+    margin-bottom: 30px;
+}
+
+.cabecalho h1 {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: var(--bg-rosa);
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+.cabecalho h2 {
+    font-size: 19px;
+    color: black;
+    margin-top: -10px;
+}
+
+/* Estatísticas */
+
+.insights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.dados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box {
+    background: #f5f6fa;
+    border: 1px solid #dcdde1;
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.box h3 {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.box p {
+    font-size: 32px;
+    color: var(--bg-background-color);
+    font-weight: bold;
+}
+
+/* Rodapé */
+
+footer {
+    margin: -25px 0 0 250px;
+    text-align: center;
+    font-style: italic;
+    color: #7f8c8d;
+    font-size: 14px;
+
+    word-wrap: break-word; 
+    max-width: 100%;
+}    
+
+
+/* teste */
+.menuLateral h5 {
+    list-style: none;
+}
+
+.menuLateral h5 a {
+    position: absolute; 
+    bottom: 0;
+    margin: 0 0 15px 0;
+
+    text-decoration: none;
+    color: white; /* Herda a cor branca do elemento pai */
+}

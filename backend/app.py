@@ -1,18 +1,21 @@
 import os
-from flask import Flask
+from flask import Flask, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from extensions import db
 from flask_migrate import Migrate
 from db_config import Dev,Prod
 from flask_jwt_extended import JWTManager
+from flask_cors import CORS
 
 # db = SQLAlchemy()
 migrate = Migrate()
 jwt = JWTManager()
 
-
 def create_app():
     app = Flask(__name__)
+    
+    # Permitir CORS para todas as rotas
+    CORS(app)
     
     # Configuração do ambiente
     if os.environ.get('FLASK_ENV') == 'production':

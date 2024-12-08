@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, request, Blueprint
 from flask_jwt_extended import jwt_required
 from service.project_service import ProjectService
+from flask_cors import CORS
 
 project_route = Blueprint("project", __name__)
 
