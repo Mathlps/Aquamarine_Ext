@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,50 +8,55 @@
     <link rel="stylesheet" href="css/navfooter.css">
     <link rel="stylesheet" href="css/animation.css">
     <link rel="shortcut icon" href="img/index/Logo_JellyFish.jpg">
-    <script src="js/animation.js" defer></script>
-    <script src="js/header.js" defer></script>
-    <script src="js/slider.js" defer></script><link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="js/animation.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/slider.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script type="module" src="js/fetch/fetchNews.js"></script>
     <title>Aquamarine</title>
 </head>
+
 <body>
     <!-- NAVBAR START -->
-        <header id="header">
-            <nav class="nav">
+    <header id="header">
+        <nav class="nav">
 
-                <div class="logo-div">
-                    <a class="logo animate" href="/"><img src="img/index/Logo_JellyFish.jpg" alt="LOGO"></a>
-                </div>
+            <div class="logo-div">
+                <a class="logo animate" href="/"><img src="img/index/Logo_JellyFish.jpg" alt="LOGO"></a>
+            </div>
 
-                
-                <div class="nav-div-1">
-                    <ul class="ul1 animate nav-list">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="sobreNos.html">SOBRE NÓS</a></li>
-                        <li><a href="projetos.html">PROJETOS</a></li>
-                        <li><a href="#">NOTÍCIAS</a></li>
-                        <li class="nav-contato"><a href="doacao.html">AJUDE</a></li>
-                    </ul>
-                </div>
-                <div class="nav-div-2">
-                    <ul class="ul2 animate div-contato">
-                        <li><a href="doacao.html">AJUDE</a></li>
-                    </ul>
-                    <button class="hamburger"></button>
-                </div>
-            </nav>
-        </header>
+
+            <div class="nav-div-1">
+                <ul class="ul1 animate nav-list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="sobreNos.html">SOBRE NÓS</a></li>
+                    <li><a href="projetos.html">PROJETOS</a></li>
+                    <li><a href="#">NOTÍCIAS</a></li>
+                    <li class="nav-contato"><a href="doacao.html">AJUDE</a></li>
+                </ul>
+            </div>
+            <div class="nav-div-2">
+                <ul class="ul2 animate div-contato">
+                    <li><a href="doacao.html">AJUDE</a></li>
+                </ul>
+                <button class="hamburger"></button>
+            </div>
+        </nav>
+    </header>
     <!-- NAVBAR END -->
     <div class="noticias-inicio animate">
         <div class="noticias-titulo animate">
             <h1>
                 NOTÍCIAS
             </h1>
-            <p>Preserve o oceano, proteja a vida! Fique por dentro das últimas notícias sobre a conservação marinha sendo realizadas por ONGs dedicadas à proteção animal e ambiental. </p>
+            <p>Preserve o oceano, proteja a vida! Fique por dentro das últimas notícias sobre a conservação marinha
+                sendo realizadas por ONGs dedicadas à proteção animal e ambiental. </p>
         </div>
 
-    <!-- DIVISOR ONDA/WAVE -->
+        <!-- DIVISOR ONDA/WAVE -->
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 312">
             <path fill="#082150" fill-opacity="1"
@@ -63,73 +69,87 @@
 
 
     <!-- NOTICIAS START -->
-        <main>
+    <main>
 
-            <div class="noticias-main">
-                <a class="noticias-card" href="https://blog.sympla.com.br/guia-do-publico/o-que-e-o-projeto-tamar/">
-                    <div class="noticias-card-img">
-                        <img src="https://blog.sympla.com.br/wp-content/uploads/2023/10/08-projeto-tamar.jpg" alt="">
-                    </div>
+        <div class="noticias-main">
+            <a class="noticias-card" href="https://blog.sympla.com.br/guia-do-publico/o-que-e-o-projeto-tamar/">
+                <div class="noticias-card-img">
+                    <img src="https://blog.sympla.com.br/wp-content/uploads/2023/10/08-projeto-tamar.jpg" alt="">
+                </div>
 
-                    <div class="noticias-card-content">
-                        <h2>O que é o Projeto Tamar, onde fica e como visitar</h2>
-                        <p>Você sabia que quatro das cinco espécies de tartarugas marinhas encontradas no Brasil estão em algum grau de ameaça de extinção? Pensando em proteger e conscientizar a preservação desses animais tão importantes para o meio ambiente, surgiu a iniciativa do Projeto Tamar.
-                        </p>
-                        <div class="noticias-card-data">12/09/2024</div>
-                    </div>
-                </a>
+                <div class="noticias-card-content">
+                    <h2>O que é o Projeto Tamar, onde fica e como visitar</h2>
+                    <p>Você sabia que quatro das cinco espécies de tartarugas marinhas encontradas no Brasil estão em
+                        algum grau de ameaça de extinção? Pensando em proteger e conscientizar a preservação desses
+                        animais tão importantes para o meio ambiente, surgiu a iniciativa do Projeto Tamar.
+                    </p>
+                    <div class="noticias-card-data">12/09/2024</div>
+                </div>
+            </a>
 
-                <a class="noticias-card" href="https://g1.globo.com/sp/campinas-regiao/terra-da-gente/noticia/2023/11/02/cacao-e-tubarao-pesquisa-mostra-que-54percent-da-populacao-brasileira-desconhece-a-origem-da-carne.ghtml">
-                    <div class="noticias-card-img">
-                        <img src="https://s2-g1.glbimg.com/Xxoc6dDF4wWVzpmPqjhqhDsg63Q=/0x0:4135x2757/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/T/j/AH2JoYQaCFKVTGxmfjwQ/credits-to-todd-southgate-sea-shepherd-brasil-fev-2-2023-2.jpg" alt="">
-                    </div>
+            <a class="noticias-card"
+                href="https://g1.globo.com/sp/campinas-regiao/terra-da-gente/noticia/2023/11/02/cacao-e-tubarao-pesquisa-mostra-que-54percent-da-populacao-brasileira-desconhece-a-origem-da-carne.ghtml">
+                <div class="noticias-card-img">
+                    <img src="https://s2-g1.glbimg.com/Xxoc6dDF4wWVzpmPqjhqhDsg63Q=/0x0:4135x2757/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/T/j/AH2JoYQaCFKVTGxmfjwQ/credits-to-todd-southgate-sea-shepherd-brasil-fev-2-2023-2.jpg"
+                        alt="">
+                </div>
 
-                    <div class="noticias-card-content">
-                        <h2>'Cação é tubarão': pesquisa mostra que 54% dos brasileiros desconhecem a origem da carne</h2>
-                        <p>Um levantamento feito pela organização sem fins lucrativos de proteção à vida marinha Sea Sheperd Brasil, em agosto de 2023, mostrou que 54% da população brasileira desconhece a origem da carne de cação. Embora o consumo humano do produto seja comum no país, especialmente em regiões costeiras.
-                        </p>
-                        <div class="noticias-card-data">02/11/2023</div>
-                    </div>
-                </a>
+                <div class="noticias-card-content">
+                    <h2>'Cação é tubarão': pesquisa mostra que 54% dos brasileiros desconhecem a origem da carne</h2>
+                    <p>Um levantamento feito pela organização sem fins lucrativos de proteção à vida marinha Sea Sheperd
+                        Brasil, em agosto de 2023, mostrou que 54% da população brasileira desconhece a origem da carne
+                        de cação. Embora o consumo humano do produto seja comum no país, especialmente em regiões
+                        costeiras.
+                    </p>
+                    <div class="noticias-card-data">02/11/2023</div>
+                </div>
+            </a>
 
-                <a class="noticias-card" href="https://www.terra.com.br/vida-e-estilo/turismo/memorial-da-america-latina-recebe-5-edicao-da-sp-ocean-week,6ff3f2c60d12ac7ff6861d2135cd2acfnejuct8v.html?utm_source=clipboard">
-                    <div class="noticias-card-img">
-                        <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/09/19/366794775-memorial.jpg" alt="">
-                    </div>
+            <a class="noticias-card"
+                href="https://www.terra.com.br/vida-e-estilo/turismo/memorial-da-america-latina-recebe-5-edicao-da-sp-ocean-week,6ff3f2c60d12ac7ff6861d2135cd2acfnejuct8v.html?utm_source=clipboard">
+                <div class="noticias-card-img">
+                    <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/09/19/366794775-memorial.jpg"
+                        alt="">
+                </div>
 
-                    <div class="noticias-card-content">
-                        <h2>Memorial da América Latina recebe 5ª edição da SP Ocean Week</h2>
-                        <p>VAté o próximo dia 22 de setembro, o Memorial da América Latina abriga a 5ª edição do festival SP Ocean Week com atividades gratuitas conduzidas ONGs e personalidades fundamentais para a preservação dos oceanos.
+                <div class="noticias-card-content">
+                    <h2>Memorial da América Latina recebe 5ª edição da SP Ocean Week</h2>
+                    <p>VAté o próximo dia 22 de setembro, o Memorial da América Latina abriga a 5ª edição do festival SP
+                        Ocean Week com atividades gratuitas conduzidas ONGs e personalidades fundamentais para a
+                        preservação dos oceanos.
 
                         O evento, que reúne mais de 60 palestrantes e 28 institutos de pesquisa científica e ONGs
-                        </p>
-                        <div class="noticias-card-data">19/09/2024</div>
-                    </div>
-                </a>
+                    </p>
+                    <div class="noticias-card-data">19/09/2024</div>
+                </div>
+            </a>
 
-                <a class="noticias-card" href="https://www.reciclasampa.com.br/artigo/expedicao-ondas-limpas-100-das-praias-do-brasil-tem-lixo-plastico#:~:text=Estudo%20capitaneado%20pela%20Sea%20Shepherd,do%20Brasil%20t%C3%AAm%20lixo%20pl%C3%A1stico">
-                    <div class="noticias-card-img">
-                        <img src="https://www.reciclasampa.com.br/imgs/conteudos/03_lixo_praias_brasil_padrao.jpg" alt="">
-                    </div>
+            <a class="noticias-card"
+                href="https://www.reciclasampa.com.br/artigo/expedicao-ondas-limpas-100-das-praias-do-brasil-tem-lixo-plastico#:~:text=Estudo%20capitaneado%20pela%20Sea%20Shepherd,do%20Brasil%20t%C3%AAm%20lixo%20pl%C3%A1stico">
+                <div class="noticias-card-img">
+                    <img src="https://www.reciclasampa.com.br/imgs/conteudos/03_lixo_praias_brasil_padrao.jpg" alt="">
+                </div>
 
-                    <div class="noticias-card-content">
-                        <h2>Expedição Ondas Limpas: 100% das praias do Brasil têm lixo plástico</h2>
-                        <p>Considerado o maior estudo já realizado sobre o perfil dos resíduos marinhos no país, a Expedição Ondas Limpas revelou um dado preocupante: 100% das praias do Brasil têm lixo plástico.
+                <div class="noticias-card-content">
+                    <h2>Expedição Ondas Limpas: 100% das praias do Brasil têm lixo plástico</h2>
+                    <p>Considerado o maior estudo já realizado sobre o perfil dos resíduos marinhos no país, a Expedição
+                        Ondas Limpas revelou um dado preocupante: 100% das praias do Brasil têm lixo plástico.
 
-                            A expedição, capitaneada pela Sea
-                        </p>
-                        <div class="noticias-card-data">03/10/2024</div>
-                    </div>
-                </a>
-            </div>
+                        A expedição, capitaneada pela Sea
+                    </p>
+                    <div class="noticias-card-data">03/10/2024</div>
+                </div>
+            </a>
+        </div>
 
-            <div class="noticias-fim">Fique atento para mais novidades!</div>
-        </main>
+        <div class="noticias-fim">Fique atento para mais novidades!</div>
+    </main>
     <!-- NOTICIAS END -->
-            
+
 
     <a href="#" class="voltar-ao-topo">
         <span><i class='bx bx-chevron-up'></i></span>
     </a>
 </body>
+
 </html>

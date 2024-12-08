@@ -1,5 +1,5 @@
 import os
-from flask import Flask
+from flask import Flask, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from extensions import db
 from flask_migrate import Migrate
@@ -11,10 +11,10 @@ from flask_cors import CORS
 migrate = Migrate()
 jwt = JWTManager()
 
-
 def create_app():
     app = Flask(__name__)
     
+    # Permitir CORS para todas as rotas
     CORS(app)
     
     # Configuração do ambiente

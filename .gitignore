@@ -16,6 +16,7 @@ __pycache__/
 # Ignorar arquivos de configuração de IDEs
 .idea/
 .vscode/
+.vercel/
 
 # Ignorar arquivos temporários
 *.tmp
