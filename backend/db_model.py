@@ -24,7 +24,9 @@ class Projeto(db.Model):
     data_fim = db.Column('Data_fim', db.Date, nullable=True)
     status = db.Column('pStatus', db.String(45), nullable=True)
     texto = db.Column('Texto', db.Text, nullable=True)
+    link_imagem = db.Column('link_imagem', db.String(255), nullable=True)
     id_adm = db.Column('IdAdm', db.Integer, db.ForeignKey('Administrador.IdAdm'), nullable=False)
+
 
     animais = db.relationship('Animal', backref='projeto', lazy=True)
 
@@ -46,4 +48,5 @@ class Noticia(db.Model):
     titulo = db.Column('Titulo', db.String(45), nullable=True)
     data_publicacao = db.Column('Data_publicacao', db.Date, nullable=True)
     texto = db.Column('Texto', db.Text, nullable=True)
+    link_imagem = db.Column('link_imagem', db.String(255), nullable=True)
     id_adm = db.Column('IdAdm', db.Integer, db.ForeignKey('Administrador.IdAdm'), nullable=False)

@@ -12,6 +12,7 @@ class ProjectService:
             data_fim=data['data_fim'],
             status=data['status'],
             texto = data['texto'],
+            link_imagem = data['link_imagem'],
             id_adm = get_jwt_identity()
         )
 
@@ -50,7 +51,8 @@ class ProjectService:
             "data_inicio": project.data_inicio.strftime('%Y-%m-%d') if project.data_inicio else None,
             "data_fim": project.data_fim.strftime('%Y-%m-%d') if project.data_fim else None,
             "status": project.status,
-            "texto": project.texto
+            "texto": project.texto,
+            "link_imagem": project.link_imagem
         }, 200
 
     @staticmethod
@@ -62,7 +64,9 @@ class ProjectService:
             "data_inicio": project.data_inicio.strftime('%Y-%m-%d') if project.data_inicio else None,
             "data_fim": project.data_fim.strftime('%Y-%m-%d') if project.data_fim else None,
             "status": project.status,
-            "texto": project.texto
+            "texto": project.texto,
+            "link_imagem": project.link_imagem
+
 
         } for project in projects], 200
     

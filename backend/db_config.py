@@ -1,35 +1,37 @@
 import os
-from dotenv import load_dotenv,find_dotenv
+from dotenv import load_dotenv, find_dotenv
 
-load_dotenv(find_dotenv(".env.local"))
-# load_dotenv(find_dotenv(".env"))
+# Carregar o arquivo .env
+load_dotenv(find_dotenv(".env"))
 
-# import os
 print("Variáveis carregadas:")
-for key, value in os.environ.items():
-    if key.startswith("DB_") or key == "JWT_SECRET_KEY" or key == "FLASK_ENV":
-        print(f"{key}: {value}")
+# for key, value in os.environ.items():
+#     if key.startswith("DEV_") or key.startswith("PROD_") or key in ["JWT_SECRET_KEY", "FLASK_ENV"]:
+#         print(f"{key}: {value}")
+print(f"Ambiente Flask: {os.environ.get('FLASK_ENV')}")
 
 
 class Config:
-    SECRET_KEY = os.environ.get('JWT_SECRET_KEY') or 'chave_secreta_padrao'
+    SECRET_KEY = os.environ.get("JWT_SECRET_KEY", "chave_secreta_padrao")
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    DEBUG = False
 
 class Dev(Config):
+    DEBUG = True 
     try:
         SQLALCHEMY_DATABASE_URI = (
-            f"mysql+pymysql://{os.environ['DB_USERNAME']}:{os.environ['DB_PASSWORD']}"
-            f"@{os.environ['DB_HOST']}:{os.environ['DB_PORT']}/{os.environ['DB_NAME']}"
+            f"mysql+pymysql://{os.environ['DEV_DB_USERNAME']}:{os.environ['DEV_DB_PASSWORD']}"
+            f"@{os.environ['DEV_DB_HOST']}:{os.environ['DEV_DB_PORT']}/{os.environ['DEV_DB_NAME']}"
         )
     except KeyError as e:
         raise RuntimeError(f"Faltando variável de ambiente necessária: {e}")
-        
+
 class Prod(Config):
     try:
         SQLALCHEMY_DATABASE_URI = (
-            f"mysql+pymysql://{os.environ['DB_USERNAME']}:{os.environ['DB_PASSWORD']}"
-            f"@{os.environ['DB_HOST']}:{os.environ['DB_PORT']}/{os.environ['DB_NAME']}"
+            f"mysql+pymysql://{os.environ['PROD_DB_USERNAME']}:{os.environ['PROD_DB_PASSWORD']}"
+            f"@{os.environ['PROD_DB_HOST']}:{os.environ['PROD_DB_PORT']}/{os.environ['PROD_DB_NAME']}"
         )
+        DEBUG = False
     except KeyError as e:
-        raise RuntimeError(f"Faltando variável de ambiente necessária: {e}") # configurar na hospedagem com a variável deles
-    DEBUG = False
+        raise RuntimeError(f"Faltando variável de ambiente necessária: {e}")

@@ -16,8 +16,10 @@ def create_app():
     
     # Configuração do ambiente
     if os.environ.get('FLASK_ENV') == 'production':
+        print("Carregando variáveis de produção")
         app.config.from_object(Prod)
     else:
+        print("Carregando variáveis de desenvolvimento")
         app.config.from_object(Dev)
 
     db.init_app(app)

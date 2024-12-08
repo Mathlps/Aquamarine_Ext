@@ -9,6 +9,7 @@ class NewsService:
             titulo=data['titulo'],
             data_publicacao=data['data_publicacao'],
             texto=data['texto'],
+            link_imagem = data['link_imagem'],
             id_adm  = get_jwt_identity()
         )
         db.session.add(new_news)
@@ -43,7 +44,9 @@ class NewsService:
             "titulo": noticia.titulo,
             "data_publicacao": noticia.data_publicacao,
             "texto": noticia.texto,
-            "id_adm": noticia.id_adm
+            "id_adm": noticia.id_adm,
+            "link_imagem": noticia.link_imagem
+            
         }, 200
 
     @staticmethod
@@ -53,7 +56,9 @@ class NewsService:
             "titulo": noticia.titulo,
             "data_publicacao": noticia.data_publicacao,
             "texto": noticia.texto,
-            "id_adm": noticia.id_adm
+            "id_adm": noticia.id_adm,
+            "link_imagem": noticia.link_imagem
+
         } for noticia in noticias], 200
 
     @staticmethod
