@@ -1,5 +1,4 @@
 import config from '../config.js'; // importa a rota da API pre config
-import { formatarData } from '../formatDate.js';
 
 const apiUrl = config.API_URL;
 
