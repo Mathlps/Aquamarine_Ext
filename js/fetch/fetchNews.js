@@ -24,9 +24,9 @@ const renderNews = (newsData) => {
     newsData.forEach(news => {
         const dataFormatada = formatarData(news.data_publicacao); // Chamada correta da função
         const newsCard = `
-            <a class="noticias-card" href="https://blog.sympla.com.br/guia-do-publico/o-que-e-o-projeto-tamar/">
+            <a class="noticias-card" href="${news.link_noticia}">
                 <div class="noticias-card-img">
-                    <img src="https://blog.sympla.com.br/wp-content/uploads/2023/10/08-projeto-tamar.jpg" alt="">
+                    <img src="${news.link_imagem}" alt="">
                 </div>
 
                 <div class="noticias-card-content">
