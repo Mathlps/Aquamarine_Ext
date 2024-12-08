@@ -25,7 +25,7 @@ const renderNews = (newsData) => {
     newsData.forEach(news => {
         const dataFormatada = formatarData(news.data_publicacao); // Chamada correta da função
         const newsCard = `
-            <a class="noticias-card" href="${news.link_noticia}">
+            <a class="noticias-card" target="_blank" href="${news.link_noticia}">
                 <div class="noticias-card-img">
                     <img src="${news.link_imagem}" alt="">
                 </div>
