@@ -4,19 +4,20 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/estilo.css" />
-    <link rel="stylesheet" href="css/navfooter.css">
-    <link rel="stylesheet" href="css/animation.css">
-    <link rel="shortcut icon" href="img/index/Logo_JellyFish.jpg">
-    <script src="js/header.js" defer></script>
-    <script src="js/slider.js" defer></script>
-    <script src="js/animation.js" defer></script>
-    <script src="js/numbers.js" defer></script>
-    <script type="module" src="js/fetch/fetchMain.js"></script>
+    <link rel="stylesheet" href="/Client/css/estilo.css" />
+    <link rel="stylesheet" href="/Client/css/navfooter.css">
+    <link rel="stylesheet" href="/Client/css/animation.css">
+    <link rel="shortcut icon" href="/Client/img/index/Logo_JellyFish.jpg">
+    <script src="/Client/js/header.js" defer></script>
+    <script src="/Client/js/slider.js" defer></script>
+    <script src="/Client/js/animation.js" defer></script>
+    <script src="/Client/js/numbers.js" defer></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- defer é usado para o js ser executado depois que a página for carregada -->
     <title>Aquamarine</title>
 </head>
+
+
 
 <body>
     <div class="container">
@@ -25,22 +26,22 @@
             <nav class="nav">
 
                 <div class="logo-div">
-                    <a class="logo animate" href="index.html"><img src="img/index/Logo_JellyFish.jpg" alt="LOGO"></a>
+                    <a class="logo animate" href="/"><img src="/Client/img/index/Logo_JellyFish.jpg" alt="LOGO"></a>
                 </div>
 
                 <div class="nav-div-1">
                     <ul class="ul1 animate nav-list">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="sobreNos.html">SOBRE NÓS</a></li>
-                        <li><a href="projetos.html">PROJETOS</a></li>
-                        <li><a href="Noticias.html">NOTÍCIAS</a></li>
-                        <li class="nav-contato"><a href="doacao.html">AJUDE</a></li>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="./Client/Pages/sobreNos.html">SOBRE NÓS</a></li>
+                        <li><a href="./Client/Pages/projetos.html">PROJETOS</a></li>
+                        <li><a href="./Client/Pages/Noticias.html">NOTÍCIAS</a></li>
+                        <li class="nav-contato"><a href="./Client/Pages/doacao.html">AJUDE</a></li>
                     </ul>
                 </div>
 
                 <div class="nav-div-2">
                     <ul class="ul2 animate div-contato">
-                        <li><a href="doacao.html">AJUDE</a></li>
+                        <li><a href="./Client/Pages/doacao.html">AJUDE</a></li>
                     </ul>
                     <button class="hamburger"></button>
                 </div>
@@ -108,8 +109,7 @@
                                 melhor
                                 para nossos mares e suas criaturas.
                             </p>
-                            <button class="animate "><a href="sobreNos.html" class="botao-saiba-mais">SAIBA
-                                    MAIS</a></button>
+                            <button class="animate botao-saiba-mais"><a href="./Client/Pages/sobreNos.html">SAIBA MAIS</a></button>
                             <!--LEVA PARA A PAGINA SOBRE-NOS -->
                         </div>
                         <!-- TEXTO SOBRE A ONG END -->
@@ -119,25 +119,24 @@
                         <div class="slider animate">
                             <div class="list">
                                 <div class="item">
-                                    <img src="img/index/slider/baleia.jpg" alt="">
+                                    <img src="./Client/img/index/baleia-wave.jpg" alt="">
                                 </div>
                                 <div class="item">
-                                    <img src="img/index/slider/leao_marinho.jpg" alt="">
+                                    <img src="./Client/img/index/slider/leao_marinho.jpg" alt="">
                                 </div>
                                 <div class="item">
-                                    <img src="img/index/slider/pinguim.jpg" alt="">
+                                    <img src="./Client/img/index/slider/pinguim.jpg" alt="">
                                 </div>
                                 <div class="item">
-                                    <img src="img/index/slider/shark.jpg" alt="">
+                                    <img src="./Client/img/index/slider/shark.jpg" alt="">
                                 </div>
                                 <div class="item">
-                                    <img src="img/index/slider/tartaruga.jpg" alt="">
+                                    <img src="./Client/img/index/slider/tartaruga.jpg" alt="">
                                 </div>
                             </div>
                             <div class="buttons">
-                                <button id="prev">
-                                    < </button>
-                                        <button id="next">></button>
+                                <button id="prev"><</button>
+                                <button id="next">></button>
                             </div>
                             <ul class="dots">
                                 <li class="active"></li>
@@ -156,7 +155,7 @@
                 <div class="wave-container-2">
                     <div>
                         <!-- Primeira onda -->
-                        <svg class="wave-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 312">
+                        <svg class="wave-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 310">
                             <path fill="#f4f1f8" fill-opacity="1"
                                 d="M0,224L48,213.3C96,203,192,181,288,186.7C384,192,480,224,576,224C672,224,768,192,864,170.7C960,149,1056,139,1152,149.3C1248,160,1344,192,1392,213.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
                             </path>
@@ -165,7 +164,8 @@
                         <svg class="wave-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 312">
                             <path fill="#dae7eb" fill-opacity="1"
                                 d="M0,160L
-                            </path>60,165.3C120,171,240,181,360,192C480,203,600,213,720,208C840,203,960,181,1080,170.7C1200,160,1320,160,1380,160L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                            60,165.3C120,171,240,181,360,192C480,203,600,213,720,208C840,203,960,181,1080,170.7C1200,160,1320,160,1380,160L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                        </path>
                         </svg>
                     </div>
                 </div>
@@ -190,7 +190,7 @@
                                     <p>Mobiliza voluntários para limpezas mensais em praias ao longo da costa
                                         brasileira, visando combater a poluição dos oceanos e promover a conscientização
                                         ambiental junto a banhistas e moradores.</p>
-                                    <button>SAIBA MAIS</button> <!--LEVA PARA PAGINA PROJETOS -->
+                                    <button><a class="b-card-back" href="./Client/Pages/projetos.html">SAIBA MAIS</a></button> <!--LEVA PARA PAGINA PROJETOS -->
                                 </div>
                             </div>
                         </div>
@@ -203,7 +203,7 @@
                                     <p>Dedica-se à conservação das tartarugas marinhas no Brasil, protegendo ninhos
                                         durante a desova e tratando tartarugas feridas. Promove eventos educativos para
                                         sensibilizar o público sobre a importância dessas espécies.</p>
-                                    <button>SAIBA MAIS</button> <!--LEVA PARA PAGINA PROJETOS -->
+                                        <button><a class="b-card-back" href="./Client/Pages/projetos.html">SAIBA MAIS</a></button> <!--LEVA PARA PAGINA PROJETOS -->
                                 </div>
                             </div>
                         </div>
@@ -217,7 +217,7 @@
                                         predatória e incentiva a criação de reservas marinhas. Realiza campanhas para
                                         educar consumidores sobre o impacto da exploração dessas espécies.
                                     </p>
-                                    <button>SAIBA MAIS</button> <!--LEVA PARA PAGINA PROJETOS -->
+                                    <button><a class="b-card-back" href="./Client/Pages/projetos.html">SAIBA MAIS</a></button> <!--LEVA PARA PAGINA PROJETOS -->
                                 </div>
                             </div>
                         </div>
@@ -230,7 +230,7 @@
                                     <p>Realiza campanhas educativas em escolas, comunidades e redes sociais para
                                         esclarecer o público sobre proteção ambiental, corrigindo informações e
                                         incentivando práticas sustentáveis para preservar o ecossistema marinho.</p>
-                                    <button>SAIBA MAIS</button> <!--LEVA PARA PAGINA PROJETOS -->
+                                        <button><a class="b-card-back" href="./Client/Pages/projetos.html">SAIBA MAIS</a></button> <!--LEVA PARA PAGINA PROJETOS -->
                                 </div>
                             </div>
                         </div>
@@ -251,17 +251,17 @@
                     <h1 class="animate">Animais Impactados</h1>
                     <div class="animais-impactados">
                         <div class="resgatados">
-                            <img src="./img/index/resgatados.png" alt="">
+                            <img src="./Client/img/index/resgatados.png" alt="">
                             <h2>Resgatados Pela ONG</h2>
                             <span class="num value-display" data-val="400">000</span>
                         </div>
                         <div class="cuidados">
-                            <img src="./img/index/cuidados-medicos.png" alt="">
+                            <img src="./Client/img/index/cuidados-medicos.png" alt="">
                             <h2>Em Cuidados Médicos</h2>
                             <span class="num value-display" data-val="340">000</span>
                         </div>
                         <div class="realocados">
-                            <img src="./img/index/realocados.png" alt="">
+                            <img src="./Client/img/index/realocados.png" alt="">
                             <h2>Realocados na Natureza</h2>
                             <span class="num value-display" data-val="250">000</span>
                         </div>
@@ -309,24 +309,25 @@
             </div>
             <!-- NOTICIAS END -->
         </main>
-        <!-- MAIN END -->
-        <!-- FOOTER START -->
+             <!-- FOOTER START -->
         <!--WAVE EFEITO FOOTER -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 312">
-            <path fill="#000000" fill-opacity="1"
-                d="M0,160L48,176C96,192,192,224,288,224C384,224,480,192,576,154.7C672,117,768,75,864,74.7C960,75,1056,117,1152,117.3C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-            </path>
-        </svg>
+        <div class="custom-shape-divider-bottom-1733103704">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 118" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+            
+        </div>
         <footer class="footer footer-content">
+           
             <div class="footer-row">
                 <div class="footer-icon">
-                    <a href="#z"><img src="img/index/Logo_JellyFish.jpg" alt="LOGO"></a>
+                    <a href="#z"><img src="./Client/img/index/Logo_JellyFish.jpg" alt="LOGO"></a>
                 </div>
                 <div class="footer-links">
-                    <a href="index.html">Home</a>
-                    <a href="sobreNos.html">Sobre Nós</a>
-                    <a href="projetos.html">Projetos</a>
-                    <a href="projetos.html">Notícias</a>
+                    <a href="/">Home</a>
+                    <a href="./sobreNos.html">Sobre Nós</a>
+                    <a href="./projetos.html">Projetos</a>
+                    <a href="./projetos.html">Notícias</a>
                 </div>
                 <div class="footer-social-icons">
                     <a href="#"><img src="https://img.icons8.com/?size=100&id=118467&format=png&color=000000"
@@ -340,13 +341,13 @@
                 </div>
             </div>
             <div class="footer-info">
-                <p>Instituto Aquamarine - Preservando a vida marinha e promovendo a conscientização ambiental.
+                <p><a href="/Client/Pages/Adm/loginAdm.html" id="login">Instituto Aquamarine</a> - Preservando a vida marinha e promovendo a conscientização
+                    ambiental.
                     <a href="/">Política de Privacidade</a> | <a href="/">Termos de Serviço</a>
                 </p>
             </div>
             <h1 class="footer-title">Juntos pela Vida Marinha</h1>
         </footer>
-        <!-- FOOTER END -->
 
         <a href="#" class="voltar-ao-topo">
             <span><i class='bx bx-chevron-up'></i></span>

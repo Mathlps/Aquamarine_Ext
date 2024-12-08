@@ -1,0 +1,298 @@
+:root {
+    /*colocar as variáveis aqui*/
+    --bg-background-color: #082150;
+    --bg-button-color: #0c3073;
+    --bg-button-hover-color: #1a4697;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/projetos/pexels-alohaphotostudio-8710944.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* Navbar */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 3%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    z-index: 1;
+    /* background-color: #082150; */
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    font-style: normal;
+    color: white;
+}
+
+header.rolagem {
+    background-color: var(--bg-background-color);
+    padding: 30px 3%;
+
+}
+
+header img {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+}
+
+header ul {
+    list-style-type: none;
+
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Inicio da pagina */
+
+.title{
+    color: #d2a5e6;
+    margin-top: 30vh;
+    margin-left: 12vw;
+    display: flex;
+    align-items: center;
+
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.content-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content{
+    margin-top: 8vh;
+    border-radius: 20px;
+    margin-bottom: 5vh;
+    padding: 5vh;
+    padding-bottom: 8vh;
+    background-color: azure;
+    width: 80%;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
+                0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
+}
+
+.content-title{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--bg-background-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 24px;
+}
+.content-items{
+    display: flex;
+    margin-top: 7vh;
+    gap: 5vw;
+}
+
+.project-image{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-image img{
+    width: 30vw;
+    min-height: 400px;
+    height: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
+                0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
+    object-fit: cover;
+}
+
+.project-description{
+    width: 50%;
+    padding-bottom: 4vh;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.text p{
+    text-indent: 2vw;
+    text-align: justify;
+    word-spacing: 1px;
+    /* padding-right: 2vw;
+    padding-top: 1vw; */
+    padding: 0 2vw 0 0;
+    font-family: "Bebas Neue", sans-serif;
+    /* font-weight: 200; */
+    font-style: normal;
+    color: #37445f;
+}
+.text h3{
+    /* text-align: center; */
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #061b43;
+}
+.donation-button{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    display: flex;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-button-color);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
+                0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.button:hover{
+    transform: scale(0.95);
+    background-color: var(--bg-button-hover-color);
+    text-decoration: none;
+} 
+
+
+@media (max-width: 916px){
+
+    .content-items{
+        display: flex;
+        flex-direction: column;
+        margin-top: 7vh;
+        gap: 7vh;
+    }
+    
+    .project-image{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .project-image img{
+        width: 60vw;
+        height: 300px;
+        max-height: 350px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
+                    0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
+    }
+    
+    .project-description{
+        width: 100%;
+        padding-bottom: 3vh;
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+    
+    .text p{
+        text-indent: 3vw;
+        text-align: justify;
+        padding: 1vh 2vw 1vh 0;
+    }
+
+}
+
+
+
+@media (max-width: 768px){
+
+    .content-items{
+        display: flex;
+        flex-direction: column;
+        margin-top: 7vh;
+        gap: 7vh;
+    }
+    
+    .project-image{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .project-image img{
+        width: 60vw;
+        height: 300px;
+        max-height: 350px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), /* Sombra mais leve */
+                    0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra ainda mais leve */
+    }
+    
+    .project-description{
+        width: 100%;
+        padding-bottom: 3vh;
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+    
+    .text p{
+        text-indent: 3vw;
+        text-align: justify;
+        padding: 1vh 2vw 1vh 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+    /* Estilos para telas pequenas */
+
+    /* HEADER START */
+
+    header {
+        padding: 15px 1%;
+    }
+
+    header ul li {
+        margin: 5px 0;
+        font-size: 0.8em;
+    }
+}
