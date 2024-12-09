@@ -1173,7 +1173,6 @@ a.link {
 @media (min-width: 1201px) and (max-width: 1490px) {
 
     .container-sobreAquamarine {
-
         text-align: center;
         padding-left: 10px;
     }
@@ -1252,5 +1251,30 @@ a.link {
 
     .noticias h3 {
         width: 250px;
+    }
+}
+@media (min-width: 1900px) and (max-width: 2000px) {
+    .container-sobreAquamarine {
+        gap: 5rem;
+        padding-left: 20px;
+    }
+    .sobre-aquamarine p {
+
+        width: 800px;
+        align-items: center;
+        font-size: 1.1rem;
+        text-indent: 20px;
+        text-align: left;
+        
+    }
+
+    .container-slider {
+        width: 800px;
+        min-height: 500px;
+        padding-bottom: 20px;
+    }
+    
+    .container-imagens {
+        width: 800px;
     }
 }
