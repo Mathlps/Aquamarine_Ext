@@ -49,7 +49,7 @@ const renderProjects = (json) => {
                             <p class="animate">${partes[2]}</p>
                             </div>
                         <div class="donation-button">
-                            <a href="#" class="button animate">Junte-se a Nós</a>
+                            <a href="./doacao.html" class="button animate">Junte-se a Nós</a>
                         </div>
                     </div>
                 </div>
