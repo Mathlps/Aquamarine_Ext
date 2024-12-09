@@ -109,6 +109,8 @@ header nav ul li a {
     height: 3px;
     background: #ffffff;
     margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
 }
 
 @media (max-width: 750px) {
@@ -146,6 +148,19 @@ header nav ul li a {
     .nav.active .nav-list {
         clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
+    }
+
+    .nav.active .hamburger {
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
     }
 }
 
