@@ -110,7 +110,7 @@ header nav ul li a {
     background: #ffffff;
     margin-top: 5px;
     position: relative;
-    transition: 0.3s;
+    transition: 0.3;
 }
 
 @media (max-width: 750px) {
@@ -175,6 +175,11 @@ header nav ul li a {
     position: relative;
 
     color: #f1f1f1;
+ 
+    & div{
+        margin: 0rem 0 1.5rem 0;
+    }
+
 }
 
 .footer-row {
@@ -187,7 +192,7 @@ header nav ul li a {
     /* Distribui o espaço horizontalmente */
     color: #fff;
     /* Cor do texto */
-    padding: 20px 0;
+    padding: -10px 0 20px 0;
     /* Espaçamento interno */
     text-align: center;
     /* Centraliza o texto */
