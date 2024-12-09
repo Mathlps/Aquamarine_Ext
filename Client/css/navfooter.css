@@ -110,7 +110,7 @@ header nav ul li a {
     background: #ffffff;
     margin-top: 5px;
     position: relative;
-    transition: 0.3;
+    transition: 0.5s;
 }
 
 @media (max-width: 750px) {
