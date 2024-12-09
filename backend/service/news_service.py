@@ -45,7 +45,8 @@ class NewsService:
             "data_publicacao": noticia.data_publicacao,
             "texto": noticia.texto,
             "id_adm": noticia.id_adm,
-            "link_imagem": noticia.link_imagem
+            "link_imagem": noticia.link_imagem,
+            "link_noticia": noticia.link_noticia
             
         }, 200
 
@@ -57,7 +58,8 @@ class NewsService:
             "data_publicacao": noticia.data_publicacao,
             "texto": noticia.texto,
             "id_adm": noticia.id_adm,
-            "link_imagem": noticia.link_imagem
+            "link_imagem": noticia.link_imagem,
+            "link_noticia": noticia.link_noticia
 
         } for noticia in noticias], 200
 

@@ -49,4 +49,5 @@ class Noticia(db.Model):
     data_publicacao = db.Column('Data_publicacao', db.Date, nullable=True)
     texto = db.Column('Texto', db.Text, nullable=True)
     link_imagem = db.Column('link_imagem', db.String(255), nullable=True)
+    link_noticia = db.Column('link_noticia', db.String(255), nullable=True)  # Adicione esta linha
     id_adm = db.Column('IdAdm', db.Integer, db.ForeignKey('Administrador.IdAdm'), nullable=False)
