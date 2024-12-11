@@ -33,8 +33,6 @@ loginForm.addEventListener("submit", async (event) => {
     const email = emailInput.value;
     const senha = senhaInput.value;
 
-    alert(email + "\n" + senha)
-
     // Enviar requisição para o backend usando a API_URL do config
     const response = await fetch(`${config.API_URL}login`, { // Usa a API_URL
         method: 'POST',
